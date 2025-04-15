@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="500px" viewBox="0 0 800 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Course Structure</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0D6EFD" offset="0%"></stop>
+            <stop stop-color="#0A58CA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Course-Structure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="500"></rect>
+        <g id="Course-Flow" transform="translate(50.000000, 50.000000)">
+            <!-- Main Title -->
+            <text id="Bootstrap-Kurs" font-family="Arial-BoldMT, Arial" font-size="24" font-weight="bold" fill="#212529">
+                <tspan x="250" y="30">Bootstrap-Kurs für UX Design</tspan>
+            </text>
+            
+            <!-- Lecture 1 Box -->
+            <rect id="Lecture1-Box" fill="url(#linearGradient-1)" x="0" y="70" width="300" height="80" rx="8"></rect>
+            <text id="Lecture1-Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#FFFFFF">
+                <tspan x="60" y="100">Vorlesung 1</tspan>
+            </text>
+            <text id="Lecture1-Subtitle" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="30" y="130">Grundlagen und Einrichtung</tspan>
+            </text>
+            
+            <!-- Lecture 2 Box -->
+            <rect id="Lecture2-Box" fill="url(#linearGradient-1)" x="400" y="70" width="300" height="80" rx="8"></rect>
+            <text id="Lecture2-Title" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#FFFFFF">
+                <tspan x="460" y="100">Vorlesung 2</tspan>
+            </text>
+            <text id="Lecture2-Subtitle" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#FFFFFF">
+                <tspan x="410" y="130">Figma zu Bootstrap & Fortgeschritten</tspan>
+            </text>
+            
+            <!-- Arrow between lectures -->
+            <path d="M310,110 L390,110" id="Arrow" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5,5"></path>
+            <polygon id="ArrowHead" fill="#0D6EFD" points="390 115 400 110 390 105"></polygon>
+            
+            <!-- Lecture 1 Topics -->
+            <rect id="Topic1-1-Box" fill="#F8F9FA" x="20" y="180" width="260" height="50" rx="4"></rect>
+            <text id="Topic1-1" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="40" y="210">HTML/CSS Grundlagen</tspan>
+            </text>
+            
+            <rect id="Topic1-2-Box" fill="#F8F9FA" x="20" y="240" width="260" height="50" rx="4"></rect>
+            <text id="Topic1-2" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="40" y="270">Bootstrap-Einrichtung</tspan>
+            </text>
+            
+            <rect id="Topic1-3-Box" fill="#F8F9FA" x="20" y="300" width="260" height="50" rx="4"></rect>
+            <text id="Topic1-3" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="40" y="330">Erste Schritte mit Bootstrap</tspan>
+            </text>
+            
+            <rect id="Topic1-4-Box" fill="#F8F9FA" x="20" y="360" width="260" height="50" rx="4"></rect>
+            <text id="Topic1-4" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="40" y="390">Praktische Übungen</tspan>
+            </text>
+            
+            <!-- Lecture 2 Topics -->
+            <rect id="Topic2-1-Box" fill="#F8F9FA" x="420" y="180" width="260" height="50" rx="4"></rect>
+            <text id="Topic2-1" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="440" y="210">Figma Dev Mode</tspan>
+            </text>
+            
+            <rect id="Topic2-2-Box" fill="#F8F9FA" x="420" y="240" width="260" height="50" rx="4"></rect>
+            <text id="Topic2-2" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="440" y="270">Von Figma zu Bootstrap</tspan>
+            </text>
+            
+            <rect id="Topic2-3-Box" fill="#F8F9FA" x="420" y="300" width="260" height="50" rx="4"></rect>
+            <text id="Topic2-3" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="440" y="330">Fortgeschrittene Konzepte</tspan>
+            </text>
+            
+            <rect id="Topic2-4-Box" fill="#F8F9FA" x="420" y="360" width="260" height="50" rx="4"></rect>
+            <text id="Topic2-4" font-family="ArialMT, Arial" font-size="14" font-weight="normal" fill="#212529">
+                <tspan x="440" y="390">Abschlussprojekt</tspan>
+            </text>
+            
+            <!-- Connecting lines for Lecture 1 -->
+            <path d="M150,150 L150,180" id="Line1-1" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M150,230 L150,240" id="Line1-2" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M150,290 L150,300" id="Line1-3" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M150,350 L150,360" id="Line1-4" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            
+            <!-- Connecting lines for Lecture 2 -->
+            <path d="M550,150 L550,180" id="Line2-1" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M550,230 L550,240" id="Line2-2" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M550,290 L550,300" id="Line2-3" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M550,350 L550,360" id="Line2-4" stroke="#0D6EFD" stroke-width="2" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressourcen - Bootstrap-Kurs für UX Design Studierende</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bootstrap-fill me-2"></i>
+                Bootstrap-Kurs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course_structure.html">Kursstruktur</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Materialien
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html_css_basics.html">HTML/CSS Grundlagen</a></li>
+                            <li><a class="dropdown-item" href="bootstrap_introduction.html">Bootstrap-Einführung</a></li>
+                            <li><a class="dropdown-item" href="figma_to_bootstrap.html">Figma zu Bootstrap</a></li>
+                            <li><a class="dropdown-item" href="visual_studio_setup.html">Visual Studio Einrichtung</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="exercises.html">Praktische Übungen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="resources.html">Ressourcen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Ressourcen</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Ressourcen</h1>
+                    <p class="lead">Nützliche Ressourcen, Tools und Referenzen für Bootstrap und UX Design.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3" style="width: 100px; height: 100px; font-size: 3rem;">
+                            <i class="bi bi-collection"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h5 class="fw-bold mb-3">Inhaltsverzeichnis</h5>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#documentation">Dokumentation</a>
+                            <a class="nav-link" href="#tutorials">Tutorials und Kurse</a>
+                            <a class="nav-link" href="#tools">Tools und Plugins</a>
+                            <a class="nav-link" href="#templates">Templates und UI-Kits</a>
+                            <a class="nav-link" href="#books">Bücher</a>
+                            <a class="nav-link" href="#communities">Communities</a>
+                            <a class="nav-link" href="#cheatsheets">Cheatsheets</a>
+                            <a class="nav-link" href="#inspiration">Inspiration</a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <div id="documentation" class="mb-5">
+                        <h2 class="fw-bold mb-4">Dokumentation</h2>
+                        <p>Offizielle Dokumentation und Referenzen für Bootstrap, Figma und verwandte Technologien.</p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-bootstrap me-2 text-primary"></i>Bootstrap Dokumentation</h5>
+                                        <p class="card-text">Die offizielle Dokumentation für Bootstrap 5 mit umfassenden Anleitungen, Komponenten und Beispielen.</p>
+                                        <a href="https://getbootstrap.com/docs/5.0/" target="_blank" class="btn btn-outline-primary">Zur Dokumentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-bezier2 me-2 text-primary"></i>Figma Hilfe-Center</h5>
+                                        <p class="card-text">Umfassende Dokumentation und Tutorials für Figma, einschließlich Dev Mode und Plugins.</p>
+                                        <a href="https://help.figma.com/" target="_blank" class="btn btn-outline-primary">Zum Hilfe-Center</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-code-square me-2 text-primary"></i>Visual Studio Code Dokumentation</h5>
+                                        <p class="card-text">Offizielle Dokumentation für VS Code mit Anleitungen zur Einrichtung, Erweiterungen und mehr.</p>
+                                        <a href="https://code.visualstudio.com/docs" target="_blank" class="btn btn-outline-primary">Zur Dokumentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-filetype-html me-2 text-primary"></i>MDN Web Docs</h5>
+                                        <p class="card-text">Umfassende Ressource für HTML, CSS und JavaScript mit detaillierten Erklärungen und Beispielen.</p>
+                                        <a href="https://developer.mozilla.org/" target="_blank" class="btn btn-outline-primary">Zu MDN Web Docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tutorials" class="mb-5">
+                        <h2 class="fw-bold mb-4">Tutorials und Kurse</h2>
+                        <p>Lernressourcen für Bootstrap, Figma und Web-Design, von Anfänger bis Fortgeschrittene.</p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">Video-Tutorials</div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Bootstrap 5 Crash Course</h5>
+                                                <p class="mb-1">Ein umfassender Einführungskurs in Bootstrap 5 von Traversy Media.</p>
+                                                <a href="https://www.youtube.com/watch?v=4sosXZsdy-s" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Video</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Figma für UX/UI Designer</h5>
+                                                <p class="mb-1">Kompletter Kurs zu Figma für UX/UI Designer von DesignCourse.</p>
+                                                <a href="https://www.youtube.com/watch?v=FTFaQWZBqQ8" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Video</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Figma Dev Mode Tutorial</h5>
+                                                <p class="mb-1">Einführung in den Figma Dev Mode und wie man ihn effektiv nutzt.</p>
+                                                <a href="https://www.youtube.com/watch?v=RVNuArHH5WM" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Video</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">Online-Kurse</div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Bootstrap 5: Grundlagen bis Fortgeschrittene</h5>
+                                                <p class="mb-1">Umfassender Kurs auf Udemy, der alle Aspekte von Bootstrap 5 abdeckt.</p>
+                                                <a href="https://www.udemy.com/course/bootstrap-5-responsive-web-design-and-development/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Kurs</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Figma: Vom Anfänger zum Profi</h5>
+                                                <p class="mb-1">Kompletter Figma-Kurs für Designer auf Udemy.</p>
+                                                <a href="https://www.udemy.com/course/figma-ux-ui-design/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Kurs</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Web Design für UX Designer</h5>
+                                                <p class="mb-1">Kurs auf Coursera, der Web-Design-Prinzipien für UX Designer vermittelt.</p>
+                                                <a href="https://www.coursera.org/learn/web-design-for-ux-designers" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Kurs</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-success">
+                            <h4 class="alert-heading h5"><i class="bi bi-lightbulb-fill me-2"></i>Tipp</h4>
+                            <p class="mb-0">Viele der aufgeführten Kurse bieten regelmäßig Rabatte an. Halten Sie Ausschau nach Angeboten oder nutzen Sie kostenlose Probeversionen, um die Kurse zu testen, bevor Sie sich anmelden.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="tools" class="mb-5">
+                        <h2 class="fw-bold mb-4">Tools und Plugins</h2>
+                        <p>Nützliche Tools und Plugins für die Arbeit mit Bootstrap und Figma.</p>
+                        
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="card h-100">
+                                    <div class="card-header">Figma-Plugins</div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Figma to Bootstrap 5</h5>
+                                                <p class="mb-1">Konvertiert Figma-Designs direkt in Bootstrap 5 HTML/CSS-Code.</p>
+                                                <a href="https://www.figma.com/community/plugin/1287660587112027215/figma-to-bootstrap-5-plugin" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Plugin</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Bootstrap 5 UI Kit</h5>
+                                                <p class="mb-1">Eine umfassende Sammlung von Bootstrap-Komponenten als Figma-Komponenten.</p>
+                                                <a href="https://www.figma.com/community/file/1230908175282365161/bootstrap-5-ui-kit" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum UI Kit</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <h5 class="mb-1">Breakpoints</h5>
+                                                <p class="mb-1">Hilft bei der Erstellung responsiver Designs in Figma.</p>
+                                                <a href="https://www.figma.com/community/plugin/824289601590456356/breakpoints" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Zum Plugin</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

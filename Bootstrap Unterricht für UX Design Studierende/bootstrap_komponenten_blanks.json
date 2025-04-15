@@ -1,0 +1,69 @@
+{
+  "title": "Bootstrap-Komponenten - Fill in the Blanks",
+  "language": "de",
+  "mainLibrary": "H5P.Blanks",
+  "embedTypes": ["iframe"],
+  "license": "U",
+  "contentType": "Fill in the Blanks",
+  "content": {
+    "task": {
+      "library": "H5P.Blanks",
+      "params": {
+        "text": "<p>Vervollständigen Sie den HTML-Code für die folgenden Bootstrap-Komponenten:</p>\n\n<p><strong>1. Navbar:</strong></p>\n<pre>&lt;nav class=\"*navbar navbar-expand-lg navbar-light bg-light*\"&gt;\n  &lt;div class=\"container-fluid\"&gt;\n    &lt;a class=\"navbar-brand\" href=\"#\"&gt;Brand&lt;/a&gt;\n    &lt;button class=\"*navbar-toggler*\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarNav\"&gt;\n      &lt;span class=\"navbar-toggler-icon\"&gt;&lt;/span&gt;\n    &lt;/button&gt;\n    &lt;div class=\"*collapse navbar-collapse*\" id=\"navbarNav\"&gt;\n      &lt;ul class=\"*navbar-nav*\"&gt;\n        &lt;li class=\"nav-item\"&gt;\n          &lt;a class=\"*nav-link active*\" href=\"#\"&gt;Home&lt;/a&gt;\n        &lt;/li&gt;\n      &lt;/ul&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/nav&gt;</pre>\n\n<p><strong>2. Card:</strong></p>\n<pre>&lt;div class=\"*card*\"&gt;\n  &lt;img src=\"...\" class=\"*card-img-top*\" alt=\"...\"&gt;\n  &lt;div class=\"*card-body*\"&gt;\n    &lt;h5 class=\"*card-title*\"&gt;Card title&lt;/h5&gt;\n    &lt;p class=\"*card-text*\"&gt;Some text here.&lt;/p&gt;\n    &lt;a href=\"#\" class=\"btn btn-primary\"&gt;Button&lt;/a&gt;\n  &lt;/div&gt;\n&lt;/div&gt;</pre>\n\n<p><strong>3. Button:</strong></p>\n<pre>&lt;button type=\"button\" class=\"*btn btn-primary*\"&gt;Primary&lt;/button&gt;\n&lt;button type=\"button\" class=\"*btn btn-secondary*\"&gt;Secondary&lt;/button&gt;\n&lt;button type=\"button\" class=\"*btn btn-success*\"&gt;Success&lt;/button&gt;\n&lt;button type=\"button\" class=\"*btn btn-danger*\"&gt;Danger&lt;/button&gt;</pre>\n\n<p><strong>4. Alert:</strong></p>\n<pre>&lt;div class=\"*alert alert-primary*\" role=\"alert\"&gt;\n  This is a primary alert.\n&lt;/div&gt;\n&lt;div class=\"*alert alert-success*\" role=\"alert\"&gt;\n  This is a success alert.\n&lt;/div&gt;</pre>\n\n<p><strong>5. Form:</strong></p>\n<pre>&lt;form&gt;\n  &lt;div class=\"*mb-3*\"&gt;\n    &lt;label for=\"exampleInputEmail1\" class=\"*form-label*\"&gt;Email address&lt;/label&gt;\n    &lt;input type=\"email\" class=\"*form-control*\" id=\"exampleInputEmail1\"&gt;\n  &lt;/div&gt;\n  &lt;div class=\"*mb-3*\"&gt;\n    &lt;label for=\"exampleInputPassword1\" class=\"*form-label*\"&gt;Password&lt;/label&gt;\n    &lt;input type=\"password\" class=\"*form-control*\" id=\"exampleInputPassword1\"&gt;\n  &lt;/div&gt;\n  &lt;button type=\"submit\" class=\"btn btn-primary\"&gt;Submit&lt;/button&gt;\n&lt;/form&gt;</pre>",
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "checkAnswerButton": "Überprüfen",
+        "submitAnswerButton": "Absenden",
+        "tryAgainButton": "Wiederholen",
+        "showSolutionButton": "Lösung anzeigen",
+        "correctAnswer": "Richtig!",
+        "incorrectAnswer": "Falsch!",
+        "missedAnswer": "Unvollständig!",
+        "displaySolutionDescription": "Aufgabe wurde aktualisiert, um die Lösung anzuzeigen.",
+        "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+        "tipLabel": "Tipp",
+        "solutionLabel": "Lösung",
+        "solutionTitle": "Lösung",
+        "noInput": "Bitte gib eine Antwort ein",
+        "notFilledOut": "Bitte fülle alle Lücken aus",
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 20,
+            "feedback": "Du solltest die Bootstrap-Komponenten noch einmal wiederholen."
+          },
+          {
+            "from": 20,
+            "to": 40,
+            "feedback": "Du hast einige Grundkenntnisse über Bootstrap-Komponenten."
+          },
+          {
+            "from": 40,
+            "to": 60,
+            "feedback": "Du hast gute Kenntnisse über Bootstrap-Komponenten."
+          },
+          {
+            "from": 60,
+            "to": 80,
+            "feedback": "Du hast sehr gute Kenntnisse über Bootstrap-Komponenten."
+          },
+          {
+            "from": 80,
+            "to": 100,
+            "feedback": "Du hast ausgezeichnete Kenntnisse über Bootstrap-Komponenten!"
+          }
+        ]
+      }
+    }
+  }
+}

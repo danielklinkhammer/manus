@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarstrom managen - Interaktive Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Solarstrom managen</h1>
+            <div class="language-selector">
+                <button class="active" data-lang="de">DE</button>
+                <button data-lang="en">EN</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="simulation-container">
+                <div class="solar-panel-section">
+                    <h2>Solaranlage</h2>
+                    <div class="solar-panel">
+                        <div class="solar-cells">
+                            <!-- Solar cells grid -->
+                            <div class="cell" data-cell="1"></div>
+                            <div class="cell" data-cell="2"></div>
+                            <div class="cell" data-cell="3"></div>
+                            <div class="cell" data-cell="4"></div>
+                            <div class="cell" data-cell="5"></div>
+                            <div class="cell" data-cell="6"></div>
+                            <div class="cell" data-cell="7"></div>
+                            <div class="cell" data-cell="8"></div>
+                            <div class="cell" data-cell="9"></div>
+                            <div class="cell" data-cell="10"></div>
+                            <div class="cell" data-cell="11"></div>
+                            <div class="cell" data-cell="12"></div>
+                        </div>
+                        <div class="light-controls">
+                            <label for="light-intensity">Lichtintensität:</label>
+                            <input type="range" id="light-intensity" min="0" max="100" value="50">
+                            <div class="light-value">50%</div>
+                        </div>
+                    </div>
+                    <div class="power-output">
+                        <div class="power-meter">
+                            <div class="meter-label">Aktuelle Leistung</div>
+                            <div class="meter-value">0 W</div>
+                            <div class="meter-bar">
+                                <div class="meter-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house-model-section">
+                    <h2>Hausmodell</h2>
+                    <div class="house-model">
+                        <div class="house-image">
+                            <svg width="300" height="200" viewBox="0 0 300 200">
+                                <!-- House outline -->
+                                <path d="M50,100 L150,30 L250,100 L250,180 L50,180 Z" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
+                                <!-- Roof with solar panels -->
+                                <path d="M150,30 L250,100 L150,100 Z" fill="#7fb0ff" stroke="#333" stroke-width="1"/>
+                                <path d="M50,100 L150,30 L150,100 Z" fill="#7fb0ff" stroke="#333" stroke-width="1"/>
+                                <!-- Door -->
+                                <rect x="130" y="140" width="40" height="40" fill="#8B4513" stroke="#333"/>
+                                <!-- Windows -->
+                                <rect x="70" y="120" width="30" height="30" fill="#B0E0E6" stroke="#333"/>
+                                <rect x="200" y="120" width="30" height="30" fill="#B0E0E6" stroke="#333"/>
+                                
+                                <!-- Energy flow indicators -->
+                                <path id="solar-to-house" d="M150,90 L150,120" stroke="#FFD700" stroke-width="4" stroke-dasharray="5,3"/>
+                                <path id="house-to-grid" d="M250,140 L280,140" stroke="#4CAF50" stroke-width="4" stroke-dasharray="5,3"/>
+                                <path id="house-to-battery" d="M50,140 L20,140" stroke="#2196F3" stroke-width="4" stroke-dasharray="5,3"/>
+                                
+                                <!-- Grid connection -->
+                                <rect x="280" y="130" width="10" height="20" fill="#555" stroke="#333"/>
+                                <!-- Battery -->
+                                <rect id="battery" x="10" y="130" width="10" height="20" fill="#2196F3" stroke="#333"/>
+                            </svg>
+                        </div>
+                        <div class="energy-flows">
+                            <div class="flow-indicator solar-house">
+                                <div class="flow-label">Solar → Haus</div>
+                                <div class="flow-value">0 W</div>
+                            </div>
+                            <div class="flow-indicator house-grid">
+                                <div class="flow-label">Haus → Netz</div>
+                                <div class="flow-value">0 W</div>
+                            </div>
+                            <div class="flow-indicator house-battery">
+                                <div class="flow-label">Haus → Batterie</div>
+                                <div class="flow-value">0 W</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="devices-section">
+                    <h2>Haushaltsgeräte</h2>
+                    <div class="devices-grid">
+                        <div class="device" data-device="fridge">
+                            <div class="device-icon">❄️</div>
+                            <div class="device-name">Kühlschrank</div>
+                            <div class="device-power">100 W</div>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="device" data-device="tv">
+                            <div class="device-icon">📺</div>
+                            <div class="device-name">Fernseher</div>
+                            <div class="device-power">150 W</div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="device" data-device="washing">
+                            <div class="device-icon">🧺</div>
+                            <div class="device-name">Waschmaschine</div>
+                            <div class="device-power">2000 W</div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="device" data-device="oven">
+                            <div class="device-icon">🍳</div>
+                            <div class="device-name">Herd</div>
+                            <div class="device-power">2500 W</div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="device" data-device="lights">
+                            <div class="device-icon">💡</div>
+                            <div class="device-name">Beleuchtung</div>
+                            <div class="device-power">200 W</div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="device" data-device="car">
+                            <div class="device-icon">🚗</div>
+                            <div class="device-name">E-Auto</div>
+                            <div class="device-power">3700 W</div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="energy-management-section">
+                    <h2>Energiemanagement</h2>
+                    <div class="management-options">
+                        <div class="option-group">
+                            <h3>Überschussenergie</h3>
+                            <div class="radio-options">
+                                <label>
+                                    <input type="radio" name="surplus" value="grid" checked>
+                                    <span>Ins Netz einspeisen</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="surplus" value="battery">
+                                    <span>In Batterie speichern</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="surplus" value="heat">
+                                    <span>In Wärme umwandeln</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <h3>Bei Energiemangel</h3>
+                            <div class="radio-options">
+                                <label>
+                                    <input type="radio" name="deficit" value="grid" checked>
+                                    <span>Aus dem Netz beziehen</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="deficit" value="battery">
+                                    <span>Aus Batterie beziehen</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="deficit" value="reduce">
+                                    <span>Verbrauch reduzieren</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h2>Energiebilanz</h2>
+                <div class="dashboard-grid">
+                    <div class="dashboard-item">
+                        <div class="item-label">Erzeugung</div>
+                        <div class="item-value" id="total-production">0 kWh</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-label">Verbrauch</div>
+                        <div class="item-value" id="total-consumption">0 kWh</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-label">Netzeinspeisung</div>
+                        <div class="item-value" id="grid-feed">0 kWh</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-label">Netzbezug</div>
+                        <div class="item-value" id="grid-draw">0 kWh</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-label">Batterieladung</div>
+                        <div class="item-value" id="battery-level">0 %</div>
+                    </div>
+                    <div class="dashboard-item">
+                        <div class="item-label">Autarkie</div>
+                        <div class="item-value" id="self-sufficiency">0 %</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="simulation-controls">
+            <button id="reset-simulation">Simulation zurücksetzen</button>
+            <button id="time-toggle">Zeitraffer starten</button>
+            <div class="time-display">
+                <div class="time-label">Simulationszeit:</div>
+                <div class="time-value">08:00 Uhr</div>
+            </div>
+        </div>
+
+        <div class="info-panel">
+            <h3>Informationen</h3>
+            <div class="info-content">
+                <p>Diese Simulation zeigt, wie ein Haushalt mit Photovoltaikanlage seinen Solarstrom managen kann.</p>
+                <p>Steuern Sie die Lichtintensität, um die Solarstromerzeugung zu beeinflussen, und schalten Sie verschiedene Geräte ein oder aus, um den Verbrauch zu steuern.</p>
+                <p>Entscheiden Sie, wie mit überschüssigem Strom umgegangen werden soll und beobachten Sie die Auswirkungen auf Ihre Energiebilanz.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

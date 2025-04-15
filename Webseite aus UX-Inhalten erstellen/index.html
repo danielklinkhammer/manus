@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/HCI Literatur - Eine umfassende Ressource für UX und HCI Bücher</title>
+    <meta name="description" content="Entdecken Sie eine kuratierte Sammlung der wichtigsten Bücher im Bereich User Experience Design und Human-Computer Interaction.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+    <link rel="icon" href="img/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="index.html">UX/HCI Literatur</a></h1>
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                <span class="sr-only">Menü</span>
+                <span>☰</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Startseite</a></li>
+                    <li><a href="pages/categories.html">Kategorien</a></li>
+                    <li><a href="pages/lists/beginners.html">Für Anfänger</a></li>
+                    <li><a href="pages/lists/advanced.html">Für Fortgeschrittene</a></li>
+                    <li><a href="pages/about.html">Über das Projekt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>UX/HCI Literatur</h1>
+                <p>Eine umfassende Ressource für Bücher im Bereich User Experience Design und Human-Computer Interaction.</p>
+                <a href="pages/categories.html" class="btn">Kategorien erkunden</a>
+                <a href="pages/lists/beginners.html" class="btn btn-secondary">Für Anfänger</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="main-content">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Buchtiteln, Autoren oder Kategorien...">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </section>
+
+        <!-- Featured Books Section -->
+        <section class="featured-section">
+            <h2>Hervorgehobene Bücher</h2>
+            <div class="book-grid">
+                <div class="book-card" data-category="grundprinzipien">
+                    <div class="book-card-image">
+                        <img src="img/book-covers/optimized/design-everyday-things.jpg" alt="The Design of Everyday Things Cover">
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Grundprinzipien</span>
+                        <h3><a href="pages/books/design-everyday-things.html">The Design of Everyday Things</a></h3>
+                        <p class="book-card-author">Donald A. Norman</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>4.15/5</span>
+                        </div>
+                        <p>Ein grundlegendes Werk über Designprinzipien und die Psychologie der Mensch-Objekt-Interaktion.</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="interface">
+                    <div class="book-card-image">
+                        <img src="img/book-covers/optimized/dont-make-me-think.jpg" alt="Don't Make Me Think Cover">
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Interface-Design</span>
+                        <h3><a href="pages/books/dont-make-me-think.html">Don't Make Me Think</a></h3>
+                        <p class="book-card-author">Steve Krug</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>4.24/5</span>
+                        </div>
+                        <p>Ein Standardwerk über Webusability und Benutzerfreundlichkeit mit pragmatischem Ansatz.</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="grundprinzipien">
+                    <div class="book-card-image">
+                        <img src="img/book-covers/optimized/laws-of-ux.jpg" alt="Laws of UX Cover">
+                    </div>
+                    <div class="book-card-content">
+                        <span class="book-card-category">Grundprinzipien</span>
+                        <h3><a href="pages/books/laws-of-ux.html">Laws of UX</a></h3>
+                        <p class="book-card-author">Jon Yablonski</p>
+                        <div class="book-card-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span>4.1/5</span>
+                        </div>
+                        <p>Ein praktischer Leitfaden, der erklärt, wie Designer psychologische Prinzipien anwenden können.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <h2>Kategorien</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Grundlegende Designprinzipien</h3>
+                        <p>Fundamentale Konzepte und Prinzipien, die die Basis für gutes Design bilden.</p>
+                        <a href="pages/categories/principles.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Psychologie und Nutzerverhalten</h3>
+                        <p>Bücher, die sich mit der menschlichen Psychologie und dem Nutzerverhalten befassen.</p>
+                        <a href="pages/categories/psychology.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Forschungsmethoden und Nutzertests</h3>
+                        <p>Bücher über Methoden zur Erforschung von Nutzerbedürfnissen und zum Testen von Designs.</p>
+                        <a href="pages/categories/research.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Interface-Design und Patterns</h3>
+                        <p>Bücher, die sich mit der Gestaltung effektiver Benutzeroberflächen und bewährten Designmustern befassen.</p>
+                        <a href="pages/categories/interface.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="pages/categories.html" class="btn btn-large">Alle Kategorien anzeigen</a>
+            </div>
+        </section>
+
+        <!-- Special Lists Section -->
+        <section class="lists-section">
+            <h2>Spezielle Listen</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="sidebar">
+                        <h3>Für Anfänger</h3>
+                        <p>Empfohlene Bücher für Einsteiger im Bereich UX und HCI.</p>
+                        <a href="pages/lists/beginners.html" class="btn">Liste erkunden</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <h3>Für Fortgeschrittene</h3>
+                        <p>Bücher für erfahrene Designer, die ihr Wissen vertiefen möchten.</p>
+                        <a href="pages/lists/advanced.html" class="btn">Liste erkunden</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="sidebar">
+                        <h3>Klassiker</h3>
+                        <p>Zeitlose Werke, die das Feld geprägt haben und weiterhin relevant sind.</p>
+                        <a href="pages/lists/classics.html" class="btn">Liste erkunden</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UX/HCI Literatur</h3>
+                    <p>Eine umfassende Ressource für Bücher im Bereich User Experience Design und Human-Computer Interaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategorien</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/categories/principles.html">Grundlegende Designprinzipien</a></li>
+                        <li><a href="pages/categories/psychology.html">Psychologie und Nutzerverhalten</a></li>
+                        <li><a href="pages/categories/research.html">Forschungsmethoden</a></li>
+                        <li><a href="pages/categories/interface.html">Interface-Design</a></li>
+                        <li><a href="pages/categories.html">Alle Kategorien</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Spezielle Listen</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/lists/beginners.html">Für Anfänger</a></li>
+                        <li><a href="pages/lists/advanced.html">Für Fortgeschrittene</a></li>
+                        <li><a href="pages/lists/researchers.html">Für Forscher</a></li>
+                        <li><a href="pages/lists/top-rated.html">Höchstbewertete Bücher</a></li>
+                        <li><a href="pages/lists/classics.html">Klassiker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Über</h3>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">Über das Projekt</a></li>
+                        <li><a href="pages/about.html#methodology">Methodik</a></li>
+                        <li><a href="pages/about.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UX/HCI Literatur. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

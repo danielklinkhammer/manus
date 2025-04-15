@@ -1,0 +1,891 @@
+{
+  "title": "Bootstrap Grundlagen - Interaktive Präsentation",
+  "language": "de",
+  "mainLibrary": "H5P.CoursePresentation",
+  "embedTypes": ["iframe"],
+  "license": "U",
+  "contentType": "Course Presentation",
+  "content": {
+    "presentation": {
+      "slides": [
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 15,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h1>Bootstrap Grundlagen</h1><p>Eine interaktive Einführung in das Frontend-Framework</p>"
+                }
+              }
+            },
+            {
+              "x": 30,
+              "y": 40,
+              "width": 40,
+              "height": 40,
+              "action": {
+                "library": "H5P.Image",
+                "params": {
+                  "file": {
+                    "path": "bootstrap-logo.svg",
+                    "mime": "image/svg+xml",
+                    "copyright": {
+                      "license": "U"
+                    }
+                  },
+                  "alt": "Bootstrap Logo"
+                }
+              }
+            }
+          ],
+          "keywords": ["Einführung", "Bootstrap"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Was ist Bootstrap?</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<ul><li>Frontend-Framework für die Webentwicklung</li><li>Entwickelt von Twitter, 2011 veröffentlicht</li><li>Aktuell: Bootstrap 5 (ohne jQuery-Abhängigkeit)</li><li>Mobile-first Ansatz</li><li>Umfangreiche Komponenten-Bibliothek</li><li>Responsives Grid-System</li><li>Konsistentes Design auf allen Geräten</li></ul>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 80,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<p>Klicken Sie auf den Pfeil, um fortzufahren</p>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Definition", "Überblick"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Vorteile von Bootstrap</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<ul><li>Schnelle Entwicklung von responsiven Websites</li><li>Konsistentes Design und Benutzerfreundlichkeit</li><li>Große Community und umfangreiche Dokumentation</li><li>Kompatibilität mit allen modernen Browsern</li><li>Anpassbar durch Sass-Variablen</li><li>Regelmäßige Updates und Verbesserungen</li><li>Ideal für Prototyping und Produktiventwicklung</li></ul>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Vorteile", "Benefits"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Wissensüberprüfung</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.MultiChoice",
+                "params": {
+                  "question": "Welche der folgenden Aussagen über Bootstrap sind korrekt?",
+                  "answers": [
+                    {
+                      "text": "Bootstrap wurde von Facebook entwickelt",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap wurde von Twitter entwickelt.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap 5 benötigt jQuery als Abhängigkeit",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap 5 hat keine jQuery-Abhängigkeit mehr.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap verwendet einen Mobile-first Ansatz",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Bootstrap verwendet einen Mobile-first Ansatz für responsives Design.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap bietet ein responsives Grid-System",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Das Grid-System ist eine Kernfunktion von Bootstrap.",
+                        "notChosenFeedback": ""
+                      }
+                    }
+                  ],
+                  "behaviour": {
+                    "enableRetry": true,
+                    "enableSolutionsButton": true,
+                    "enableCheckButton": true,
+                    "type": "auto",
+                    "singlePoint": false,
+                    "randomAnswers": false,
+                    "showSolutionsRequiresInput": true,
+                    "confirmCheckDialog": false,
+                    "confirmRetryDialog": false,
+                    "autoCheck": false,
+                    "passPercentage": 100,
+                    "showScorePoints": true
+                  },
+                  "UI": {
+                    "checkAnswerButton": "Überprüfen",
+                    "showSolutionButton": "Lösung anzeigen",
+                    "tryAgainButton": "Wiederholen",
+                    "tipsLabel": "Tipp anzeigen",
+                    "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+                    "tipAvailable": "Tipp verfügbar",
+                    "feedbackAvailable": "Feedback verfügbar",
+                    "readFeedback": "Feedback lesen",
+                    "wrongAnswer": "Falsche Antwort",
+                    "correctAnswer": "Richtige Antwort",
+                    "shouldCheck": "Sollte ausgewählt werden",
+                    "shouldNotCheck": "Sollte nicht ausgewählt werden",
+                    "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Quiz", "Test"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Bootstrap Grid-System</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<ul><li>12-Spalten-System für flexible Layouts</li><li>Container → Rows → Columns</li><li>Responsive Breakpoints: xs, sm, md, lg, xl, xxl</li><li>Mobile-first Ansatz</li><li>Klassen: .container, .row, .col-*</li><li>Automatische Anpassung an Bildschirmgrößen</li></ul>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Grid", "Layout"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Grid-System Visualisierung</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.Image",
+                "params": {
+                  "file": {
+                    "path": "bootstrap-grid.png",
+                    "mime": "image/png",
+                    "copyright": {
+                      "license": "U"
+                    }
+                  },
+                  "alt": "Bootstrap Grid System Visualisierung"
+                }
+              }
+            }
+          ],
+          "keywords": ["Grid", "Visualisierung"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Wissensüberprüfung: Grid-System</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.MultiChoice",
+                "params": {
+                  "question": "Wie viele Spalten hat das Bootstrap Grid-System?",
+                  "answers": [
+                    {
+                      "text": "6 Spalten",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Das Bootstrap Grid-System hat mehr Spalten.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "10 Spalten",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Das Bootstrap Grid-System hat mehr Spalten.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "12 Spalten",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Das Bootstrap Grid-System basiert auf 12 Spalten.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "16 Spalten",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Das Bootstrap Grid-System hat weniger Spalten.",
+                        "notChosenFeedback": ""
+                      }
+                    }
+                  ],
+                  "behaviour": {
+                    "enableRetry": true,
+                    "enableSolutionsButton": true,
+                    "enableCheckButton": true,
+                    "type": "auto",
+                    "singlePoint": false,
+                    "randomAnswers": false,
+                    "showSolutionsRequiresInput": true,
+                    "confirmCheckDialog": false,
+                    "confirmRetryDialog": false,
+                    "autoCheck": false,
+                    "passPercentage": 100,
+                    "showScorePoints": true
+                  },
+                  "UI": {
+                    "checkAnswerButton": "Überprüfen",
+                    "showSolutionButton": "Lösung anzeigen",
+                    "tryAgainButton": "Wiederholen",
+                    "tipsLabel": "Tipp anzeigen",
+                    "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+                    "tipAvailable": "Tipp verfügbar",
+                    "feedbackAvailable": "Feedback verfügbar",
+                    "readFeedback": "Feedback lesen",
+                    "wrongAnswer": "Falsche Antwort",
+                    "correctAnswer": "Richtige Antwort",
+                    "shouldCheck": "Sollte ausgewählt werden",
+                    "shouldNotCheck": "Sollte nicht ausgewählt werden",
+                    "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Quiz", "Grid"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Bootstrap-Komponenten</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<p>Bootstrap bietet eine Vielzahl von vorgefertigten Komponenten:</p><ul><li>Navigationskomponenten (Navbar, Nav, Breadcrumb)</li><li>Inhaltskomponenten (Cards, Carousel, Modal)</li><li>Formularkomponenten (Input, Checkbox, Select)</li><li>Feedback-Komponenten (Alert, Badge, Progress)</li></ul>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Komponenten", "UI-Elemente"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Wissensüberprüfung: Komponenten</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.MultiChoice",
+                "params": {
+                  "question": "Welche der folgenden sind Bootstrap-Komponenten?",
+                  "answers": [
+                    {
+                      "text": "Navbar",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Die Navbar ist eine wichtige Bootstrap-Komponente.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Slideshow",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. In Bootstrap heißt diese Komponente 'Carousel'.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Card",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Cards sind flexible Container für Inhalte in Bootstrap.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Lightbox",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Lightbox ist keine Standard-Bootstrap-Komponente. Ähnliche Funktionalität bietet das Modal.",
+                        "notChosenFeedback": ""
+                      }
+                    }
+                  ],
+                  "behaviour": {
+                    "enableRetry": true,
+                    "enableSolutionsButton": true,
+                    "enableCheckButton": true,
+                    "type": "auto",
+                    "singlePoint": false,
+                    "randomAnswers": false,
+                    "showSolutionsRequiresInput": true,
+                    "confirmCheckDialog": false,
+                    "confirmRetryDialog": false,
+                    "autoCheck": false,
+                    "passPercentage": 100,
+                    "showScorePoints": true
+                  },
+                  "UI": {
+                    "checkAnswerButton": "Überprüfen",
+                    "showSolutionButton": "Lösung anzeigen",
+                    "tryAgainButton": "Wiederholen",
+                    "tipsLabel": "Tipp anzeigen",
+                    "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+                    "tipAvailable": "Tipp verfügbar",
+                    "feedbackAvailable": "Feedback verfügbar",
+                    "readFeedback": "Feedback lesen",
+                    "wrongAnswer": "Falsche Antwort",
+                    "correctAnswer": "Richtige Antwort",
+                    "shouldCheck": "Sollte ausgewählt werden",
+                    "shouldNotCheck": "Sollte nicht ausgewählt werden",
+                    "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Quiz", "Komponenten"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Responsives Design mit Bootstrap</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<ul><li>Mobile-first Ansatz: Design für kleine Bildschirme zuerst</li><li>Responsive Breakpoints: xs, sm, md, lg, xl, xxl</li><li>Flexible Layouts mit dem Grid-System</li><li>Responsive Utilities: .d-none, .d-md-block, etc.</li><li>Responsive Bilder mit .img-fluid</li><li>Automatische Anpassung von Komponenten</li></ul>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Responsiv", "Mobile-first"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Responsive Breakpoints</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.Table",
+                "params": {
+                  "table": {
+                    "rows": [
+                      [
+                        {
+                          "text": "Breakpoint"
+                        },
+                        {
+                          "text": "Kürzel"
+                        },
+                        {
+                          "text": "Dimension"
+                        },
+                        {
+                          "text": "Gerätetyp"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Extra Small"
+                        },
+                        {
+                          "text": "xs"
+                        },
+                        {
+                          "text": "< 576px"
+                        },
+                        {
+                          "text": "Smartphones"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Small"
+                        },
+                        {
+                          "text": "sm"
+                        },
+                        {
+                          "text": "≥ 576px"
+                        },
+                        {
+                          "text": "Große Smartphones, kleine Tablets"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Medium"
+                        },
+                        {
+                          "text": "md"
+                        },
+                        {
+                          "text": "≥ 768px"
+                        },
+                        {
+                          "text": "Tablets"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Large"
+                        },
+                        {
+                          "text": "lg"
+                        },
+                        {
+                          "text": "≥ 992px"
+                        },
+                        {
+                          "text": "Desktops"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Extra Large"
+                        },
+                        {
+                          "text": "xl"
+                        },
+                        {
+                          "text": "≥ 1200px"
+                        },
+                        {
+                          "text": "Große Desktops"
+                        }
+                      ],
+                      [
+                        {
+                          "text": "Extra Extra Large"
+                        },
+                        {
+                          "text": "xxl"
+                        },
+                        {
+                          "text": "≥ 1400px"
+                        },
+                        {
+                          "text": "Sehr große Displays"
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Breakpoints", "Responsive"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Wissensüberprüfung: Responsive Design</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.MultiChoice",
+                "params": {
+                  "question": "Welche Aussage zum responsiven Design in Bootstrap ist korrekt?",
+                  "answers": [
+                    {
+                      "text": "Bootstrap verwendet einen Desktop-first Ansatz",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap verwendet einen Mobile-first Ansatz.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Der Breakpoint 'md' steht für Mobilgeräte",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Der Breakpoint 'md' steht für mittlere Geräte wie Tablets.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Mit .d-none kann ein Element ausgeblendet werden",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig! Die Klasse .d-none blendet ein Element aus.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap unterstützt maximal 4 verschiedene Bildschirmgrößen",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap 5 unterstützt 6 Breakpoints: xs, sm, md, lg, xl und xxl.",
+                        "notChosenFeedback": ""
+                      }
+                    }
+                  ],
+                  "behaviour": {
+                    "enableRetry": true,
+                    "enableSolutionsButton": true,
+                    "enableCheckButton": true,
+                    "type": "auto",
+                    "singlePoint": false,
+                    "randomAnswers": false,
+                    "showSolutionsRequiresInput": true,
+                    "confirmCheckDialog": false,
+                    "confirmRetryDialog": false,
+                    "autoCheck": false,
+                    "passPercentage": 100,
+                    "showScorePoints": true
+                  },
+                  "UI": {
+                    "checkAnswerButton": "Überprüfen",
+                    "showSolutionButton": "Lösung anzeigen",
+                    "tryAgainButton": "Wiederholen",
+                    "tipsLabel": "Tipp anzeigen",
+                    "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+                    "tipAvailable": "Tipp verfügbar",
+                    "feedbackAvailable": "Feedback verfügbar",
+                    "readFeedback": "Feedback lesen",
+                    "wrongAnswer": "Falsche Antwort",
+                    "correctAnswer": "Richtige Antwort",
+                    "shouldCheck": "Sollte ausgewählt werden",
+                    "shouldNotCheck": "Sollte nicht ausgewählt werden",
+                    "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Quiz", "Responsive"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Zusammenfassung</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 50,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<p>In dieser Präsentation haben wir gelernt:</p><ul><li>Was Bootstrap ist und welche Vorteile es bietet</li><li>Wie das Bootstrap Grid-System funktioniert</li><li>Welche Komponenten Bootstrap bereitstellt</li><li>Wie responsives Design mit Bootstrap umgesetzt wird</li></ul><p>Diese Grundlagen bilden die Basis für die Arbeit mit Bootstrap in Ihren Webprojekten.</p>"
+                }
+              }
+            }
+          ],
+          "keywords": ["Zusammenfassung", "Fazit"]
+        },
+        {
+          "elements": [
+            {
+              "x": 10,
+              "y": 10,
+              "width": 80,
+              "height": 10,
+              "action": {
+                "library": "H5P.Text",
+                "params": {
+                  "text": "<h2>Abschlussquiz</h2>"
+                }
+              }
+            },
+            {
+              "x": 10,
+              "y": 25,
+              "width": 80,
+              "height": 60,
+              "action": {
+                "library": "H5P.MultiChoice",
+                "params": {
+                  "question": "Welche der folgenden Aussagen zu Bootstrap sind korrekt? (Mehrere Antworten möglich)",
+                  "answers": [
+                    {
+                      "text": "Bootstrap ist ein Frontend-Framework für die Webentwicklung",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig!",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Das Grid-System von Bootstrap basiert auf 12 Spalten",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig!",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap kann nur mit jQuery verwendet werden",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap 5 hat keine jQuery-Abhängigkeit mehr.",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap verwendet einen Mobile-first Ansatz",
+                      "correct": true,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Richtig!",
+                        "notChosenFeedback": ""
+                      }
+                    },
+                    {
+                      "text": "Bootstrap-Komponenten können nicht angepasst werden",
+                      "correct": false,
+                      "tipsAndFeedback": {
+                        "tip": "",
+                        "chosenFeedback": "Falsch. Bootstrap-Komponenten können durch Sass-Variablen und Custom CSS angepasst werden.",
+                        "notChosenFeedback": ""
+                      }
+                    }
+                  ],
+                  "behaviour": {
+                    "enableRetry": true,
+                    "enableSolutionsButton": true,
+                    "enableCheckButton": true,
+                    "type": "auto",
+                    "singlePoint": false,
+                    "randomAnswers": false,
+                    "showSolutionsRequiresInput": true,
+                    "confirmCheckDialog": false,
+                    "confirmRetryDialog": false,
+                    "autoCheck": false,
+                    "passPercentage": 100,
+                    "showScorePoints": true
+                  },
+                  "UI": {
+                    "checkAnswerButton": "Überprüfen",
+                    "showSolutionButton": "Lösung anzeigen",
+                    "tryAgainButton": "Wiederholen",
+                    "tipsLabel": "Tipp anzeigen",
+                    "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+                    "tipAvailable": "Tipp verfügbar",
+                    "feedbackAvailable": "Feedback verfügbar",
+                    "readFeedback": "Feedback lesen",
+                    "wrongAnswer": "Falsche Antwort",
+                    "correctAnswer": "Richtige Antwort",
+                    "shouldCheck": "Sollte ausgewählt werden",
+                    "shouldNotCheck": "Sollte nicht ausgewählt werden",
+                    "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+                  }
+                }
+              }
+            }
+          ],
+          "keywords": ["Quiz", "Abschluss"]
+        }
+      ]
+    }
+  }
+}

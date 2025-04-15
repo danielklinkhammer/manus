@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchkategorien - UX/HCI Literatur</title>
+    <meta name="description" content="Entdecken Sie verschiedene Kategorien von UX und HCI Büchern, von Grundprinzipien bis zu spezialisierten Themen.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../img/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="../index.html">UX/HCI Literatur</a></h1>
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                <span class="sr-only">Menü</span>
+                <span>☰</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="categories.html" class="active">Kategorien</a></li>
+                    <li><a href="lists/beginners.html">Für Anfänger</a></li>
+                    <li><a href="lists/advanced.html">Für Fortgeschrittene</a></li>
+                    <li><a href="about.html">Über das Projekt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Buchkategorien</h1>
+                <p>Entdecken Sie unsere kuratierte Sammlung von UX und HCI Büchern, organisiert nach Themenbereichen, um genau die Ressourcen zu finden, die Sie benötigen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Buchtiteln, Autoren oder Kategorien...">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="category-section">
+            <h2>Alle Kategorien</h2>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Grundlegende Designprinzipien</h3>
+                        <p>Fundamentale Konzepte und Prinzipien, die die Basis für gutes Design bilden. Diese Bücher behandeln zeitlose Designkonzepte, die für alle Designer essentiell sind.</p>
+                        <p><strong>Schlüsselthemen:</strong> Affordanzen, Signifiers, Mapping, Feedback, Konzeptuelle Modelle</p>
+                        <p><strong>Wichtige Bücher:</strong> The Design of Everyday Things, Universal Principles of Design, Laws of UX</p>
+                        <a href="categories/principles.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Psychologie und Nutzerverhalten</h3>
+                        <p>Bücher, die sich mit der menschlichen Psychologie und dem Nutzerverhalten befassen. Sie erklären, wie Menschen denken, wahrnehmen und mit Interfaces interagieren.</p>
+                        <p><strong>Schlüsselthemen:</strong> Kognitive Psychologie, Wahrnehmung, Entscheidungsfindung, Aufmerksamkeit, Gedächtnis</p>
+                        <p><strong>Wichtige Bücher:</strong> 100 Things Every Designer Needs to Know about People, Designing with the Mind in Mind</p>
+                        <a href="categories/psychology.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Forschungsmethoden und Nutzertests</h3>
+                        <p>Bücher über Methoden zur Erforschung von Nutzerbedürfnissen und zum Testen von Designs. Diese Werke bieten praktische Anleitungen für effektive Forschung.</p>
+                        <p><strong>Schlüsselthemen:</strong> Nutzerinterviews, Usability-Tests, Datenanalyse, Forschungsplanung</p>
+                        <p><strong>Wichtige Bücher:</strong> Just Enough Research, Rocket Surgery Made Easy, Research Methods in HCI</p>
+                        <a href="categories/research.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Interface-Design und Patterns</h3>
+                        <p>Bücher, die sich mit der Gestaltung effektiver Benutzeroberflächen und bewährten Designmustern befassen. Diese Werke bieten konkrete Richtlinien für UI-Design.</p>
+                        <p><strong>Schlüsselthemen:</strong> UI-Patterns, Webdesign, Mobile Interfaces, Navigation, Formulare</p>
+                        <p><strong>Wichtige Bücher:</strong> Don't Make Me Think, Designing Interfaces, Refactoring UI</p>
+                        <a href="categories/interface.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Produktdesign und -strategie</h3>
+                        <p>Bücher über den breiteren Kontext des Produktdesigns und strategische Aspekte der UX. Diese Werke verbinden Design mit Geschäftszielen.</p>
+                        <p><strong>Schlüsselthemen:</strong> Produktstrategie, Nutzerengagement, Lean UX, Agile Methoden</p>
+                        <p><strong>Wichtige Bücher:</strong> Build Better Products, Hooked, Lean UX, UX Magic</p>
+                        <a href="categories/product.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Interaktionsdesign</h3>
+                        <p>Bücher, die sich auf die Gestaltung von Interaktionen zwischen Nutzern und Systemen konzentrieren. Diese Werke behandeln die dynamischen Aspekte des Designs.</p>
+                        <p><strong>Schlüsselthemen:</strong> Interaktionsmodelle, Gestaltung von Abläufen, Mikrointeraktionen</p>
+                        <p><strong>Wichtige Bücher:</strong> About Face, Interaction Design: Beyond Human-Computer Interaction</p>
+                        <a href="categories/interaction.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Praktische Anleitungen und Methoden</h3>
+                        <p>Praxisorientierte Bücher mit konkreten Methoden und Techniken für UX-Designer. Diese Werke bieten direkt anwendbare Werkzeuge und Prozesse.</p>
+                        <p><strong>Schlüsselthemen:</strong> UX-Prozesse, Prototyping, Design Thinking, Teamarbeit</p>
+                        <p><strong>Wichtige Bücher:</strong> The User Experience Team of One, UX for Beginners, Paper Prototyping</p>
+                        <a href="categories/practical.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="sidebar">
+                        <h3>Umfassende Referenzwerke</h3>
+                        <p>Umfangreiche Nachschlagewerke und Handbücher, die als umfassende Ressourcen für UX und HCI dienen. Diese Werke bieten tiefgehende Einblicke in das gesamte Feld.</p>
+                        <p><strong>Schlüsselthemen:</strong> HCI-Theorie, UX-Methoden, Designprinzipien, Forschungsansätze</p>
+                        <p><strong>Wichtige Bücher:</strong> Human Computer Interaction Handbook, Designing the User Interface</p>
+                        <a href="categories/reference.html" class="btn">Kategorie erkunden</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UX/HCI Literatur</h3>
+                    <p>Eine umfassende Ressource für Bücher im Bereich User Experience Design und Human-Computer Interaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategorien</h3>
+                    <ul class="footer-links">
+                        <li><a href="categories/principles.html">Grundlegende Designprinzipien</a></li>
+                        <li><a href="categories/psychology.html">Psychologie und Nutzerverhalten</a></li>
+                        <li><a href="categories/research.html">Forschungsmethoden</a></li>
+                        <li><a href="categories/interface.html">Interface-Design</a></li>
+                        <li><a href="categories.html">Alle Kategorien</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Spezielle Listen</h3>
+                    <ul class="footer-links">
+                        <li><a href="lists/beginners.html">Für Anfänger</a></li>
+                        <li><a href="lists/advanced.html">Für Fortgeschrittene</a></li>
+                        <li><a href="lists/researchers.html">Für Forscher</a></li>
+                        <li><a href="lists/top-rated.html">Höchstbewertete Bücher</a></li>
+                        <li><a href="lists/classics.html">Klassiker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Über</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Über das Projekt</a></li>
+                        <li><a href="about.html#methodology">Methodik</a></li>
+                        <li><a href="about.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UX/HCI Literatur. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

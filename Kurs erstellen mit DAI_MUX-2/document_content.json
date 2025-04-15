@@ -1,0 +1,129 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Modul Designing with and for Artificial Intelligence",
+    "style": "Title"
+  },
+  {
+    "type": "paragraph",
+    "text": "Autor/in: \t ",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Ausgabestelle:\t ",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Geltungsbereich:\t ",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Klassifizierung:\t ",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Version:\t\t ",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Ausgabedatum:\t",
+    "style": "Inhaltssteuerelementeabsatz"
+  },
+  {
+    "type": "paragraph",
+    "text": "Modul",
+    "style": "Überschrift ohne Index"
+  },
+  {
+    "type": "table",
+    "data": [
+      [
+        "Name",
+        "Designing with and for Artificial Intelligence",
+        "Designing with and for Artificial Intelligence",
+        "Designing with and for Artificial Intelligence"
+      ],
+      [
+        "Kürzel",
+        "DAI",
+        "ECTS-Punkte",
+        "4"
+      ],
+      [
+        "Typ",
+        "Wahlpflichtmodul",
+        "Wahlpflichtmodul",
+        "Wahlpflichtmodul"
+      ],
+      [
+        "Verantwortliche/r",
+        "Daniel Klinkhammer, Florian Mathis",
+        "Daniel Klinkhammer, Florian Mathis",
+        "Daniel Klinkhammer, Florian Mathis"
+      ],
+      [
+        "Leitidee",
+        "Der Kurs Designing with and for Artificial Intelligence richtet sich an Studierende, die sich mit der Rolle von Künstlicher Intelligenz (KI) im UX-Design und in Human-Computer Interaction (HCI) auseinandersetzen möchten. Der Fokus liegt darauf, KI sowohl als Werkzeug im Designprozess zu nutzen (with AI) als auch nutzerzentrierte KI-Systeme zu gestalten (for AI).\nIm ersten Teil des Kurses (with AI) lernen die Studierenden, wie KI kreative Prozesse unterstützen, Prototyping optimieren und Evaluationen verbessern kann. Sie untersuchen, wie generative Methoden in der Nutzerforschung eingesetzt werden, experimentieren mit KI-gestützten Designmethoden und testen deren Potenzial für innovative UX-Konzepte.\nDer zweite Teil des Kurses (for AI) konzentriert sich auf die Gestaltung und Evaluation intelligenter Systeme. Studierende setzen sich mit Conversational Interfaces und AI-Design Patterns auseinander, analysieren Fragen der Transparenz und Vertrauenswürdigkeit und erforschen die Zukunftsperspektiven KI-basierter Interaktionen.\nDurch praxisorientierte Lehrmethoden wie Workshops, Peer-Reviews und einer Mini-Konferenz wenden die Studierenden ihr Wissen direkt an. Der Leistungsnachweis erfolgt durch ein individuelles Portfolio sowie eine Gruppenarbeit in Form eines wissenschaftlichen Posters mit Präsentation im Rahmen der Mini-Konferenz.",
+        "Der Kurs Designing with and for Artificial Intelligence richtet sich an Studierende, die sich mit der Rolle von Künstlicher Intelligenz (KI) im UX-Design und in Human-Computer Interaction (HCI) auseinandersetzen möchten. Der Fokus liegt darauf, KI sowohl als Werkzeug im Designprozess zu nutzen (with AI) als auch nutzerzentrierte KI-Systeme zu gestalten (for AI).\nIm ersten Teil des Kurses (with AI) lernen die Studierenden, wie KI kreative Prozesse unterstützen, Prototyping optimieren und Evaluationen verbessern kann. Sie untersuchen, wie generative Methoden in der Nutzerforschung eingesetzt werden, experimentieren mit KI-gestützten Designmethoden und testen deren Potenzial für innovative UX-Konzepte.\nDer zweite Teil des Kurses (for AI) konzentriert sich auf die Gestaltung und Evaluation intelligenter Systeme. Studierende setzen sich mit Conversational Interfaces und AI-Design Patterns auseinander, analysieren Fragen der Transparenz und Vertrauenswürdigkeit und erforschen die Zukunftsperspektiven KI-basierter Interaktionen.\nDurch praxisorientierte Lehrmethoden wie Workshops, Peer-Reviews und einer Mini-Konferenz wenden die Studierenden ihr Wissen direkt an. Der Leistungsnachweis erfolgt durch ein individuelles Portfolio sowie eine Gruppenarbeit in Form eines wissenschaftlichen Posters mit Präsentation im Rahmen der Mini-Konferenz.",
+        "Der Kurs Designing with and for Artificial Intelligence richtet sich an Studierende, die sich mit der Rolle von Künstlicher Intelligenz (KI) im UX-Design und in Human-Computer Interaction (HCI) auseinandersetzen möchten. Der Fokus liegt darauf, KI sowohl als Werkzeug im Designprozess zu nutzen (with AI) als auch nutzerzentrierte KI-Systeme zu gestalten (for AI).\nIm ersten Teil des Kurses (with AI) lernen die Studierenden, wie KI kreative Prozesse unterstützen, Prototyping optimieren und Evaluationen verbessern kann. Sie untersuchen, wie generative Methoden in der Nutzerforschung eingesetzt werden, experimentieren mit KI-gestützten Designmethoden und testen deren Potenzial für innovative UX-Konzepte.\nDer zweite Teil des Kurses (for AI) konzentriert sich auf die Gestaltung und Evaluation intelligenter Systeme. Studierende setzen sich mit Conversational Interfaces und AI-Design Patterns auseinander, analysieren Fragen der Transparenz und Vertrauenswürdigkeit und erforschen die Zukunftsperspektiven KI-basierter Interaktionen.\nDurch praxisorientierte Lehrmethoden wie Workshops, Peer-Reviews und einer Mini-Konferenz wenden die Studierenden ihr Wissen direkt an. Der Leistungsnachweis erfolgt durch ein individuelles Portfolio sowie eine Gruppenarbeit in Form eines wissenschaftlichen Posters mit Präsentation im Rahmen der Mini-Konferenz."
+      ],
+      [
+        "Voraussetzungen",
+        "Keine speziellen Vorkenntnisse erforderlich.",
+        "Keine speziellen Vorkenntnisse erforderlich.",
+        "Keine speziellen Vorkenntnisse erforderlich."
+      ],
+      [
+        "Lernergebnisse",
+        "Die Studierenden …\n… verstehen die Rolle von Künstlicher Intelligenz (KI) in der User Experience (UX) und Human-Computer Interaction (HCI). Sie können KI sowohl als Werkzeug für Designprozesse als auch als eigenständiges interaktives System konzipieren.\n… sind in der Lage, generative KI-Methoden in der Nutzerforschung anzuwenden, kreative Prozesse mit KI zu unterstützen und UX-Prototypen mit KI-Technologien zu entwickeln.\n… kennen Methoden zur KI-gestützten Evaluation und können diese nutzen, um die User Experience von digitalen Produkten systematisch zu analysieren und zu optimieren.\n… können Conversational Interfaces und interaktive AI-Systeme gestalten und evaluieren. Sie verstehen die Herausforderungen von Transparenz, Vertrauen und Ethik in der KI-Interaktion und sind in der Lage, entsprechende Designlösungen zu entwickeln.\n… setzen sich mit zukünftigen Entwicklungen in der Gestaltung KI-gestützter Systeme auseinander. Sie sind in der Lage, datengetriebene und regelbasierte Ansätze zu vergleichen und deren Potenziale für innovative UX-Anwendungen zu bewerten.",
+        "Die Studierenden …\n… verstehen die Rolle von Künstlicher Intelligenz (KI) in der User Experience (UX) und Human-Computer Interaction (HCI). Sie können KI sowohl als Werkzeug für Designprozesse als auch als eigenständiges interaktives System konzipieren.\n… sind in der Lage, generative KI-Methoden in der Nutzerforschung anzuwenden, kreative Prozesse mit KI zu unterstützen und UX-Prototypen mit KI-Technologien zu entwickeln.\n… kennen Methoden zur KI-gestützten Evaluation und können diese nutzen, um die User Experience von digitalen Produkten systematisch zu analysieren und zu optimieren.\n… können Conversational Interfaces und interaktive AI-Systeme gestalten und evaluieren. Sie verstehen die Herausforderungen von Transparenz, Vertrauen und Ethik in der KI-Interaktion und sind in der Lage, entsprechende Designlösungen zu entwickeln.\n… setzen sich mit zukünftigen Entwicklungen in der Gestaltung KI-gestützter Systeme auseinander. Sie sind in der Lage, datengetriebene und regelbasierte Ansätze zu vergleichen und deren Potenziale für innovative UX-Anwendungen zu bewerten.",
+        "Die Studierenden …\n… verstehen die Rolle von Künstlicher Intelligenz (KI) in der User Experience (UX) und Human-Computer Interaction (HCI). Sie können KI sowohl als Werkzeug für Designprozesse als auch als eigenständiges interaktives System konzipieren.\n… sind in der Lage, generative KI-Methoden in der Nutzerforschung anzuwenden, kreative Prozesse mit KI zu unterstützen und UX-Prototypen mit KI-Technologien zu entwickeln.\n… kennen Methoden zur KI-gestützten Evaluation und können diese nutzen, um die User Experience von digitalen Produkten systematisch zu analysieren und zu optimieren.\n… können Conversational Interfaces und interaktive AI-Systeme gestalten und evaluieren. Sie verstehen die Herausforderungen von Transparenz, Vertrauen und Ethik in der KI-Interaktion und sind in der Lage, entsprechende Designlösungen zu entwickeln.\n… setzen sich mit zukünftigen Entwicklungen in der Gestaltung KI-gestützter Systeme auseinander. Sie sind in der Lage, datengetriebene und regelbasierte Ansätze zu vergleichen und deren Potenziale für innovative UX-Anwendungen zu bewerten."
+      ],
+      [
+        "Leistungsnachweis",
+        "Portfolio (70 %, Individualleistung): Die Studierenden arbeiten mithilfe verschiedener KI-Methoden und Tools entlang des UX-Lifecycles und dokumentieren ihre Prozesse, Erkenntnisse und Ergebnisse in einem Bericht (max. 10 Seiten).\nGestaltung eines wissenschaftlichen Posters mit Präsentation (30 %, Gruppenleistung): Die Studierenden entwickeln ein wissenschaftliches Poster zu einem relevanten Thema aus dem Kurs und präsentieren es im Rahmen einer Mini-Konferenz.",
+        "Portfolio (70 %, Individualleistung): Die Studierenden arbeiten mithilfe verschiedener KI-Methoden und Tools entlang des UX-Lifecycles und dokumentieren ihre Prozesse, Erkenntnisse und Ergebnisse in einem Bericht (max. 10 Seiten).\nGestaltung eines wissenschaftlichen Posters mit Präsentation (30 %, Gruppenleistung): Die Studierenden entwickeln ein wissenschaftliches Poster zu einem relevanten Thema aus dem Kurs und präsentieren es im Rahmen einer Mini-Konferenz.",
+        "Portfolio (70 %, Individualleistung): Die Studierenden arbeiten mithilfe verschiedener KI-Methoden und Tools entlang des UX-Lifecycles und dokumentieren ihre Prozesse, Erkenntnisse und Ergebnisse in einem Bericht (max. 10 Seiten).\nGestaltung eines wissenschaftlichen Posters mit Präsentation (30 %, Gruppenleistung): Die Studierenden entwickeln ein wissenschaftliches Poster zu einem relevanten Thema aus dem Kurs und präsentieren es im Rahmen einer Mini-Konferenz."
+      ],
+      [
+        "Nachprüfung",
+        "Ja",
+        "Ja",
+        "Ja"
+      ]
+    ]
+  },
+  {
+    "type": "table",
+    "data": [
+      [
+        "Unterrichtsprache",
+        "Deutsch (Material evtl. teilweise auf Englisch)"
+      ],
+      [
+        "Eingangskompetenzen",
+        "Es sind keine spezifischen Vorkenntnisse erforderlich."
+      ],
+      [
+        "Inhalte",
+        "Der Kurs behandelt zwei zentrale Perspektiven des Designs mit und für Künstliche Intelligenz (KI): with AI – for AI. Dies umfasst den Einsatz von KI als unterstützendes Werkzeug im Designprozess (with AI) sowie die Gestaltung von nutzerzentrierten KI-Systemen (for AI). Studierende lernen, wie KI in kreativen Prozessen genutzt wird und wie menschenzentrierte KI-Interaktionen gestaltet werden können.\nIn diesem Modul werden folgende Themen behandelt:\nThema 1: Einführung in KI und HCI sowie generative Nutzerforschung. Grundlagen der KI im UX-Design und ihre Rolle in der Human-Computer Interaction (HCI). Überblick über generative Methoden in der Nutzerforschung.\nThema 2: KI als Kreativpartner: Neue Formen der Gestaltung. Untersuchung von KI-gestützten Kreativprozessen und deren Potenziale für Design und Ideengenerierung.\nThema 3: Von der Idee zum Prototyp: KI in der Produktentwicklung. Einsatz von KI-Tools für Prototyping, Iteration und Produktentwicklung.\nThema 4: Bewertung und Test von UX mit KI-gestützten Methoden. Anwendung von KI zur Evaluation von Usability, Akzeptanz und Nutzererfahrung.\nThema 5: Conversational Interfaces & KI-Design Patterns. Einführung in multimodale und kontextuelle KI-Systeme und deren Einfluss auf UX-Design.\nThema 6: Transparenz, Vertrauen und Ethik in der KI-Interaktion. Untersuchung ethischer Herausforderungen und Gestaltung von vertrauenswürdigen KI-Systemen.\nThema 7: Die Zukunft der KI in der HCI: Agenten und datengetriebene Systeme. Analyse zukünftiger Entwicklungen und Herausforderungen im Design von KI-Systemen."
+      ],
+      [
+        "Lehr- und Lernmethoden",
+        "Der Kurs kombiniert verschiedene Lehr- und Lernmethoden, um sowohl theoretisches Wissen als auch praktische Fähigkeiten zu vermitteln:\nInteraktive Vorlesungen mit Diskussionen zu aktuellen Forschungsthemen und Fallstudien\nHands-on-Workshops zur Anwendung von KI-Tools in UX-Designprozessen\nProjektbasiertes Lernen, bei dem Studierende eigene KI-gestützte UX-Projekte entwickeln\nPeer-Reviews und Feedback-Sessions zur kritischen Reflexion und Verbesserung von Arbeiten\nGastvorträge von Experten aus der Praxis und Wissenschaft\nMini-Konferenz mit wissenschaftlichen Poster-Präsentationen zur Förderung des wissenschaftlichen Austauschs"
+      ],
+      [
+        "Struktur",
+        "28h Präsenzunterricht \n80h Selbststudium\n108h Total"
+      ],
+      [
+        "Literatur",
+        "Holzinger, A. (2018). Human-Centered AI: The Role of Human-in-the-Loop, Explainability and Accountability. Springer.\nShneiderman, B. (2022). Human-Centered AI. Oxford University Press.\nKore, A. (2022). Designing Human-Centric AI Experiences: Applied UX Design for Artificial Intelligence (Design Thinking). Apress.\nHirzle, T., Müller, F., Draxler, F., Schmitz, M., Knierim, P., & Hornbæk, K. (2023, April). When xr and ai meet-a scoping review on extended reality and artificial intelligence. In Proceedings of the 2023 CHI conference on human factors in computing systems (pp. 1-45).\nWeitere Literatur wird in der Vorlesung bekannt gegeben."
+      ]
+    ]
+  }

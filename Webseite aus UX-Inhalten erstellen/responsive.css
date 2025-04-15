@@ -1,0 +1,188 @@
+/* Responsive Stylesheet for UX Literature Website */
+
+/* ===== MOBILE FIRST APPROACH ===== */
+
+/* Small devices (phones, 576px and down) */
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .book-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .book-card-image {
+    height: 250px;
+  }
+  
+  .footer-section {
+    margin-bottom: var(--spacing-md);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 0 0 50%;
+    margin-bottom: var(--spacing-lg);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .book-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .book-detail {
+    flex-direction: column;
+  }
+  
+  .book-detail-image {
+    margin-right: 0;
+    margin-bottom: var(--spacing-lg);
+    max-width: 300px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .book-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* XXL devices (larger desktops, 1400px and up) */
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .book-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ===== NAVIGATION RESPONSIVE BEHAVIOR ===== */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-wrap: wrap;
+  }
+  
+  .main-nav {
+    display: none;
+    width: 100%;
+    margin-top: var(--spacing-md);
+  }
+  
+  .main-nav.active {
+    display: block;
+  }
+  
+  .main-nav ul {
+    flex-direction: column;
+  }
+  
+  .main-nav li {
+    margin: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+/* ===== LAYOUT RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col, .col-4, .col-6, .col-8, .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .sidebar {
+    margin-top: var(--spacing-lg);
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .site-header, .site-footer, .sidebar, .btn, .mobile-nav-toggle {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+  
+  .book-detail {
+    display: block;
+  }
+  
+  .book-detail-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .book-sections {
+    page-break-before: always;
+  }
+}

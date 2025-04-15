@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Hintergrund -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Titel -->
+  <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#212529">Bootstrap Grid-System: Drag and Drop</text>
+  
+  <!-- Container-Bereich -->
+  <rect x="100" y="100" width="600" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="150" font-family="Arial" font-size="18" text-anchor="middle" fill="#6c757d">Container (oberste Ebene)</text>
+  
+  <!-- Row-Bereich -->
+  <rect x="150" y="250" width="500" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="300" font-family="Arial" font-size="18" text-anchor="middle" fill="#6c757d">Row (zweite Ebene)</text>
+  
+  <!-- Column-Bereiche (50%) -->
+  <rect x="200" y="400" width="200" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="300" y="450" font-family="Arial" font-size="16" text-anchor="middle" fill="#6c757d">Column 1 (50%)</text>
+  
+  <rect x="450" y="400" width="200" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="550" y="450" font-family="Arial" font-size="16" text-anchor="middle" fill="#6c757d">Column 2 (50%)</text>
+  
+  <!-- Column-Bereiche (33%) -->
+  <rect x="100" y="550" width="150" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="175" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="#6c757d">Column 1 (33%)</text>
+  
+  <rect x="325" y="550" width="150" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="#6c757d">Column 2 (33%)</text>
+  
+  <rect x="550" y="550" width="150" height="100" fill="#e9ecef" stroke="#dee2e6" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="625" y="600" font-family="Arial" font-size="14" text-anchor="middle" fill="#6c757d">Column 3 (33%)</text>
+  
+  <!-- Anweisungen -->
+  <text x="400" y="80" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">Ziehen Sie die Bootstrap-Elemente in die entsprechenden Bereiche</text>
+</svg>

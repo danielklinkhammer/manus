@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Hintergrund -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Container -->
+  <rect x="50" y="50" width="700" height="500" fill="#e9ecef" stroke="#dee2e6" stroke-width="2"/>
+  <text x="400" y="80" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529">.container</text>
+  
+  <!-- Row 1 -->
+  <rect x="100" y="120" width="600" height="150" fill="#ced4da" stroke="#adb5bd" stroke-width="2"/>
+  <text x="400" y="145" font-family="Arial" font-size="18" text-anchor="middle" fill="#212529">.row</text>
+  
+  <!-- Columns in Row 1 -->
+  <rect x="120" y="170" width="270" height="80" fill="#0d6efd" stroke="#0a58ca" stroke-width="2" fill-opacity="0.3"/>
+  <text x="255" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">.col-md-6</text>
+  
+  <rect x="410" y="170" width="270" height="80" fill="#0d6efd" stroke="#0a58ca" stroke-width="2" fill-opacity="0.3"/>
+  <text x="545" y="215" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">.col-md-6</text>
+  
+  <!-- Row 2 -->
+  <rect x="100" y="300" width="600" height="150" fill="#ced4da" stroke="#adb5bd" stroke-width="2"/>
+  <text x="400" y="325" font-family="Arial" font-size="18" text-anchor="middle" fill="#212529">.row</text>
+  
+  <!-- Columns in Row 2 -->
+  <rect x="120" y="350" width="175" height="80" fill="#0d6efd" stroke="#0a58ca" stroke-width="2" fill-opacity="0.3"/>
+  <text x="207.5" y="395" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">.col-md-4</text>
+  
+  <rect x="315" y="350" width="175" height="80" fill="#0d6efd" stroke="#0a58ca" stroke-width="2" fill-opacity="0.3"/>
+  <text x="402.5" y="395" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">.col-md-4</text>
+  
+  <rect x="510" y="350" width="175" height="80" fill="#0d6efd" stroke="#0a58ca" stroke-width="2" fill-opacity="0.3"/>
+  <text x="597.5" y="395" font-family="Arial" font-size="16" text-anchor="middle" fill="#212529">.col-md-4</text>
+  
+  <!-- Legende -->
+  <rect x="50" y="520" width="700" height="30" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  <text x="400" y="540" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">Bootstrap Grid System Visualisierung</text>
+</svg>

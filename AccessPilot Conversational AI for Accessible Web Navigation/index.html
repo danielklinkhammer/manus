@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessPilot - Conversational AI for Accessible Web Navigation</title>
+    <style>
+        :root {
+            --primary-color: #0a3d62;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+            --accent-color: #e74c3c;
+            --light-gray: #f1f1f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        
+        .logo h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .feature-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .feature-content {
+            padding: 1.5rem;
+        }
+        
+        .feature-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-link {
+            display: inline-block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .feature-link:hover {
+            text-decoration: underline;
+        }
+        
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .cta {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .about {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-image {
+                order: 1;
+            }
+            
+            .about-content {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="AccessPilot Logo">
+                    <h1>AccessPilot</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="screenreader.html">Screenreader</a></li>
+                        <li><a href="research.html">Forschung</a></li>
+                        <li><a href="plugins.html">KI-Plugins</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Conversational AI for Accessible Web Navigation</h2>
+            <p>AccessPilot revolutioniert die Web-Zugänglichkeit für blinde und sehbehinderte Menschen durch intelligente semantische Analyse und konversationelle Benutzeroberflächen.</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Über das Projekt</h2>
+                <p>AccessPilot ist ein Forschungsprojekt im Bereich Human-Computer Interaction (HCI) und UX Design, das die Grenzen traditioneller Screenreader überwindet.</p>
+            </div>
+            
+            <div class="about">
+                <div class="about-image">
+                    <img src="assets/images/blind-user-accesspilot.png" alt="Blinder Nutzer mit AccessPilot">
+                </div>
+                <div class="about-content">
+                    <h2>Unsere Vision</h2>
+                    <p>AccessPilot ist ein Forschungsprojekt im Bereich Human-Computer Interaction (HCI) und UX Design. Ziel ist die Entwicklung eines KI-basierten Agenten, der Webseiten für blinde und sehbehinderte Menschen zugänglich macht.</p>
+                    <p>Statt linearem Vorlesen durch klassische Screenreader nutzt AccessPilot semantische Analyse und conversational UI, um Webseiteninhalte intelligent zu strukturieren, zu filtern und sprachlich-interaktiv zu vermitteln.</p>
+                    <p>Der Prototyp wird gemeinsam mit der Schweizerischen Bibliothek für Blinde, Seh- und Lesebehinderte (SBS) entwickelt und evaluiert. Im Anschluss soll die Lösung auf weitere Use Cases und Webseiten übertragen werden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Forschungsschwerpunkte</h2>
+                <p>Unsere Forschung konzentriert sich auf drei Kernbereiche, die zusammen die Grundlage für AccessPilot bilden.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="assets/images/screenreader-analysis.png" alt="Screenreader Analyse">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Screenreader & Webhilfsmittel</h3>
+                        <p>Analyse der aktuellen technischen Möglichkeiten und Grenzen von marktführenden Screenreadern wie JAWS, NVDA und VoiceOver.</p>
+                        <a href="screenreader.html" class="feature-link">Mehr erfahren →</a>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="assets/images/hci-ux-research.png" alt="HCI/UX Forschung">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Forschungslage HCI/UX</h3>
+                        <p>Einbettung in den internationalen Forschungsdiskurs zu Conversational Interfaces, UX Design für blinde Nutzer:innen und KI-gestützte Assistenzen.</p>
+                        <a href="research.html" class="feature-link">Mehr erfahren →</a>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="assets/images/ai-browser-plugins.png" alt="KI-Browser-Plugins">
+                    </div>
+                    <div class="feature-content">
+                        <h3>KI-Browser-Plugins</h3>
+                        <p>Marktanalyse zu bestehenden KI-gestützten Browserlösungen und deren Eignung für Barrierefreiheit.</p>
+                        <a href="plugins.html" class="feature-link">Mehr erfahren →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Innovationspotenzial</h2>
+                <p>AccessPilot schließt wichtige Forschungslücken und bietet innovative Lösungsansätze für die Web-Zugänglichkeit.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>Semantische Analyse</h3>
+                        <p>AccessPilot nutzt fortschrittliche KI-Technologien zur semantischen Analyse von Webinhalten, um deren Bedeutung und Struktur zu verstehen und intelligent zu vermitteln.</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>Konversationelle UI</h3>
+                        <p>Durch eine natürliche Gesprächsschnittstelle können Nutzer:innen mit Webinhalten interagieren, Fragen stellen und gezielt navigieren, ohne komplexe Befehle erlernen zu müssen.</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>Aufgabenorientierte Navigation</h3>
+                        <p>AccessPilot ermöglicht eine aufgabenorientierte Navigation, die über die lineare Struktur traditioneller Screenreader hinausgeht und Nutzer:innen hilft, ihre Ziele effizienter zu erreichen.</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-content">
+                        <h3>Kontextbewusstes Filtern</h3>
+                        <p>Die intelligente Filterung und Priorisierung von Webinhalten basierend auf dem Nutzerkontext und der aktuellen Aufgabe verbessert die Nutzererfahrung erheblich.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Forschungsantrag</h2>
+            <p>AccessPilot adressiert eine wichtige Forschungslücke im Bereich der Web-Zugänglichkeit für blinde und sehbehinderte Menschen. Durch die Kombination von semantischer Analyse, konversationeller UI und aufgabenorientierter Navigation bietet das Projekt erhebliches Innovationspotenzial.</p>
+            <p>Die Zusammenarbeit mit der Schweizerischen Bibliothek für Blinde, Seh- und Lesebehinderte (SBS) ermöglicht eine praxisnahe Entwicklung und Evaluation des Prototyps.</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Anwendungsbeispiele</h2>
+                <p>AccessPilot kann in verschiedenen Szenarien eingesetzt werden, um die Web-Zugänglichkeit zu verbessern.</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="assets/images/news-website-accesspilot.png" alt="Nachrichtenwebseite mit AccessPilot">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Nachrichtenwebseiten</h3>
+                        <p>AccessPilot kann Nachrichtenwebseiten analysieren, die wichtigsten Schlagzeilen zusammenfassen und auf Anfrage detaillierte Informationen zu bestimmten Themen liefern.</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-image">
+                        <img src="assets/images/structured-website-accesspilot.png" alt="Strukturierte Webseite mit AccessPilot">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Strukturierte Webseiten</h3>
+                        <p>AccessPilot kann strukturierte Webseiten analysieren und die Navigation für blinde und sehbehinderte Nutzer:innen optimieren.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Über AccessPilot</h3>
+                    <ul>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                        <li><a href="privacy.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Ressourcen</h3>
+                    <ul>
+                        <li><a href="screenreader.html">Screenreader</a></li>
+                        <li><a href="research.html">Forschung</a></li>
+                        <li><a href="plugins.html">KI-Plugins</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Folgen Sie uns</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 AccessPilot. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

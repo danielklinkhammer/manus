@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchergebnisse - UX/HCI Literatur</title>
+    <meta name="description" content="Suchergebnisse für UX und HCI Bücher auf der UX/HCI Literatur Webseite.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Roboto+Mono&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../img/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title"><a href="../index.html">UX/HCI Literatur</a></h1>
+            <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                <span class="sr-only">Menü</span>
+                <span>☰</span>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="categories.html">Kategorien</a></li>
+                    <li><a href="lists/beginners.html">Für Anfänger</a></li>
+                    <li><a href="lists/advanced.html">Für Fortgeschrittene</a></li>
+                    <li><a href="about.html">Über das Projekt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Suchergebnisse</h1>
+                <p>Ergebnisse für: <span id="search-query">...</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search Section -->
+        <section class="search-section">
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Suchen Sie nach Buchtiteln, Autoren oder Kategorien...">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </section>
+
+        <!-- Search Results -->
+        <section class="category-section">
+            <div id="search-results">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Suchergebnisse werden geladen...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- No Results Suggestions -->
+        <section class="category-section" id="no-results" style="display: none;">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sidebar">
+                        <h2>Keine Ergebnisse gefunden</h2>
+                        <p>Leider konnten wir keine Bücher finden, die Ihren Suchkriterien entsprechen.</p>
+                        
+                        <h3>Vorschläge:</h3>
+                        <ul>
+                            <li>Überprüfen Sie die Rechtschreibung Ihrer Suchanfrage</li>
+                            <li>Verwenden Sie allgemeinere Begriffe</li>
+                            <li>Versuchen Sie verwandte Begriffe oder Synonyme</li>
+                            <li>Durchsuchen Sie die <a href="categories.html">Kategorien</a> manuell</li>
+                        </ul>
+                        
+                        <h3>Beliebte Kategorien:</h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="categories/principles.html" class="btn">Grundlegende Designprinzipien</a>
+                            </div>
+                            <div class="col-6">
+                                <a href="categories/psychology.html" class="btn">Psychologie und Nutzerverhalten</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>UX/HCI Literatur</h3>
+                    <p>Eine umfassende Ressource für Bücher im Bereich User Experience Design und Human-Computer Interaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategorien</h3>
+                    <ul class="footer-links">
+                        <li><a href="categories/principles.html">Grundlegende Designprinzipien</a></li>
+                        <li><a href="categories/psychology.html">Psychologie und Nutzerverhalten</a></li>
+                        <li><a href="categories/research.html">Forschungsmethoden</a></li>
+                        <li><a href="categories/interface.html">Interface-Design</a></li>
+                        <li><a href="categories.html">Alle Kategorien</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Spezielle Listen</h3>
+                    <ul class="footer-links">
+                        <li><a href="lists/beginners.html">Für Anfänger</a></li>
+                        <li><a href="lists/advanced.html">Für Fortgeschrittene</a></li>
+                        <li><a href="lists/researchers.html">Für Forscher</a></li>
+                        <li><a href="lists/top-rated.html">Höchstbewertete Bücher</a></li>
+                        <li><a href="lists/classics.html">Klassiker</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Über</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Über das Projekt</a></li>
+                        <li><a href="about.html#methodology">Methodik</a></li>
+                        <li><a href="about.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 UX/HCI Literatur. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/search.js"></script>
+</body>
+</html>

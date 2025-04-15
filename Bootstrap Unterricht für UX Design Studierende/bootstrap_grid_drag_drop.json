@@ -1,0 +1,207 @@
+{
+  "title": "Bootstrap Grid-System - Drag and Drop",
+  "language": "de",
+  "mainLibrary": "H5P.DragQuestion",
+  "embedTypes": ["iframe"],
+  "license": "U",
+  "contentType": "Drag and Drop",
+  "content": {
+    "task": {
+      "library": "H5P.DragQuestion",
+      "params": {
+        "question": "<p>Ordnen Sie die Bootstrap-Elemente in der richtigen Hierarchie an. Ziehen Sie die Elemente in die entsprechenden Bereiche.</p>",
+        "background": {
+          "path": "grid-background.png",
+          "mime": "image/png",
+          "copyright": {
+            "license": "U"
+          }
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "singlePoint": false,
+          "showSolutionsRequiresInput": true,
+          "applyPenalties": true,
+          "enableScoreExplanation": true,
+          "instantFeedback": false,
+          "enableCheckButton": true,
+          "dropZoneHighlighting": "always",
+          "autoAlignSpacing": 2
+        },
+        "elements": [
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #0d6efd; color: white; padding: 10px; border-radius: 5px;'>.container</p>"
+              }
+            },
+            "x": 5,
+            "y": 5,
+            "width": 15,
+            "height": 5,
+            "dropZones": [0]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #6c757d; color: white; padding: 10px; border-radius: 5px;'>.row</p>"
+              }
+            },
+            "x": 25,
+            "y": 5,
+            "width": 15,
+            "height": 5,
+            "dropZones": [1]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #198754; color: white; padding: 10px; border-radius: 5px;'>.col-md-6</p>"
+              }
+            },
+            "x": 45,
+            "y": 5,
+            "width": 15,
+            "height": 5,
+            "dropZones": [2, 3]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #198754; color: white; padding: 10px; border-radius: 5px;'>.col-md-6</p>"
+              }
+            },
+            "x": 65,
+            "y": 5,
+            "width": 15,
+            "height": 5,
+            "dropZones": [2, 3]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #6c757d; color: white; padding: 10px; border-radius: 5px;'>.row</p>"
+              }
+            },
+            "x": 5,
+            "y": 15,
+            "width": 15,
+            "height": 5,
+            "dropZones": [1]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #198754; color: white; padding: 10px; border-radius: 5px;'>.col-md-4</p>"
+              }
+            },
+            "x": 25,
+            "y": 15,
+            "width": 15,
+            "height": 5,
+            "dropZones": [4, 5, 6]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #198754; color: white; padding: 10px; border-radius: 5px;'>.col-md-4</p>"
+              }
+            },
+            "x": 45,
+            "y": 15,
+            "width": 15,
+            "height": 5,
+            "dropZones": [4, 5, 6]
+          },
+          {
+            "type": {
+              "library": "H5P.Text",
+              "params": {
+                "text": "<p style='text-align: center; background-color: #198754; color: white; padding: 10px; border-radius: 5px;'>.col-md-4</p>"
+              }
+            },
+            "x": 65,
+            "y": 15,
+            "width": 15,
+            "height": 5,
+            "dropZones": [4, 5, 6]
+          }
+        ],
+        "dropZones": [
+          {
+            "x": 20,
+            "y": 40,
+            "width": 60,
+            "height": 10,
+            "correctElements": [0],
+            "showLabel": true,
+            "label": "Container (oberste Ebene)"
+          },
+          {
+            "x": 25,
+            "y": 55,
+            "width": 50,
+            "height": 10,
+            "correctElements": [1, 4],
+            "showLabel": true,
+            "label": "Row (zweite Ebene)"
+          },
+          {
+            "x": 30,
+            "y": 70,
+            "width": 20,
+            "height": 10,
+            "correctElements": [2],
+            "showLabel": true,
+            "label": "Column 1 (50%)"
+          },
+          {
+            "x": 55,
+            "y": 70,
+            "width": 20,
+            "height": 10,
+            "correctElements": [3],
+            "showLabel": true,
+            "label": "Column 2 (50%)"
+          },
+          {
+            "x": 20,
+            "y": 85,
+            "width": 15,
+            "height": 10,
+            "correctElements": [5],
+            "showLabel": true,
+            "label": "Column 1 (33%)"
+          },
+          {
+            "x": 40,
+            "y": 85,
+            "width": 15,
+            "height": 10,
+            "correctElements": [6],
+            "showLabel": true,
+            "label": "Column 2 (33%)"
+          },
+          {
+            "x": 60,
+            "y": 85,
+            "width": 15,
+            "height": 10,
+            "correctElements": [7],
+            "showLabel": true,
+            "label": "Column 3 (33%)"
+          }
+        ],
+        "scoreWords": ["Nicht bestanden", "Schlecht", "Mittelmäßig", "Gut", "Sehr gut", "Perfekt!"]
+      }
+    }
+  }
+}

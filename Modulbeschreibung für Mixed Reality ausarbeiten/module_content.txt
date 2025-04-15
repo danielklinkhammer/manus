@@ -1,0 +1,70 @@
+Modul  Entwicklung von Mixed Reality Experiences
+
+Autor/in: 	 
+Ausgabestelle:	 
+Geltungsbereich:	 
+Klassifizierung:	 
+Version:		 
+Ausgabedatum:	
+
+
+Modul
+
+
+Name | Entwicklung von Mixed Reality Experiences | Entwicklung von Mixed Reality Experiences | Entwicklung von Mixed Reality Experiences
+Kürzel | MR | ECTS-Punkte | 4
+Typ | Wahlpflichtmodul | Wahlpflichtmodul | Wahlpflichtmodul
+Verantwortliche/r | Daniel Klinkhammer, Florian Mathis | Daniel Klinkhammer, Florian Mathis | Daniel Klinkhammer, Florian Mathis
+Leitidee | Das Modul “Mixed Reality Experiences” (Extended/Augmented/Virtual Reality) bietet Studierenden eine Einführung in die Thematik der gemischten Realität sowohl aus einer User Experience (UX) Perspektive als auch aus einer Entwicklungsperspektive. Durch die Verbindung theoretischer Konzepte mit praktischer Anwendung sollen die Studierenden nicht nur ein Verständnis für Mixed Reality entwickeln, sondern auch die Fähigkeiten erwerben, immersive Erfahrungen mithilfe von Unity o. Ä. zu gestalten und umzusetzen.  | Das Modul “Mixed Reality Experiences” (Extended/Augmented/Virtual Reality) bietet Studierenden eine Einführung in die Thematik der gemischten Realität sowohl aus einer User Experience (UX) Perspektive als auch aus einer Entwicklungsperspektive. Durch die Verbindung theoretischer Konzepte mit praktischer Anwendung sollen die Studierenden nicht nur ein Verständnis für Mixed Reality entwickeln, sondern auch die Fähigkeiten erwerben, immersive Erfahrungen mithilfe von Unity o. Ä. zu gestalten und umzusetzen.  | Das Modul “Mixed Reality Experiences” (Extended/Augmented/Virtual Reality) bietet Studierenden eine Einführung in die Thematik der gemischten Realität sowohl aus einer User Experience (UX) Perspektive als auch aus einer Entwicklungsperspektive. Durch die Verbindung theoretischer Konzepte mit praktischer Anwendung sollen die Studierenden nicht nur ein Verständnis für Mixed Reality entwickeln, sondern auch die Fähigkeiten erwerben, immersive Erfahrungen mithilfe von Unity o. Ä. zu gestalten und umzusetzen. 
+Voraussetzungen | keine | keine | keine
+Lernergebnisse | Nach erfolgreichem Abschluss des Moduls sollen die Studierenden in der Lage sein …
+… Grundlagen der Mixed Reality zu verstehen: Die Studierenden sollen die Kernelemente und Prinzipien von Mixed Reality verstehen, einschliesslich Augmented Reality (AR) und Virtual Reality (VR), sowie deren Anwendungsbereiche in verschiedenen Branchen.
+… UX-Design für Mixed Reality zu konzipieren: Die Studierenden sollen die grundlegenden UX-Prinzipien für Mixed-Reality Anwendungen beherrschen, von der Benutzerforschung über das Prototyping bis zur Implementierung von benutzerzentrierten Designs.
+… eine Entwicklungsumgebung für VR/AR Experiences zu nutzen: Die Studierenden sollen eine fundierte Kenntnis der Unity-Plattform erlangen, einschliesslich der Entwicklungsumgebung, der Assets und der grundlegenden Programmierkonzepte.
+… Mixed Reality-Anwendungen zu programmieren: Die Studierenden sollen in der Lage sein, Mixed Reality-Anwendungen mithilfe von z.B. Unity und C# zu programmieren und dabei fortgeschrittene Interaktionsmöglichkeiten zu implementieren.
+… Kollaborative Projekte umzusetzen: Die Studierenden sollen die erworbenen Kenntnisse und Fähigkeiten in einem praxisorientierten Projekt anwenden, das kollaboratives Arbeiten, Problemlösung und Kreativität fördert. | Nach erfolgreichem Abschluss des Moduls sollen die Studierenden in der Lage sein …
+… Grundlagen der Mixed Reality zu verstehen: Die Studierenden sollen die Kernelemente und Prinzipien von Mixed Reality verstehen, einschliesslich Augmented Reality (AR) und Virtual Reality (VR), sowie deren Anwendungsbereiche in verschiedenen Branchen.
+… UX-Design für Mixed Reality zu konzipieren: Die Studierenden sollen die grundlegenden UX-Prinzipien für Mixed-Reality Anwendungen beherrschen, von der Benutzerforschung über das Prototyping bis zur Implementierung von benutzerzentrierten Designs.
+… eine Entwicklungsumgebung für VR/AR Experiences zu nutzen: Die Studierenden sollen eine fundierte Kenntnis der Unity-Plattform erlangen, einschliesslich der Entwicklungsumgebung, der Assets und der grundlegenden Programmierkonzepte.
+… Mixed Reality-Anwendungen zu programmieren: Die Studierenden sollen in der Lage sein, Mixed Reality-Anwendungen mithilfe von z.B. Unity und C# zu programmieren und dabei fortgeschrittene Interaktionsmöglichkeiten zu implementieren.
+… Kollaborative Projekte umzusetzen: Die Studierenden sollen die erworbenen Kenntnisse und Fähigkeiten in einem praxisorientierten Projekt anwenden, das kollaboratives Arbeiten, Problemlösung und Kreativität fördert. | Nach erfolgreichem Abschluss des Moduls sollen die Studierenden in der Lage sein …
+… Grundlagen der Mixed Reality zu verstehen: Die Studierenden sollen die Kernelemente und Prinzipien von Mixed Reality verstehen, einschliesslich Augmented Reality (AR) und Virtual Reality (VR), sowie deren Anwendungsbereiche in verschiedenen Branchen.
+… UX-Design für Mixed Reality zu konzipieren: Die Studierenden sollen die grundlegenden UX-Prinzipien für Mixed-Reality Anwendungen beherrschen, von der Benutzerforschung über das Prototyping bis zur Implementierung von benutzerzentrierten Designs.
+… eine Entwicklungsumgebung für VR/AR Experiences zu nutzen: Die Studierenden sollen eine fundierte Kenntnis der Unity-Plattform erlangen, einschliesslich der Entwicklungsumgebung, der Assets und der grundlegenden Programmierkonzepte.
+… Mixed Reality-Anwendungen zu programmieren: Die Studierenden sollen in der Lage sein, Mixed Reality-Anwendungen mithilfe von z.B. Unity und C# zu programmieren und dabei fortgeschrittene Interaktionsmöglichkeiten zu implementieren.
+… Kollaborative Projekte umzusetzen: Die Studierenden sollen die erworbenen Kenntnisse und Fähigkeiten in einem praxisorientierten Projekt anwenden, das kollaboratives Arbeiten, Problemlösung und Kreativität fördert.
+Leistungsnachweis | Praktische Arbeit zum Thema Mixed Reality (60%) – Gruppenarbeit
+Schriftliche Prüfung (40%) - Individualleistung  | Praktische Arbeit zum Thema Mixed Reality (60%) – Gruppenarbeit
+Schriftliche Prüfung (40%) - Individualleistung  | Praktische Arbeit zum Thema Mixed Reality (60%) – Gruppenarbeit
+Schriftliche Prüfung (40%) - Individualleistung 
+Nachprüfung | Nein | Nein | Nein
+Unterrichtsprache | Deutsch (Material evtl. teilweise auf Englisch)
+Eingangskompetenzen | Grundkenntnisse in der Programmierung (C#) und Unity hilfreich.
+Inhalte | Einführung in Mixed Reality:
+Definition und Klassifikation von Mixed Reality
+Historische Entwicklung und aktuelle Trends
+Anwendungsbeispiele in verschiedenen Branchen
+UX-Design für Mixed Reality:
+Benutzerforschung und Konzeptentwicklung
+Prototyping von Mixed Reality-Interaktion
+Entwicklungs- und Iterationsprozesse
+Unity-Entwicklungsumgebung:
+Grundlagen der Unity-Plattform
+Asset-Management und -Integration
+Einführung in die C#-Programmierung
+Programmierung von Mixed Reality-Anwendungen:
+Implementierung von AR- und VR-Funktionen
+Interaktionsmöglichkeiten und Benutzerführung
+Optimierung für verschiedene Mixed Reality-Geräte
+Praktisches Projekt:
+Definition und Konzeption eines Mixed Reality-Projekts
+Kollaborative Umsetzung unter Anwendung von UX- und Unity-Kenntnissen
+Präsentation und Reflexion der Projektergebnisse
+Lehr- und Lernmethoden | Präsenzunterricht mit Vorlesungen (Inputs)
+Aktive Mitarbeit der Studierenden durch Diskussionen in den Lehrveranstaltungen und in den Coachings
+Wissenstransfer mit Hilfe von Anwendungsszenarien und Praxisbeispielen
+Projektarbeit in Kleingruppen und Präsentation
+Abschlussbericht
+Struktur | 36 h Präsenzunterricht
+44 h Projektarbeit
+40 h Selbststudium

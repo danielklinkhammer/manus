@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Paradigm Shift</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect fill="#F8F9FA" x="0" y="0" width="600" height="400"></rect>
+        
+        <!-- Timeline -->
+        <line x1="50" y1="200" x2="550" y2="200" stroke="#0A192F" stroke-width="4"></line>
+        
+        <!-- Command Line Era -->
+        <circle cx="100" cy="200" r="15" fill="#0A192F"></circle>
+        <text font-family="Arial" font-size="14" font-weight="bold" fill="#0A192F" text-anchor="middle" x="100" y="240">Command Line</text>
+        <text font-family="Arial" font-size="12" fill="#8892B0" text-anchor="middle" x="100" y="260">1970er-1980er</text>
+        
+        <!-- GUI Era -->
+        <circle cx="200" cy="200" r="15" fill="#0A192F"></circle>
+        <text font-family="Arial" font-size="14" font-weight="bold" fill="#0A192F" text-anchor="middle" x="200" y="240">GUI</text>
+        <text font-family="Arial" font-size="12" fill="#8892B0" text-anchor="middle" x="200" y="260">1980er-1990er</text>
+        
+        <!-- Post-WIMP Era -->
+        <circle cx="300" cy="200" r="15" fill="#0A192F"></circle>
+        <text font-family="Arial" font-size="14" font-weight="bold" fill="#0A192F" text-anchor="middle" x="300" y="240">Post-WIMP</text>
+        <text font-family="Arial" font-size="12" fill="#8892B0" text-anchor="middle" x="300" y="260">1990er-2010er</text>
+        
+        <!-- Agentische Interfaces Era -->
+        <circle cx="400" cy="200" r="15" fill="#0A192F"></circle>
+        <text font-family="Arial" font-size="14" font-weight="bold" fill="#0A192F" text-anchor="middle" x="400" y="240">Agentische Interfaces</text>
+        <text font-family="Arial" font-size="12" fill="#8892B0" text-anchor="middle" x="400" y="260">2010er-heute</text>
+        
+        <!-- Interface of One Era -->
+        <circle cx="500" cy="200" r="20" fill="#64FFDA"></circle>
+        <circle cx="500" cy="200" r="25" stroke="#64FFDA" stroke-width="2" stroke-dasharray="5,5"></circle>
+        <text font-family="Arial" font-size="16" font-weight="bold" fill="#0A192F" text-anchor="middle" x="500" y="240">Interface of One</text>
+        <text font-family="Arial" font-size="12" fill="#8892B0" text-anchor="middle" x="500" y="260">Zukunftsvision</text>
+        
+        <!-- Icons -->
+        <rect x="80" y="120" width="40" height="40" stroke="#8892B0" stroke-width="2"></rect>
+        <text font-family="monospace" font-size="10" fill="#8892B0" text-anchor="middle" x="100" y="145">$_</text>
+        
+        <rect x="180" y="120" width="40" height="40" stroke="#8892B0" stroke-width="2" rx="5"></rect>
+        <rect x="185" y="125" width="30" height="30" fill="#8892B0" fill-opacity="0.3" rx="3"></rect>
+        
+        <g transform="translate(280, 120)">
+            <rect width="40" height="40" stroke="#8892B0" stroke-width="2" rx="5"></rect>
+            <line x1="10" y1="20" x2="30" y2="20" stroke="#8892B0" stroke-width="2"></line>
+            <circle cx="20" cy="30" r="5" fill="#8892B0"></circle>
+        </g>
+        
+        <g transform="translate(380, 120)">
+            <rect width="40" height="40" stroke="#8892B0" stroke-width="2" rx="10"></rect>
+            <circle cx="20" cy="20" r="10" fill="#8892B0" fill-opacity="0.3"></circle>
+            <path d="M15,30 C15,35 25,35 25,30" stroke="#8892B0" stroke-width="1.5" fill="none"></path>
+        </g>
+        
+        <g transform="translate(480, 120)">
+            <rect width="40" height="40" stroke="#64FFDA" stroke-width="2" rx="20"></rect>
+            <circle cx="20" cy="20" r="10" fill="#64FFDA" fill-opacity="0.3"></circle>
+            <path d="M15,30 C15,35 25,35 25,30" stroke="#64FFDA" stroke-width="1.5" fill="none"></path>
+            <circle cx="40" cy="40" r="10" stroke="#64FFDA" stroke-width="1.5" fill="none"></circle>
+            <circle cx="0" cy="40" r="10" stroke="#64FFDA" stroke-width="1.5" fill="none"></circle>
+            <circle cx="40" cy="0" r="10" stroke="#64FFDA" stroke-width="1.5" fill="none"></circle>
+            <circle cx="0" cy="0" r="10" stroke="#64FFDA" stroke-width="1.5" fill="none"></circle>
+        </g>
+        
+        <!-- Title -->
+        <text font-family="Arial" font-size="24" font-weight="bold" fill="#0A192F" text-anchor="middle" x="300" y="50">Paradigmenwechsel in der Mensch-Computer-Interaktion</text>
+        <text font-family="Arial" font-size="16" fill="#8892B0" text-anchor="middle" x="300" y="80">Evolutionäre Entwicklung von Interface-Paradigmen</text>
+    </g>
+</svg>

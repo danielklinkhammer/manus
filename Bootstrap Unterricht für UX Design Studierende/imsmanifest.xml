@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="BootstrapCourse" version="1.0" 
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" 
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                              http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <lom:lom xmlns:lom="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+      <lom:general>
+        <lom:title>
+          <lom:langstring xml:lang="de">Bootstrap für UX Design</lom:langstring>
+        </lom:title>
+        <lom:description>
+          <lom:langstring xml:lang="de">Ein umfassender Kurs für Bootstrap innerhalb von zwei Vorlesungen zu jeweils 3 Stunden, mit Übergang von Figma Dev Mode zu Bootstrap und Visual Studio als Entwicklungsumgebung.</lom:langstring>
+        </lom:description>
+        <lom:keyword>
+          <lom:langstring xml:lang="de">Bootstrap</lom:langstring>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:langstring xml:lang="de">UX Design</lom:langstring>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:langstring xml:lang="de">Figma</lom:langstring>
+        </lom:keyword>
+        <lom:keyword>
+          <lom:langstring xml:lang="de">Visual Studio</lom:langstring>
+        </lom:keyword>
+      </lom:general>
+    </lom:lom>
+  </metadata>
+  <organizations default="BootstrapCourseOrg">
+    <organization identifier="BootstrapCourseOrg">
+      <title>Bootstrap für UX Design</title>
+      <item identifier="ITEM_1" identifierref="RESOURCE_1" isvisible="true">
+        <title>Kursübersicht</title>
+      </item>
+      <item identifier="ITEM_2" identifierref="RESOURCE_2" isvisible="true">
+        <title>HTML/CSS Grundlagen</title>
+      </item>
+      <item identifier="ITEM_3" identifierref="RESOURCE_3" isvisible="true">
+        <title>Bootstrap Einführung</title>
+      </item>
+      <item identifier="ITEM_4" identifierref="RESOURCE_4" isvisible="true">
+        <title>Figma zu Bootstrap</title>
+      </item>
+      <item identifier="ITEM_5" identifierref="RESOURCE_5" isvisible="true">
+        <title>Visual Studio Setup</title>
+      </item>
+      <item identifier="ITEM_6" identifierref="RESOURCE_6" isvisible="true">
+        <title>Praktische Übungen</title>
+      </item>
+      <item identifier="ITEM_7" identifierref="RESOURCE_7" isvisible="true">
+        <title>Ressourcen</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RESOURCE_1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+      <file href="images/course-structure.svg"/>
+    </resource>
+    <resource identifier="RESOURCE_2" type="webcontent" adlcp:scormtype="sco" href="html_css_basics.html">
+      <file href="html_css_basics.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+    <resource identifier="RESOURCE_3" type="webcontent" adlcp:scormtype="sco" href="bootstrap_introduction.html">
+      <file href="bootstrap_introduction.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+    <resource identifier="RESOURCE_4" type="webcontent" adlcp:scormtype="sco" href="figma_to_bootstrap.html">
+      <file href="figma_to_bootstrap.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+    <resource identifier="RESOURCE_5" type="webcontent" adlcp:scormtype="sco" href="visual_studio_setup.html">
+      <file href="visual_studio_setup.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+    <resource identifier="RESOURCE_6" type="webcontent" adlcp:scormtype="sco" href="exercises.html">
+      <file href="exercises.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+    <resource identifier="RESOURCE_7" type="webcontent" adlcp:scormtype="sco" href="resources.html">
+      <file href="resources.html"/>
+      <file href="styles.css"/>
+      <file href="scorm_api.js"/>
+    </resource>
+  </resources>
+</manifest>

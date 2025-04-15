@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technische Spezifikationen - Solarstrom managen</title>
+    <meta name="description" content="Detaillierte technische Spezifikationen für die interaktive Ausstellungsstation 'Solarstrom managen'">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-solar-panel"></i>
+                <span>Solarstrom managen</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Startseite</a></li>
+                    <li><a href="../index.html#features">Funktionen</a></li>
+                    <li><a href="../index.html#about">Über das Projekt</a></li>
+                    <li><a href="../index.html#simulation">Simulation</a></li>
+                    <li><a href="../index.html#specs">Spezifikationen</a></li>
+                    <li><a href="../index.html#gallery">Galerie</a></li>
+                    <li><a href="../index.html#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+        <div class="doc-container">
+            <h1>Technische Spezifikationen: Interaktive Station "Solarstrom managen"</h1>
+            
+            <h2>1. Hardwareanforderungen</h2>
+            
+            <h3>1.1 Computersystem</h3>
+            <table>
+                <tr>
+                    <th>Komponente</th>
+                    <th>Spezifikation</th>
+                </tr>
+                <tr>
+                    <td>Prozessor</td>
+                    <td>Intel Core i5 (10. Generation oder neuer)</td>
+                </tr>
+                <tr>
+                    <td>Arbeitsspeicher</td>
+                    <td>16 GB DDR4</td>
+                </tr>
+                <tr>
+                    <td>Festplatte</td>
+                    <td>512 GB SSD</td>
+                </tr>
+                <tr>
+                    <td>Grafikkarte</td>
+                    <td>Integrierte Intel Iris Xe oder dedizierte GPU mit 4 GB VRAM</td>
+                </tr>
+                <tr>
+                    <td>Betriebssystem</td>
+                    <td>Ubuntu Linux 22.04 LTS</td>
+                </tr>
+                <tr>
+                    <td>Anschlüsse</td>
+                    <td>4× USB 3.0, 1× HDMI, 1× DisplayPort, 1× Ethernet (RJ45)</td>
+                </tr>
+            </table>
+            
+            <h3>1.2 Displays und Ausgabegeräte</h3>
+            <table>
+                <tr>
+                    <th>Komponente</th>
+                    <th>Spezifikation</th>
+                </tr>
+                <tr>
+                    <td>Hauptdisplay</td>
+                    <td>32" 4K UHD Touchscreen (3840×2160 Pixel), kapazitiv, 10-Punkt-Multi-Touch</td>
+                </tr>
+                <tr>
+                    <td>Lautsprecher</td>
+                    <td>2× 10W Breitbandlautsprecher</td>
+                </tr>
+                <tr>
+                    <td>Subwoofer</td>
+                    <td>1× 20W Subwoofer</td>
+                </tr>
+                <tr>
+                    <td>LED-Beleuchtung</td>
+                    <td>50× RGB-LEDs für das Hausmodell, individuell ansteuerbar</td>
+                </tr>
+            </table>
+            
+            <h3>1.3 Sensoren</h3>
+            <table>
+                <tr>
+                    <th>Komponente</th>
+                    <th>Spezifikation</th>
+                    <th>Anzahl</th>
+                </tr>
+                <tr>
+                    <td>Lichtsensoren</td>
+                    <td>Kalibrierte Photodioden mit 0-100.000 Lux Messbereich</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Temperatursensoren</td>
+                    <td>PT100-Sensoren mit 0,1°C Auflösung</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Näherungssensoren</td>
+                    <td>Infrarot-Näherungssensoren mit 10-80 cm Reichweite</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            
+            <h3>1.4 Solarzellen</h3>
+            <table>
+                <tr>
+                    <th>Eigenschaft</th>
+                    <th>Spezifikation</th>
+                </tr>
+                <tr>
+                    <td>Typ</td>
+                    <td>Monokristalline Silizium-Solarzellen</td>
+                </tr>
+                <tr>
+                    <td>Abmessungen</td>
+                    <td>4× 30 cm × 20 cm</td>
+                </tr>
+                <tr>
+                    <td>Nennleistung</td>
+                    <td>Je 10 Wp (Watt peak) bei 1000 W/m² Einstrahlung</td>
+                </tr>
+                <tr>
+                    <td>Wirkungsgrad</td>
+                    <td>22%</td>
+                </tr>
+                <tr>
+                    <td>Montage</td>
+                    <td>Verstellbarer Neigungswinkel (0-45°)</td>
+                </tr>
+            </table>
+            
+            <h3>1.5 Netzwerk und Konnektivität</h3>
+            <ul>
+                <li>Ethernet: 1 Gbit/s</li>
+                <li>WLAN: IEEE 802.11ac (Wi-Fi 5)</li>
+                <li>Bluetooth: 5.0</li>
+                <li>Optional: 4G/LTE-Modem für Remote-Wartung</li>
+            </ul>
+            
+            <h3>1.6 Mechanische Komponenten</h3>
+            <table>
+                <tr>
+                    <th>Komponente</th>
+                    <th>Spezifikation</th>
+                </tr>
+                <tr>
+                    <td>Basisgestell</td>
+                    <td>Aluminiumprofil-Konstruktion, pulverbeschichtet</td>
+                </tr>
+                <tr>
+                    <td>Höhenverstellung</td>
+                    <td>Elektromotorisch, 75-110 cm Verstellbereich</td>
+                </tr>
+                <tr>
+                    <td>Hausmodell</td>
+                    <td>3D-gedrucktes Modell aus ABS-Kunststoff, Maßstab 1:50</td>
+                </tr>
+                <tr>
+                    <td>Verkleidungen</td>
+                    <td>HPL-Platten (High Pressure Laminate), 8 mm</td>
+                </tr>
+                <tr>
+                    <td>Taschenlampen</td>
+                    <td>3× LED-Taschenlampen mit 500-1000 Lumen, fokussierbar</td>
+                </tr>
+                <tr>
+                    <td>Ladestation</td>
+                    <td>Induktive Ladestation für die Taschenlampen</td>
+                </tr>
+            </table>
+            
+            <h2>2. Software-Architektur</h2>
+            
+            <h3>2.1 Systemarchitektur</h3>
+            <p>Die Software-Architektur folgt einem modularen Aufbau mit klarer Trennung von Frontend und Backend:</p>
+            <ul>
+                <li><strong>Präsentationsschicht:</strong> Benutzeroberfläche und Visualisierungen</li>
+                <li><strong>Anwendungsschicht:</strong> Geschäftslogik und Simulationsengine</li>
+                <li><strong>Datenzugriffsschicht:</strong> Datenbankzugriff und Sensoranbindung</li>
+                <li><strong>Hardwareabstraktionsschicht:</strong> Treiber und Hardwareschnittstellen</li>
+            </ul>
+            
+            <h3>2.2 Frontend-Komponenten</h3>
+            <ul>
+                <li><strong>UI-Framework:</strong> React.js mit TypeScript</li>
+                <li><strong>Styling:</strong> CSS3 mit SASS-Präprozessor</li>
+                <li><strong>Visualisierungsbibliotheken:</strong> D3.js für Diagramme, Three.js für 3D-Visualisierungen</li>
+                <li><strong>Responsive Design:</strong> Flexbox und CSS Grid für verschiedene Bildschirmgrößen</li>
+                <li><strong>Internationalisierung:</strong> i18next für mehrsprachige Unterstützung</li>
+            </ul>
+            
+            <h3>2.3 Backend-Komponenten</h3>
+            <ul>
+                <li><strong>Server:</strong> Node.js mit Express.js</li>
+                <li><strong>Datenbank:</strong> SQLite für lokale Datenspeicherung</li>
+                <li><strong>Sensoranbindung:</strong> Arduino-Integration über Serial API</li>
+                <li><strong>Logging:</strong> Winston für strukturierte Protokollierung</li>
+                <li><strong>Systemdienste:</strong> Systemd für Prozessverwaltung und Autostart</li>
+            </ul>
+            
+            <h3>2.4 Simulationsengine</h3>
+            <p>Die Simulationsengine ist das Herzstück der Software und umfasst folgende Komponenten:</p>
+            <ul>
+                <li><strong>Solarstrommodell:</strong> Berechnung der Solarstromerzeugung basierend auf Lichteinstrahlung</li>
+                <li><strong>Verbrauchsmodell:</strong> Simulation des Stromverbrauchs verschiedener Haushaltsgeräte</li>
+                <li><strong>Speichermodell:</strong> Simulation von Batteriespeichern mit Lade- und Entladezyklen</li>
+                <li><strong>Netzmodell:</strong> Simulation der Netzeinspeisung und -entnahme</li>
+                <li><strong>Wärmemodell:</strong> Simulation der Umwandlung von Strom in Wärme</li>
+                <li><strong>Zeitmodell:</strong> Simulation von Tages- und Jahresverläufen</li>
+            </ul>
+            
+            <h3>2.5 Sicherheitskonzept</h3>
+            <ul>
+                <li><strong>Betriebssystemhärtung:</strong> Minimale Installationsbasis, regelmäßige Updates</li>
+                <li><strong>Anwendungssicherheit:</strong> Eingabevalidierung, Schutz vor XSS und CSRF</li>
+                <li><strong>Netzwerksicherheit:</strong> Firewall, verschlüsselte Kommunikation</li>
+                <li><strong>Physische Sicherheit:</strong> Abschließbare Gehäuse, Diebstahlsicherung</li>
+                <li><strong>Datenschutz:</strong> Keine Speicherung personenbezogener Daten</li>
+            </ul>
+            
+            <h2>3. Sensorik und Messtechnik</h2>
+            
+            <h3>3.1 Lichtsensoren</h3>
+            <p>Die Lichtsensoren dienen zur Messung der Lichtintensität auf den Solarzellen:</p>
+            <ul>
+                <li><strong>Sensortyp:</strong> Kalibrierte Photodioden mit Verstärkerschaltung</li>
+                <li><strong>Messbereich:</strong> 0-100.000 Lux</li>
+                <li><strong>Auflösung:</strong> 10 Lux</li>
+                <li><strong>Abtastrate:</strong> 10 Hz</li>
+                <li><strong>Positionierung:</strong> Je ein Sensor pro Solarzelle</li>
+                <li><strong>Kalibrierung:</strong> Werkseitige Kalibrierung, regelmäßige Nachkalibrierung möglich</li>
+            </ul>
+            
+            <h3>3.2 Energiemesssystem</h3>
+            <p>Das Energiemesssystem erfasst die elektrischen Parameter im System:</p>
+            <ul>
+                <li><strong>Spannungsmessung:</strong> 0-24V DC mit 0,1V Auflösung</li>
+                <li><strong>Strommessung:</strong> 0-5A mit 0,01A Auflösung</li>
+                <li><strong>Leistungsberechnung:</strong> Echtzeit-Multiplikation von Spannung und Strom</li>
+                <li><strong>Energiezählung:</strong> Kumulierte Energiemenge in Wh</li>
+                <li><strong>Messpunkte:</strong> Solarzellen, Batteriespeicher, Verbraucher, Netzanschluss</li>
+            </ul>
+            
+            <h3>3.3 Umgebungssensorik</h3>
+            <p>Zur Überwachung der Betriebsbedingungen:</p>
+            <ul>
+                <li><strong>Temperatursensoren:</strong> Überwachung der Systemtemperatur</li>
+                <li><strong>Näherungssensoren:</strong> Erkennung von Besuchern für automatische Aktivierung</li>
+                <li><strong>Beschleunigungssensor:</strong> Erkennung von Erschütterungen oder Manipulationen</li>
+            </ul>
+            
+            <h3>3.4 Kalibrierungsverfahren</h3>
+            <p>Für präzise Messungen werden folgende Kalibrierungsverfahren angewendet:</p>
+            <ul>
+                <li><strong>Lichtsensoren:</strong> Kalibrierung mit geeichtem Luxmeter</li>
+                <li><strong>Energiemessung:</strong> Kalibrierung mit Präzisionsmultimeter</li>
+                <li><strong>Temperatursensoren:</strong> Zweipunktkalibrierung bei 0°C und 50°C</li>
+                <li><strong>Kalibrierungsintervall:</strong> Jährliche Überprüfung und Nachkalibrierung</li>
+            </ul>
+            
+            <h2>4. Energiemanagement-Algorithmen</h2>
+            
+            <h3>4.1 Solarstromerzeugung</h3>
+            <p>Die Berechnung der Solarstromerzeugung basiert auf folgenden Faktoren:</p>
+            <ul>
+                <li><strong>Lichteinstrahlung:</strong> Gemessen durch die Lichtsensoren in Lux</li>
+                <li><strong>Wirkungsgrad:</strong> 22% für die monokristallinen Solarzellen</li>
+                <li><strong>Temperaturkoeffizient:</strong> -0,4% pro °C über 25°C</li>
+                <li><strong>Einfallswinkel:</strong> Kosinus-Korrektur für nicht-senkrechten Lichteinfall</li>
+                <li><strong>Verschattung:</strong> Berücksichtigung partieller Verschattung einzelner Zellen</li>
+            </ul>
+            <p>Die Formel zur Berechnung der Leistung P in Watt ist:</p>
+            <pre>P = A × E × η × k_T × k_θ</pre>
+            <p>wobei:</p>
+            <ul>
+                <li>A = Fläche der Solarzellen in m²</li>
+                <li>E = Einstrahlung in W/m² (abgeleitet aus Lux-Werten)</li>
+                <li>η = Wirkungsgrad</li>
+                <li>k_T = Temperaturkorrekturfaktor</li>
+                <li>k_θ = Winkelkorrekturfaktor</li>
+            </ul>
+            
+            <h3>4.2 Verbrauchsmanagement</h3>
+            <p>Das Verbrauchsmanagement simuliert den Stromverbrauch verschiedener Haushaltsgeräte:</p>
+            <ul>
+                <li><strong>Gerätedatenbank:</strong> Typische Verbrauchswerte für verschiedene Haushaltsgeräte</li>
+                <li><strong>Lastprofile:</strong> Zeitabhängige Verbrauchsmuster für realistische Simulation</li>
+                <li><strong>Prioritäten:</strong> Einteilung der Geräte in essenzielle und nicht-essenzielle Verbraucher</li>
+                <li><strong>Lastabwurf:</strong> Automatische Abschaltung nicht-essenzieller Verbraucher bei Energiemangel</li>
+                <li><strong>Lastverschiebung:</strong> Optimierung des Verbrauchszeitpunkts basierend auf Energieverfügbarkeit</li>
+            </ul>
+            
+            <h3>4.3 Speichermanagement</h3>
+            <p>Die Simulation des Batteriespeichers berücksichtigt:</p>
+            <ul>
+                <li><strong>Kapazität:</strong> Maximale Speicherkapazität in kWh</li>
+                <li><strong>Ladezustand (SoC):</strong> Aktueller Füllstand in Prozent</li>
+                <li><strong>Lade-/Entladeleistung:</strong> Maximale Leistung in kW</li>
+                <li><strong>Wirkungsgrad:</strong> Verluste beim Laden und Entladen</li>
+                <li><strong>Alterung:</strong> Kapazitätsverlust über Zeit und Zyklen</li>
+                <li><strong>Ladestrategien:</strong> Verschiedene Algorithmen für optimale Nutzung</li>
+            </ul>
+            
+            <h3>4.4 Netzinteraktion</h3>
+            <p>Die Simulation der Interaktion mit dem Stromnetz umfasst:</p>
+            <ul>
+                <li><strong>Einspeisung:</strong> Überschüssiger Solarstrom wird ins Netz eingespeist</li>
+                <li><strong>Bezug:</strong> Bei Energiemangel wird Strom aus dem Netz bezogen</li>
+                <li><strong>Netzbelastung:</strong> Simulation der Auswirkungen auf das lokale Stromnetz</li>
+              <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

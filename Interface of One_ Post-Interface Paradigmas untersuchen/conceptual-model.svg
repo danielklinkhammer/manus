@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Conceptual Model</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect fill="#F8F9FA" x="0" y="0" width="600" height="400"></rect>
+        
+        <!-- Central Circle -->
+        <circle cx="300" cy="200" r="80" fill="#0A192F"></circle>
+        <text font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" x="300" y="190">Interface</text>
+        <text font-family="Arial" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" x="300" y="210">of One</text>
+        
+        <!-- Core Components -->
+        <g transform="translate(300, 200)">
+            <!-- Contextual Intelligence -->
+            <g transform="translate(0, -140)">
+                <circle r="40" fill="#64FFDA" fill-opacity="0.8"></circle>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="-5">Kontextuelle</text>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="10">Intelligenz</text>
+                <line x1="0" y1="40" x2="0" y2="60" stroke="#0A192F" stroke-width="2"></line>
+            </g>
+            
+            <!-- Adaptive Modality Selection -->
+            <g transform="translate(133, -43)">
+                <circle r="40" fill="#64FFDA" fill-opacity="0.8"></circle>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="-5">Adaptive</text>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="10">Modalitätsauswahl</text>
+                <line x1="-33" y1="23" x2="-53" y2="43" stroke="#0A192F" stroke-width="2"></line>
+            </g>
+            
+            <!-- Semantic Integration -->
+            <g transform="translate(133, 43)">
+                <circle r="40" fill="#64FFDA" fill-opacity="0.8"></circle>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="-5">Semantische</text>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="10">Integration</text>
+                <line x1="-33" y1="-23" x2="-53" y2="-43" stroke="#0A192F" stroke-width="2"></line>
+            </g>
+            
+            <!-- Trustworthy Agency -->
+            <g transform="translate(-133, 43)">
+                <circle r="40" fill="#64FFDA" fill-opacity="0.8"></circle>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="-5">Vertrauenswürdige</text>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="10">Agentur</text>
+                <line x1="33" y1="-23" x2="53" y2="-43" stroke="#0A192F" stroke-width="2"></line>
+            </g>
+            
+            <!-- Flow-oriented Architecture -->
+            <g transform="translate(-133, -43)">
+                <circle r="40" fill="#64FFDA" fill-opacity="0.8"></circle>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="-5">Flussorientierte</text>
+                <text font-family="Arial" font-size="12" font-weight="bold" fill="#0A192F" text-anchor="middle" y="10">Architektur</text>
+                <line x1="33" y1="23" x2="53" y2="43" stroke="#0A192F" stroke-width="2"></line>
+            </g>
+        </g>
+        
+        <!-- Title -->
+        <text font-family="Arial" font-size="24" font-weight="bold" fill="#0A192F" text-anchor="middle" x="300" y="50">Konzeptionelles Modell</text>
+        <text font-family="Arial" font-size="16" fill="#8892B0" text-anchor="middle" x="300" y="80">Kernkomponenten des Interface of One</text>
+    </g>
+</svg>

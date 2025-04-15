@@ -1,0 +1,499 @@
+{
+  "title": "HTML/CSS Grundlagen - Multiple Choice Quiz",
+  "language": "de",
+  "mainLibrary": "H5P.QuestionSet",
+  "embedTypes": ["iframe"],
+  "license": "U",
+  "contentType": "Question Set",
+  "content": {
+    "questionSet": {
+      "introPage": {
+        "showIntroPage": true,
+        "title": "HTML/CSS Grundlagen Quiz",
+        "introduction": "<p>Testen Sie Ihr Wissen zu HTML und CSS Grundlagen mit diesem Quiz. Diese Konzepte sind wichtig für die Arbeit mit Bootstrap.</p>",
+        "startButtonText": "Quiz starten"
+      },
+      "progressType": "dots",
+      "passPercentage": 80,
+      "questions": [
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Welche der folgenden HTML-Tags sind semantische Elemente?",
+            "answers": [
+              {
+                "text": "&lt;div&gt;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. &lt;div&gt; ist ein generisches Container-Element ohne semantische Bedeutung.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;header&gt;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! &lt;header&gt; ist ein semantisches Element, das einen Kopfbereich definiert.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;span&gt;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. &lt;span&gt; ist ein generisches Inline-Element ohne semantische Bedeutung.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;article&gt;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! &lt;article&gt; ist ein semantisches Element, das einen eigenständigen Inhalt definiert.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;nav&gt;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! &lt;nav&gt; ist ein semantisches Element, das einen Navigationsbereich definiert.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        },
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Welche CSS-Eigenschaft wird verwendet, um den Abstand zwischen dem Inhalt eines Elements und seinem Rand zu definieren?",
+            "answers": [
+              {
+                "text": "margin",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. margin definiert den Abstand außerhalb des Elements, zwischen dem Element und anderen Elementen.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "padding",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! padding definiert den Abstand zwischen dem Inhalt eines Elements und seinem Rand.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "border",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. border definiert den Rand eines Elements.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "spacing",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. Es gibt keine CSS-Eigenschaft namens 'spacing'.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        },
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Welche CSS-Eigenschaft wird verwendet, um ein Element flexibel zu machen?",
+            "answers": [
+              {
+                "text": "display: block;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. display: block; macht ein Element zu einem Blockelement, aber nicht flexibel.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "display: flex;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! display: flex; aktiviert das Flexbox-Layout für ein Element.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "display: inline;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. display: inline; macht ein Element zu einem Inline-Element, aber nicht flexibel.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "display: grid;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. display: grid; aktiviert das Grid-Layout, nicht das Flexbox-Layout.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        },
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Welche CSS-Eigenschaft wird verwendet, um ein Element responsiv zu machen, sodass es nie größer als sein Container wird?",
+            "answers": [
+              {
+                "text": "width: 100%;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. width: 100%; setzt die Breite auf 100% des Containers, aber das Element könnte trotzdem überlaufen, wenn es einen festen Mindestinhalt hat.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "max-width: 100%;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! max-width: 100%; stellt sicher, dass das Element nie breiter als sein Container wird.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "min-width: 100%;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. min-width: 100%; würde das Element zwingen, mindestens so breit wie sein Container zu sein, was zu Überlauf führen könnte.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "height: auto;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. height: auto; betrifft die Höhe, nicht die Breite des Elements.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        },
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Welches HTML-Element wird verwendet, um ein Formular zu erstellen?",
+            "answers": [
+              {
+                "text": "&lt;input&gt;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. &lt;input&gt; wird für Eingabefelder innerhalb eines Formulars verwendet.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;form&gt;",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! &lt;form&gt; ist das Container-Element für Formulare.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;button&gt;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. &lt;button&gt; wird für Schaltflächen verwendet, nicht für das gesamte Formular.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "&lt;fieldset&gt;",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. &lt;fieldset&gt; wird verwendet, um verwandte Elemente in einem Formular zu gruppieren, nicht für das gesamte Formular.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        },
+        {
+          "library": "H5P.MultiChoice",
+          "params": {
+            "question": "Was ist der Zweck des Viewport Meta-Tags in HTML?",
+            "answers": [
+              {
+                "text": "Er definiert die Hintergrundfarbe der Webseite",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. Die Hintergrundfarbe wird mit CSS definiert, nicht mit dem Viewport Meta-Tag.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "Er stellt sicher, dass die Webseite auf mobilen Geräten korrekt skaliert wird",
+                "correct": true,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Richtig! Der Viewport Meta-Tag stellt sicher, dass die Webseite auf verschiedenen Geräten korrekt skaliert wird.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "Er definiert den Titel der Webseite",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. Der Titel der Webseite wird mit dem &lt;title&gt;-Tag definiert.",
+                  "notChosenFeedback": ""
+                }
+              },
+              {
+                "text": "Er lädt externe JavaScript-Dateien",
+                "correct": false,
+                "tipsAndFeedback": {
+                  "tip": "",
+                  "chosenFeedback": "Falsch. Externe JavaScript-Dateien werden mit dem &lt;script&gt;-Tag geladen.",
+                  "notChosenFeedback": ""
+                }
+              }
+            ],
+            "behaviour": {
+              "enableRetry": true,
+              "enableSolutionsButton": true,
+              "enableCheckButton": true,
+              "type": "auto",
+              "singlePoint": false,
+              "randomAnswers": true,
+              "showSolutionsRequiresInput": true,
+              "confirmCheckDialog": false,
+              "confirmRetryDialog": false,
+              "autoCheck": false,
+              "passPercentage": 100,
+              "showScorePoints": true
+            },
+            "UI": {
+              "checkAnswerButton": "Überprüfen",
+              "showSolutionButton": "Lösung anzeigen",
+              "tryAgainButton": "Wiederholen",
+              "tipsLabel": "Tipp anzeigen",
+              "scoreBarLabel": "Du hast :num von :total Punkten erreicht",
+              "tipAvailable": "Tipp verfügbar",
+              "feedbackAvailable": "Feedback verfügbar",
+              "readFeedback": "Feedback lesen",
+              "wrongAnswer": "Falsche Antwort",
+              "correctAnswer": "Richtige Antwort",
+              "shouldCheck": "Sollte ausgewählt werden",
+              "shouldNotCheck": "Sollte nicht ausgewählt werden",
+              "noInput": "Bitte antworte, bevor du die Lösung ansiehst"
+            }
+          }
+        }
+      ],
+      "texts": {
+        "prevButton": "Zurück",
+        "nextButton": "Weiter",
+        "finishButton": "Beenden",
+        "textualProgress": "Frage: @current von @total",
+        "questionLabel": "Frage",
+        "jumpToQuestion": "Zur Frage %d springen",
+        "scoreBarLabel": "Du hast @score von @total Punkten erreicht",
+        "shareResult": "Ergebnis teilen",
+        "submitButton": "Absenden",
+        "submitMessage": "Deine Antworten wurden abgeschickt!",
+        "noQuestionsTitle": "Keine Fragen",
+        "noQuestions": "Es wurden keine Fragen hinzugefügt.",
+        "resultPageTitle": "Deine Ergebnisse",
+        "resultPageHeader": "Deine Ergebnisse",
+        "failedMessage": "Du hast nicht genügend Punkte erreicht, um zu bestehen.",
+        "successMessage": "Du hast genügend Punkte erreicht, um zu bestehen.",
+        "scoreString": "Du hast @score von @total Punkten erreicht.",
+        "solutionViewTitle": "Lösung",
+        "retryMessage": "Wiederholen",
+        "retryButtonText": "Wiederholen",
+        "retryButtonLabel": "Wiederholen",
+        "showSolutionButtonText": "Lösung anzeigen",
+        "showSolutionButtonLabel": "Lösung anzeigen",
+        "summaryOverview": "Übersicht",
+        "solutionViewText": "Lösung",
+        "summaryButtonText": "Zusammenfassung anzeigen",
+        "summaryButtonLabel": "Zusammenfassung anzeigen",
+        "resultPageBodyText": "Du hast @percentage% der Fragen richtig beantwortet."
+      }
+    }
+  }
+}

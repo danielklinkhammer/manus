@@ -1,0 +1,38 @@
+[
+  {
+    "id": "design-principles",
+    "name": "Designprinzipien",
+    "description": "Grundlegende Regeln und Konzepte für effektives Design",
+    "relatedBooks": ["design-of-everyday-things", "universal-principles-of-design", "laws-of-ux"]
+  },
+  {
+    "id": "cognitive-psychology",
+    "name": "Kognitive Psychologie",
+    "description": "Wie das menschliche Gehirn Informationen verarbeitet und mit Interfaces interagiert",
+    "relatedBooks": ["designing-with-the-mind-in-mind", "100-things-designer-needs-to-know"]
+  },
+  {
+    "id": "usability",
+    "name": "Usability und Benutzerfreundlichkeit",
+    "description": "Methoden und Prinzipien zur Verbesserung der Benutzerfreundlichkeit",
+    "relatedBooks": ["dont-make-me-think", "design-of-everyday-things"]
+  },
+  {
+    "id": "accessibility",
+    "name": "Barrierefreiheit und inklusives Design",
+    "description": "Gestaltung von Produkten, die für Menschen mit verschiedenen Fähigkeiten zugänglich sind",
+    "relatedBooks": ["inclusive-design-for-digital-world"]
+  },
+  {
+    "id": "research-methods",
+    "name": "Forschungsmethoden",
+    "description": "Techniken zur Erforschung von Nutzerbedürfnissen und -verhalten",
+    "relatedBooks": ["user-experience-team-of-one", "ux-magic"]
+  },
+  {
+    "id": "prototyping",
+    "name": "Prototyping und Iteration",
+    "description": "Methoden zur Erstellung und Verfeinerung von Designlösungen",
+    "relatedBooks": ["ux-magic", "user-experience-team-of-one"]
+  }
+]

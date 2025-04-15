@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forschungs- und Dienstleistungsprojekte im Bereich HCI an der FHGR</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-gray: #f9f9f9;
+            --medium-gray: #e0e0e0;
+            --dark-gray: #606060;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            background-image: linear-gradient(to bottom right, rgba(230, 230, 230, 0.5) 1px, transparent 1px),
+                              linear-gradient(to bottom left, rgba(230, 230, 230, 0.5) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        .logo-text {
+            margin-left: 15px;
+            font-size: 1.2em;
+            color: var(--primary-color);
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: var(--dark-gray);
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .main-title {
+            text-align: center;
+            padding: 50px 0;
+            background-color: white;
+            margin: 0;
+        }
+        
+        .main-title h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin: 0;
+            padding: 0 20px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.2em;
+            color: var(--dark-gray);
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+        }
+        
+        h4 {
+            color: var(--secondary-color);
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .project-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        
+        .project-card p {
+            margin-bottom: 15px;
+        }
+        
+        .project-section {
+            margin-top: 20px;
+        }
+        
+        .project-section h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .highlight {
+            background-color: #f2f9ff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: #a3c6e9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://blog.fhgr.ch/uxblog/wp-content/uploads/sites/2/2020/06/Logo-User-Experience-Blog.png" alt="FHGR Logo">
+                <div class="logo-text">User Experience Blog</div>
+            </div>
+            <nav class="nav">
+                <a href="#">Blog</a>
+                <a href="#">Unser Angebot</a>
+                <a href="#">UX Design</a>
+                <a href="#">UX Methoden</a>
+                <a href="#">UX Jobangebote</a>
+                <a href="#">Über Uns</a>
+                <a href="#">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-title">
+        <h1>Forschungs- und Dienstleistungsprojekte im Bereich HCI an der FHGR</h1>
+    </div>
+    
+    <div class="subtitle">
+        Innovative Projektideen an der Schnittstelle von Human-Computer Interaction, kantonaler Innovationsstrategie und den Forschungsschwerpunkten der FHGR
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Die FHGR und das SII: Forschungsschwerpunkte und Strategie</h2>
+            
+            <p>Die Fachhochschule Graubünden (FHGR) und insbesondere das Schweizerische Institut für Informationswissenschaft (SII) haben eine einzigartige Position, um innovative Forschungs- und Dienstleistungsprojekte im Bereich Human-Computer Interaction (HCI) zu entwickeln. Basierend auf den aktuellen HCI-Trends 2024, der Forschungsstrategie der FHGR und den kantonalen Innovationszielen stellen wir potenzielle Projektideen vor, die sowohl wissenschaftlich relevant als auch praktisch umsetzbar sind.</p>
+            
+            <p>Das Schweizerische Institut für Informationswissenschaft (SII) an der Fachhochschule Graubünden konzentriert seine Forschungsaktivitäten auf drei Hauptbereiche:</p>
+            
+            <ol>
+                <li><strong>Informationsorganisation</strong>: Strukturierung und Management von Informationen für optimale Nutzbarkeit</li>
+                <li><strong>Big Data & Analytics</strong>: Analyse großer Datenmengen zur Gewinnung wertvoller Erkenntnisse</li>
+                <li><strong>Datenanalyse und -visualisierung</strong>: Aufbereitung komplexer Daten in verständliche visuelle Darstellungen</li>
+            </ol>
+            
+            <p>Weitere wichtige Forschungsfelder umfassen:</p>
+            <ul>
+                <li>Digital Business and Usability Engineering</li>
+                <li>Knowledge and User Research</li>
+                <li>Bibliothek und Digitalisierung von analogem Kulturgut</li>
+                <li>Bildungsinformatik</li>
+            </ul>
+            
+            <p>Das UX-Team der FHGR ist nicht nur in Lehre und Forschung tätig, sondern bietet auch Dienstleistungen für externe Partner an. Diese umfassen:</p>
+            
+            <ul>
+                <li>Überprüfung der Nutzerfreundlichkeit von Websites oder Applikationen</li>
+                <li>Durchführung von Usability-Tests mit aktuellen Technologien</li>
+                <li>Gemeinsame Gestaltung und Entwicklung intuitiv bedienbarer Anwendungen</li>
+                <li>Zusammenführung der Anforderungen von Nutzerinnen und Nutzern, Business und Technik</li>
+                <li>Durchführung von Schulungen und Workshops zum Thema User Experience</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Kantonale Innovationsstrategie und Fördermöglichkeiten</h2>
+            
+            <p>Die Innovationsstrategie Graubünden 2028 zielt darauf ab, den Kanton als Standort für Bildung, Forschung und Innovation mit Fokus auf die Technologiewirtschaft zu stärken. Der Verein GRdigital spielt dabei eine zentrale Rolle bei der Förderung der digitalen Transformation in Graubünden. Er unterstützt Projekte finanziell und dient als Kompetenzzentrum für Digitalisierungsvorhaben.</p>
+            
+            <p>Gesuche zur finanziellen Förderung von Digitalisierungsprojekten können beim Verein GRdigital eingereicht werden, der diese prüft und beurteilt. Dies bietet eine hervorragende Möglichkeit für die FHGR und das SII, innovative HCI-Projekte zu initiieren und umzusetzen.</p>
+            
+            <div class="highlight">
+                <p>Die Kombination aus den aktuellen HCI-Trends 2024, der Forschungsstrategie der FHGR/SII und den kantonalen Innovationszielen eröffnet vielversprechende Möglichkeiten für innovative Forschungs- und Dienstleistungsprojekte.</p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Aktuelle HCI-Trends 2024 und ihre Relevanz für die FHGR</h2>
+            
+            <p>Die aktuellen Trends im Bereich Human-Computer Interaction für 2024 bieten zahlreiche Anknüpfungspunkte für die Forschungs- und Dienstleistungsaktivitäten der FHGR und des SII:</p>
+            
+            <h3>1. Human-Technology Symbiosis</h3>
+            <ul>
+                <li>Human Centered AI (HCAI) und Explainable AI (XAI)</li>
+                <li>Adaptive und personalisierte Benutzeroberflächen</li>
+                <li>Künstliche Intelligenz und IoT-Integration</li>
+            </ul>
+            
+            <h3>2. Human-Environment Interactions</h3>
+            <ul>
+                <li>VR, AR, MR, XR und Metaverse</li>
+                <li>Computer-Grafik und Visualisierung</li>
+                <li>Brain-Machine Interfaces (BMI)</li>
+            </ul>
+            
+            <h3>3. Konversationelle Schnittstellen</h3>
+            <ul>
+                <li>Natürliche Sprachverarbeitung (NLP)</li>
+                <li>Sprachgesteuerte Assistenten</li>
+            </ul>
+            
+            <h3>4. Ethik, Datenschutz und Sicherheit</h3>
+            <ul>
+                <li>Philosophische und ethische Fragen der HCI</li>
+                <li>Datenschutz und Online-Sicherheit</li>
+                <li>Nachhaltigkeit und SDGs in HCI</li>
+            </ul>
+            
+            <h3>5. Zugänglichkeit und universeller Zugang</h3>
+            <ul>
+                <li>Kulturelle Unterschiede in HCI</li>
+                <li>Schnittstellen für Menschen mit Behinderungen und Senioren</li>
+            </ul>
+        </div>
+        
+        <h2>Potenzielle Forschungs- und Dienstleistungsprojekte</h2>
+        
+        <p>Basierend auf der Schnittmenge zwischen den Forschungsschwerpunkten der FHGR/SII, den aktuellen HCI-Trends und den kantonalen Innovationszielen schlagen wir folgende Projektideen vor:</p>
+        
+        <div class="project-card">
+            <h3>1. AlpenXR: Immersive Tourismuserlebnisse für Graubünden</h3>
+            
+            <div class="project-section">
+                <h4>Beschreibung:</h4>
+                <p>Entwicklung einer XR-Plattform (Extended Reality), die immersive Erlebnisse für Touristen in Graubünden schafft und gleichzeitig als Planungs- und Informationstool dient.</p>
+            </div>
+            
+            <div class="project-section">
+                <h4>Relevante HCI-Trends:</h4>
+                <ul>
+                    <li>VR, AR, MR, XR und Metaverse</li>
+                    <li>Adaptive und personalisierte Benutzeroberflächen</li>
+                    <li>Computer-Grafik und Visualisierung</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h4>Bezug zur FHGR/SII-Strategie:</h4>
+                <ul>
+                    <li>Datenanalyse und -visualisierung</li>
+                    <li>Digital Business and Usability Engineering</li>
+                    <li>Knowledge and User Research</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h4>Kantonaler Nutzen:</h4>
+                <ul>
+                    <li>Stärkung des Tourismussektors durch innovative digitale Angebote</li>
+                    <li>Positionierung Graubündens als Vorreiter im Bereich digitaler Tourismuserlebnisse</li>
+                    <li>Potenzial für Förderung durch GRdigital aufgrund des Digitalisierungsaspekts</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h4>Projektkomponenten:</h4>
+                <ul>
+                    <li>Entwicklung einer AR-App, die Wanderwege, Skigebiete und kulturelle Sehenswürdigkeiten mit interaktiven Informationsebenen anreichert</li>
+                    <li>VR-Erlebnisse für Museen und Besucherzentren, die historische und kulturelle Aspekte Graubündens erlebbar machen</li>
+                    <li>Datenanalyse-Dashboard für Tourismusanbieter zur Optimierung ihrer Angebote basierend auf Nutzerdaten</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <h3>2. GraubündenVoice: Mehrsprachige Sprachassistenten für öffentliche Dienste</h3>
+            
+            <div class="project-section">
+                <h4>Beschreibung:</h4>
+                <p>Entwicklung eines mehrsprachigen Sprachassistentensystems (Deutsch, Italienisch, Rätoromanisch), das Bürgerinnen und Bürgern den Zugang zu kantonalen Dienstleistungen erleichtert.</p>
+            </div>
+            
+            <div class="project-section">
+                <h4>Relevante HCI-Trends:</h4>
+                <ul>
+                    <li>Konversationelle Schnittstellen</li>
+                    <li>Natürliche Sprachverarbeitung (NLP)</li>
+                    <li>Human Centered AI (HCAI)</li>
+                    <li>Zugänglichkeit und universeller Zugang</li>
+                </ul>
+            </div>
+            
+            <div class="project-section">
+                <h4>Bezug zur FHGR/SII-Strategie:</h4>
+                <ul>
+                    <li>Informationsorganisation</li>
+                    <li>Kno<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

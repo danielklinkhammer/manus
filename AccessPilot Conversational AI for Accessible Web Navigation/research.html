@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forschungslage HCI/UX & Conversational Accessibility - AccessPilot</title>
+    <style>
+        :root {
+            --primary-color: #0a3d62;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+            --accent-color: #e74c3c;
+            --light-gray: #f1f1f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        
+        .logo h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+        
+        .content h3 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .content ul, .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            margin-top: 1rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .paper-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .paper-card h3 {
+            margin-top: 0;
+        }
+        
+        .paper-card .authors {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .paper-card .year {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .paper-card .relevance {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .paper-card .relevance h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .references {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .references h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .references ol {
+            padding-left: 2rem;
+        }
+        
+        .references li {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/F16BD85F-5723-461C-BE2E-0613DC0BB618.png" alt="AccessPilot Logo">
+                    <h1>AccessPilot</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="screenreader.html">Screenreader</a></li>
+                        <li><a href="research.html">Forschung</a></li>
+                        <li><a href="plugins.html">KI-Plugins</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Forschungslage HCI/UX & Conversational Accessibility</h2>
+            <p>Einbettung in den internationalen Forschungsdiskurs zu Conversational Interfaces und Barrierefreiheit</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Einführung</h2>
+                <p>Conversational Interfaces (CUIs) bieten ein erhebliches Potenzial für die Verbesserung der Barrierefreiheit im Web, insbesondere für blinde und sehbehinderte Nutzer. Die Forschung in diesem Bereich hat in den letzten Jahren deutlich zugenommen, wobei verschiedene Ansätze und Technologien untersucht werden. Diese Analyse gibt einen Überblick über den aktuellen Forschungsstand zu konversationalen Schnittstellen im Kontext der Barrierefreiheit und identifiziert relevante Forschungslücken, die durch AccessPilot adressiert werden können.</p>
+                
+                <div class="image-container">
+                    <img src="images/C488149E-79B7-4090-9281-1E0ADC8A0452 (1).png" alt="Conversational Interface für Barrierefreiheit">
+                    <p class="image-caption">Abbildung 1: Konversationelle Schnittstelle zur Verbesserung der Web-Zugänglichkeit</p>
+                </div>
+                
+                <h2>Grundlegende Konzepte und Vorteile</h2>
+                
+                <h3>Natürliche Interaktion statt Befehlserinnerung</h3>
+                <p>Ein zentraler Vorteil von Conversational Interfaces ist, dass Nutzer nicht mehr spezifische Befehle oder Navigationsmethoden erlernen und erinnern müssen. Wie in einem Artikel des Knight Lab (2016) hervorgehoben wird:</p>
+                
+                <blockquote>
+                    <p>"Eine Schnittstelle, die nicht davon abhängt, dass Benutzer bestimmte Befehle oder Interaktionsmethoden abrufen können, ist von Natur aus zugänglich: Jede Person nutzt das System auf ihre eigene Weise, sodass jeder Anwendungsfall berücksichtigt wird. Benutzer müssen ihre Absichten nicht mehr in Aktionen übersetzen. Jetzt ist die Absicht die Aktion."</p>
+                </blockquote>
+                
+                <p>Diese Eigenschaft macht CUIs besonders wertvoll für blinde Nutzer, die sonst mit komplexen Tastenkombinationen und linearen Navigationsstrukturen in Screenreadern konfrontiert sind.</p>
+                
+                <h3>Kontextbewusstsein und personalisierte Interaktion</h3>
+                <p>Moderne Conversational Interfaces, insbesondere solche, die auf KI und maschinellem Lernen basieren, können Kontext verstehen und personalisierte Antworten liefern. Dies ermöglicht eine intuitivere und effizientere Interaktion als traditionelle Screenreader-Ansätze.</p>
+                
+                <p>Mariansky (zitiert in Knight Lab, 2016) beschreibt die ideale konversationelle Schnittstelle als "eine Suchmaschine, die nur ein Ergebnis liefert" - das perfekte Ergebnis für den Nutzer in seinem spezifischen Kontext und seiner aktuellen Situation.</p>
+                
+                <h2>Aktuelle Forschungsansätze</h2>
+                <p>Die Forschung zu konversationellen Schnittstellen für Barrierefreiheit hat in den letzten Jahren erheblich zugenommen. Im Folgenden werden einige der wichtigsten Forschungsarbeiten in diesem Bereich vorgestellt.</p>
+                
+                <div class="paper-card">
+                    <h3>Conversational User Interfaces for Blind Knowledge Workers: A Case Study</h3>
+                    <p class="authors">Dent, K., & Ramea, K.</p>
+                    <span class="year">2020</span>
+                    <p>Diese Fallstudie untersuchte die Entwicklung einer konversationellen Benutzeroberfläche für Multifunktionsdrucker, die speziell auf die Bedürfnisse blinder Wissensarbeiter zugeschnitten ist. Die Studie betont, wie moderne Touchscreen-Interfaces in Bürogeräten größere Hindernisse für blinde Nutzer schaffen und zu einer Umgebung der Abhängigkeit am Arbeitsplatz beitragen.</p>
+                    <p>Die Forscher arbeiteten mit einer Gruppe blinder und sehbehinderter Personen zusammen, um die Herausforderungen zu verstehen und eine aufgabenbasierte, kollaborative Interaktion zwischen Menschen und intelligenten Agenten zu entwickeln.</p>
+                    <div class="relevance">
+                        <h4>Relevanz für AccessPilot:</h4>
+                        <p>Die Studie zeigt, wie konversationelle Schnittstellen die Unabhängigkeit blinder Nutzer fördern können, indem sie komplexe visuelle Interfaces durch natürliche Sprachinteraktionen ersetzen. Dieser Ansatz ist direkt relevant für AccessPilot, das ähnliche Prinzipien auf die Webnavigation anwendet.</p>
+                    </div>
+                </div>
+                
+                <div class="paper-card">
+                    <h3>Enabling Uniform Computer Interaction Experience for Blind Users through Large Language Models</h3>
+                    <p class="authors">Kodandaram, S. R., Uckun, U., Bi, X., Ramakrishnan, I. V., & Ashok, V.</p>
+                    <span class="year">2024</span>
+                    <p>Diese innovative Studie präsentiert "Savant", eine neuartige assistive Technologie, die durch Large Language Models (LLMs) angetrieben wird. Savant ermöglicht es blinden Screenreader-Nutzern, über natürliche Sprache einheitlich mit jeder Anwendungsschnittstelle zu interagieren.</p>
+                    <p>Das System kann eine Reihe von mühsamen Screenreader-Aktionen auf den Steuerelementen der Anwendung automatisieren, wenn es durch einen natürlichsprachlichen Befehl des Benutzers aufgefordert wird. Diese Befehle können flexibel sein, da der Benutzer nicht strikt die genauen Namen der Steuerelemente im Befehl angeben muss.</p>
+                    <p>Eine Benutzerstudie mit 11 blinden Teilnehmern zeigte signifikante Verbesserungen in der Interaktionseffizienz und Benutzerfreundlichkeit im Vergleich zu herkömmlichen Praktiken.</p>
+                    <div class="relevance">
+                        <h4>Relevanz für AccessPilot:</h4>
+                        <p>Die Studie demonstriert das Potenzial von Large Language Models für die Verbesserung der Zugänglichkeit durch natürliche Sprachinteraktion. AccessPilot kann von ähnlichen Ansätzen profitieren, um eine einheitliche und intuitive Interaktion mit Webinhalten zu ermöglichen.</p>
+                    </div>
+                </div>
+                
+                <div class="paper-card">
+                    <h3>Development of a Usable and Accessible Conversational Interface for a Mexican University System</h3>
+                    <p class="authors">Iñiguez-Carrillo, A. L., García-Ruiz, M. A., Gaytán-Lugo, L. S., & Maciel-Arellano, R.</p>
+                    <span class="year">2018</span>
+                    <p>Diese Studie untersuchte die Entwicklung einer benutzerfreundlichen und zugänglichen konversationellen Schnittstelle für ein mexikanisches Universitätssystem. Die Studie betont, dass konversationelle Schnittstellen Barrierefreiheit für Benutzer mit geringen technischen Fähigkeiten und die Integration von Benutzern mit Behinderungen (visuell oder motorisch) ermöglichen.</p>
+                    <p>Die Forscher identifizierten Benutzerherausforderungen für Personen mit visuellen und motorischen Behinderungen und entwickelten eine Schnittstelle, die intuitiver und effizienter ist.</p>
+                    <div class="relevance">
+                        <h4>Relevanz für AccessPilot:</h4>
+                        <p>Die Studie zeigt, wie konversationelle Schnittstellen in einem spezifischen Anwendungskontext (Universitätssystem) implementiert werden können, um die Zugänglichkeit zu verbessern. AccessPilot kann von diesen Erkenntnissen profitieren, um seine Anwendung auf verschiedene Webkontexte zu optimieren.</p>
+                    </div>
+                </div>
+                
+                <div class="paper-card">
+     <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

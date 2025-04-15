@@ -1,0 +1,101 @@
+[
+  {
+    "id": "design-of-everyday-things",
+    "title": "The Design of Everyday Things",
+    "author": "Donald A. Norman",
+    "year": 1988,
+    "edition": "Überarbeitete Ausgabe 2013",
+    "categories": ["Klassiker", "Grundlagen", "Designprinzipien"],
+    "topics": ["Affordances", "Signifiers", "Mapping", "Feedback", "Conceptual Models"],
+    "shortDescription": "Ein grundlegendes Werk über nutzerzentriertes Design und die Psychologie alltäglicher Gegenstände.",
+    "summaryFile": "design_of_everyday_things.md"
+  },
+  {
+    "id": "dont-make-me-think",
+    "title": "Don't Make Me Think",
+    "author": "Steve Krug",
+    "year": 2000,
+    "edition": "3. Auflage 2014",
+    "categories": ["Klassiker", "Usability", "Webdesign"],
+    "topics": ["Usability", "Web Design", "User Testing", "Navigation"],
+    "shortDescription": "Ein pragmatischer Leitfaden zur Webusability mit dem Fokus auf Einfachheit und Intuitivität.",
+    "summaryFile": "dont_make_me_think.md"
+  },
+  {
+    "id": "universal-principles-of-design",
+    "title": "Universal Principles of Design",
+    "author": "William Lidwell",
+    "year": 2003,
+    "edition": "Überarbeitete Ausgabe 2010",
+    "categories": ["Klassiker", "Designprinzipien", "Referenz"],
+    "topics": ["Design Principles", "Psychology", "Usability", "Aesthetics"],
+    "shortDescription": "Eine umfassende Sammlung von 125 Designprinzipien aus verschiedenen Disziplinen mit praktischen Anwendungsbeispielen.",
+    "summaryFile": "universal_principles_of_design.md"
+  },
+  {
+    "id": "100-things-designer-needs-to-know",
+    "title": "100 Things Every Designer Needs to Know About People",
+    "author": "Susan M. Weinschenk",
+    "year": 2011,
+    "edition": "2. Auflage 2020",
+    "categories": ["Psychologie", "Designprinzipien", "Nutzerverhalten"],
+    "topics": ["Psychology", "Cognitive Biases", "Perception", "Decision Making"],
+    "shortDescription": "Eine Sammlung von 100 psychologischen Erkenntnissen und deren Anwendung im Design von Produkten und Erfahrungen.",
+    "summaryFile": "100_things_every_designer_needs_to_know_about_people.md"
+  },
+  {
+    "id": "designing-with-the-mind-in-mind",
+    "title": "Designing with the Mind in Mind",
+    "author": "Jeff Johnson",
+    "year": 2010,
+    "edition": "3. Auflage 2020",
+    "categories": ["Psychologie", "Kognition", "UI-Design"],
+    "topics": ["Cognitive Psychology", "Perception", "Memory", "Attention"],
+    "shortDescription": "Eine Einführung in die kognitiven Grundlagen des UI-Designs und wie das menschliche Gehirn mit Interfaces interagiert.",
+    "summaryFile": "designing_with_the_mind_in_mind.md"
+  },
+  {
+    "id": "laws-of-ux",
+    "title": "Laws of UX",
+    "author": "Jon Yablonski",
+    "year": 2020,
+    "edition": "2. Auflage 2024",
+    "categories": ["Neuere Werke", "Designprinzipien", "UX-Design"],
+    "topics": ["Hick's Law", "Fitts's Law", "Jakob's Law", "Miller's Law"],
+    "shortDescription": "Eine Sammlung von Prinzipien und Heuristiken, die Designer bei der Gestaltung besserer Benutzererfahrungen unterstützen.",
+    "summaryFile": "laws_of_ux.md"
+  },
+  {
+    "id": "ux-magic",
+    "title": "UX Magic",
+    "author": "Daniel Rosenberg",
+    "year": 2020,
+    "edition": "1. Auflage",
+    "categories": ["Neuere Werke", "Methodik", "UX-Design"],
+    "topics": ["Semantic IxD", "Design Process", "User Research", "Prototyping"],
+    "shortDescription": "Ein systematischer Ansatz zur Transformation von Produktanforderungen in optimale Benutzererfahrungen.",
+    "summaryFile": "ux_magic.md"
+  },
+  {
+    "id": "inclusive-design-for-digital-world",
+    "title": "Inclusive Design for a Digital World",
+    "author": "Regine M. Gilbert",
+    "year": 2019,
+    "edition": "1. Auflage",
+    "categories": ["Neuere Werke", "Barrierefreiheit", "Inklusives Design"],
+    "topics": ["Accessibility", "Inclusive Design", "Disability", "WCAG"],
+    "shortDescription": "Ein praktischer Leitfaden für die Gestaltung digitaler Produkte, die für Menschen mit verschiedenen Fähigkeiten zugänglich sind.",
+    "summaryFile": "inclusive_design_for_a_digital_world.md"
+  },
+  {
+    "id": "user-experience-team-of-one",
+    "title": "The User Experience Team of One",
+    "author": "Leah Buley",
+    "year": 2013,
+    "edition": "2. Auflage 2023",
+    "categories": ["Methodik", "UX-Praxis", "Karriere"],
+    "topics": ["UX Process", "Research Methods", "Stakeholder Management", "Collaboration"],
+    "shortDescription": "Ein praktischer Leitfaden für UX-Profis, die als einzige UX-Spezialisten in ihren Organisationen arbeiten.",
+    "summaryFile": "the_user_experience_team_of_one.md"
+  }
+]

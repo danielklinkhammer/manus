@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Einführung - Bootstrap-Kurs für UX Design Studierende</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-bootstrap-fill me-2"></i>
+                Bootstrap-Kurs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="course_structure.html">Kursstruktur</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Materialien
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html_css_basics.html">HTML/CSS Grundlagen</a></li>
+                            <li><a class="dropdown-item active" href="bootstrap_introduction.html">Bootstrap-Einführung</a></li>
+                            <li><a class="dropdown-item" href="figma_to_bootstrap.html">Figma zu Bootstrap</a></li>
+                            <li><a class="dropdown-item" href="visual_studio_setup.html">Visual Studio Einrichtung</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="exercises.html">Praktische Übungen</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resources.html">Ressourcen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Startseite</a></li>
+                            <li class="breadcrumb-item">Materialien</li>
+                            <li class="breadcrumb-item active" aria-current="page">Bootstrap-Einführung</li>
+                        </ol>
+                    </nav>
+                    <h1 class="fw-bold mb-3">Bootstrap-Einführung</h1>
+                    <p class="lead">Eine umfassende Einführung in das Bootstrap-Framework für UX Design Studierende.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3" style="width: 100px; height: 100px; font-size: 3rem;">
+                            <i class="bi bi-bootstrap"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <h5 class="fw-bold mb-3">Inhaltsverzeichnis</h5>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#what-is-bootstrap">Was ist Bootstrap?</a>
+                            <a class="nav-link" href="#getting-started">Erste Schritte</a>
+                            <a class="nav-link" href="#grid-system">Grid-System</a>
+                            <a class="nav-link" href="#components">Komponenten</a>
+                            <a class="nav-link" href="#utilities">Utilities</a>
+                            <a class="nav-link" href="#customization">Anpassung</a>
+                            <a class="nav-link" href="#javascript">JavaScript-Komponenten</a>
+                            <a class="nav-link" href="#best-practices">Best Practices</a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <div id="what-is-bootstrap" class="mb-5">
+                        <h2 class="fw-bold mb-4">Was ist Bootstrap?</h2>
+                        <p>Bootstrap ist das weltweit beliebteste Frontend-Framework für die Entwicklung responsiver, mobilfirst Webseiten. Es ist eine kostenlose und quelloffene Sammlung von HTML-, CSS- und JavaScript-Tools, die die Webentwicklung erheblich vereinfachen.</p>
+                        
+                        <div class="row g-4 mt-3">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-phone me-2 text-primary"></i>Responsives Design</h5>
+                                        <p class="card-text">Bootstrap wurde für responsives Design entwickelt. Es passt sich automatisch an verschiedene Bildschirmgrößen an, von Mobiltelefonen bis hin zu Desktop-Computern.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-grid-3x3-gap me-2 text-primary"></i>Konsistentes Design</h5>
+                                        <p class="card-text">Bootstrap bietet ein konsistentes Design-Framework, das auf bewährten Designprinzipien basiert und eine einheitliche Benutzererfahrung gewährleistet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-box-seam me-2 text-primary"></i>Vorgefertigte Komponenten</h5>
+                                        <p class="card-text">Bootstrap enthält vorgefertigte UI-Komponenten wie Navigationsleisten, Karten, Formulare, Modals und vieles mehr, die sofort einsatzbereit sind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title"><i class="bi bi-speedometer2 me-2 text-primary"></i>Schnelle Entwicklung</h5>
+                                        <p class="card-text">Mit Bootstrap können Sie schnell professionell aussehende Webseiten erstellen, ohne bei Null anfangen zu müssen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="h4 mt-4 mb-3">Warum Bootstrap für UX Designer?</h3>
+                        <p>Für UX Designer bietet Bootstrap mehrere Vorteile:</p>
+                        <ul>
+                            <li><strong>Gemeinsame Sprache</strong>: Bootstrap bietet eine gemeinsame Sprache zwischen Designern und Entwicklern.</li>
+                            <li><strong>Schnelle Prototypen</strong>: Erstellen Sie schnell funktionale Prototypen, um Ihre Designs zu testen.</li>
+                            <li><strong>Konsistenz</strong>: Gewährleisten Sie Konsistenz in Ihren Designs mit standardisierten Komponenten.</li>
+                            <li><strong>Responsivität</strong>: Stellen Sie sicher, dass Ihre Designs auf allen Geräten gut aussehen.</li>
+                            <li><strong>Integration mit Figma</strong>: Bootstrap lässt sich gut mit Figma integrieren, was den Übergang vom Design zum Code erleichtert.</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="getting-started" class="mb-5">
+                        <h2 class="fw-bold mb-4">Erste Schritte</h2>
+                        <p>Es gibt mehrere Möglichkeiten, Bootstrap in Ihr Projekt einzubinden. Hier sind die gängigsten Methoden:</p>
+                        
+                        <h3 class="h4 mt-4 mb-3">1. Bootstrap über CDN einbinden</h3>
+                        <p>Die einfachste Methode ist die Einbindung über ein Content Delivery Network (CDN):</p>
+                        
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Bootstrap-Projekt&lt;/title&gt;
+    
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Hier kommt der Inhalt der Webseite --&gt;
+    
+    &lt;!-- Bootstrap JavaScript Bundle mit Popper --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        
+                        <h3 class="h4 mt-4 mb-3">2. Bootstrap herunterladen</h3>
+                        <p>Sie können die kompilierten CSS- und JavaScript-Dateien von der <a href="https://getbootstrap.com/docs/5.0/getting-started/download/" target="_blank">Bootstrap-Website</a> herunterladen und in Ihr Projekt einbinden.</p>
+                        
+                        <h3 class="h4 mt-4 mb-3">3. Bootstrap über npm installieren</h3>
+                        <p>Wenn Sie mit Node.js und npm arbeiten, können Sie Bootstrap als Abhängigkeit installieren:</p>
+                        
+                        <pre><code>npm install bootstrap</code></pre>
+                        
+                        <div class="alert alert-info mt-4">
+                            <h4 class="alert-heading h5"><i class="bi bi-info-circle-fill me-2"></i>Hinweis</h4>
+                            <p class="mb-0">Für diesen Kurs verwenden wir hauptsächlich die CDN-Methode, da sie am einfachsten zu implementieren ist und keine zusätzliche Installation erfordert.</p>
+                        </div>
+                        
+                        <h3 class="h4 mt-4 mb-3">Grundlegende Bootstrap-Vorlage</h3>
+                        <p>Hier ist eine grundlegende Bootstrap-Vorlage, mit der Sie beginnen können:</p>
+                        
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mein Bootstrap-Projekt&lt;/title&gt;
+    
+    &lt;!-- Bootstrap CSS --&gt;
+    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+    
+    &lt;!-- Eigene Styles --&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Navigation --&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;
+        &lt;div class="container"&gt;
+            &lt;a class="navbar-brand" href="#"&gt;Meine Webseite&lt;/a&gt;
+            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"&gt;
+                &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+                &lt;ul class="navbar-nav ms-auto"&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link active" href="#"&gt;Home&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="#"&gt;Über uns&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="#"&gt;Dienstleistungen&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class="nav-item"&gt;
+                        &lt;a class="nav-link" href="#"&gt;Kontakt&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+
+    &lt;!-- Hauptinhalt --&gt;
+    &lt;div class="container mt-4"&gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-8"&gt;
+                &lt;h1&gt;Willkommen auf meiner Webseite&lt;/h1&gt;
+                &lt;p&gt;Dies ist ein einfaches Bootstrap-Beispiel.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-4"&gt;
+                &lt;div class="card"&gt;
+                    &lt;div class="card-body"&gt;
+                        &lt;h5 class="card-title"&gt;Seitenleiste&lt;/h5&gt;
+                        &lt;p class="card-text"&gt;Hier können Sie zusätzliche Informationen platzieren.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Footer --&gt;
+    &lt;footer class="bg-light py-4 mt-4"&gt;
+        &lt;div class="container text-center"&gt;
+            &lt;p class="mb-0"&gt;&copy; 2025 Meine Webseite. Alle Rechte vorbehalten.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    
+    &lt;!-- Bootstrap JavaScript Bundle mit Popper --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                    
+                    <div id="grid-system" class="mb-5">
+                        <h2 class="fw-bold mb-4">Grid-System</h2>
+                        <p>Das Bootstrap Grid-System ist eines der mächtigsten Features von Bootstrap. Es ermöglicht Ihnen, responsive Layouts mit einem 12-Spalten-System zu erstellen.</p>
+                        
+                        <h3 class="h4 mt-4 mb-3">Grundlegende Struktur</h3>
+                        <p>Das Grid-System besteht aus drei Hauptkomponenten:</p>
+                        <ul>
+                            <li><strong>Container</strong>: <code>.container</code> oder <code>.container-fluid</code></li>
+                            <li><strong>Reihen</strong>: <code>.row</code></li>
+                            <li><strong>Spalten</strong>: <code>.col-*</code></li>
+                        </ul>
+                        
+                        <pre><code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

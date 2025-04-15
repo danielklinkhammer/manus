@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwortschutz - gr.ch CMS-Migrationsanalyse</title>
+    <style>
+        body {
+            font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .login-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        h1 {
+            color: #0056b3;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #004494;
+        }
+        
+        .error-message {
+            color: #e63946;
+            margin-top: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Kanton Graubünden Logo">
+        </div>
+        <h1>gr.ch CMS-Migrationsanalyse</h1>
+        <div id="login-form">
+            <div class="form-group">
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" placeholder="Bitte Passwort eingeben">
+            </div>
+            <button id="login-button">Zugang erhalten</button>
+            <p id="error-message" class="error-message">Falsches Passwort. Bitte versuchen Sie es erneut.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if already authenticated
+            const isAuthenticated = localStorage.getItem('grch_authenticated');
+            if (isAuthenticated === 'true') {
+                window.location.href = 'index.html';
+            }
+            
+            const loginButton = document.getElementById('login-button');
+            const passwordInput = document.getElementById('password');
+            const errorMessage = document.getElementById('error-message');
+            
+            // Correct password
+            const correctPassword = 'JakobNielsen';
+            
+            loginButton.addEventListener('click', function() {
+                if (passwordInput.value === correctPassword) {
+                    // Set authentication in localStorage
+                    localStorage.setItem('grch_authenticated', 'true');
+                    // Redirect to main page
+                    window.location.href = 'index.html';
+                } else {
+                    // Show error message
+                    errorMessage.style.display = 'block';
+                    passwordInput.value = '';
+                }
+            });
+            
+            // Allow Enter key to submit
+            passwordInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    loginButton.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

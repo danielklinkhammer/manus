@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KI-Browser-Plugins - AccessPilot</title>
+    <style>
+        :root {
+            --primary-color: #0a3d62;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+            --accent-color: #e74c3c;
+            --light-gray: #f1f1f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        
+        .logo h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+        
+        .content h3 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .content ul, .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            margin-top: 1rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .plugin-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .plugin-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .plugin-card .features {
+            margin: 1rem 0;
+        }
+        
+        .plugin-card .features h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .plugin-card .evaluation {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .plugin-card .evaluation h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .plugin-card .evaluation .strengths {
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+        
+        .plugin-card .evaluation .weaknesses {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+        
+        .plugin-card .evaluation .potential {
+            color: #f39c12;
+        }
+        
+        .references {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .references h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .references ol {
+            padding-left: 2rem;
+        }
+        
+        .references li {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/F16BD85F-5723-461C-BE2E-0613DC0BB618.png" alt="AccessPilot Logo">
+                    <h1>AccessPilot</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="screenreader.html">Screenreader</a></li>
+                        <li><a href="research.html">Forschung</a></li>
+                        <li><a href="plugins.html">KI-Plugins</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>KI-Browser-Plugins</h2>
+            <p>Marktanalyse zu bestehenden KI-gestützten Browserlösungen und deren Eignung für Barrierefreiheit</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Einführung</h2>
+                <p>Die Entwicklung von KI-basierten Browser-Plugins hat in den letzten Jahren erheblich zugenommen, mit einem wachsenden Fokus auf Barrierefreiheit und Unterstützung für blinde und sehbehinderte Nutzer. Diese Analyse untersucht bestehende KI-gestützte Browserlösungen, bewertet ihre Eignung für Barrierefreiheit und identifiziert Stärken, Schwächen und Potenziale für AccessPilot.</p>
+                
+                <div class="image-container">
+                    <img src="images/C9C8C552-5328-492C-A989-EA21CFC40C10 (1).png" alt="KI-Browser-Plugin Nutzung">
+                    <p class="image-caption">Abbildung 1: Nutzung eines KI-Browser-Plugins zur Verbesserung der Webzugänglichkeit</p>
+                </div>
+                
+                <h2>Überblick zu KI-gestützten Browser-Plugins für Barrierefreiheit</h2>
+                <p>Die Recherche zu KI-basierten Browser-Plugins für Barrierefreiheit zeigt eine wachsende Anzahl von Lösungen, die verschiedene Aspekte der Web-Zugänglichkeit für blinde und sehbehinderte Nutzer adressieren. Diese Tools nutzen künstliche Intelligenz, um die Grenzen traditioneller Screenreader zu überwinden und ein intuitiveres Nutzungserlebnis zu ermöglichen.</p>
+                
+                <h2>Wichtige KI-Browser-Plugins und ihre Funktionen</h2>
+                
+                <div class="plugin-card">
+                    <h3>AccessiBe</h3>
+                    <p>AccessiBe ist eine KI-gestützte Lösung, die Websites automatisch für Menschen mit Behinderungen zugänglich macht. Die Technologie analysiert und modifiziert Webseiten in Echtzeit, um sie mit Screenreadern und anderen assistiven Technologien kompatibel zu machen.</p>
+                    
+                    <div class="features">
+                        <h4>Funktionen:</h4>
+                        <ul>
+                            <li>Automatische Optimierung für Screenreader</li>
+                            <li>Tastaturnavigation</li>
+                            <li>Erkennung und Beschreibung von Bildern mittels KI</li>
+                            <li>Dynamische Anpassung von Formularen und interaktiven Elementen</li>
+                            <li>Automatische Erkennung und Korrektur von Zugänglichkeitsproblemen</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="evaluation">
+                        <h4>Bewertung:</h4>
+                        <div class="strengths">
+                            <h5>Stärken:</h5>
+                            <ul>
+                                <li>Umfassende Lösung, die viele Aspekte der Barrierefreiheit abdeckt</li>
+                                <li>Einfache Integration für Website-Betreiber</li>
+                                <li>Kontinuierliche Verbesserung durch maschinelles Lernen</li>
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h5>Schwächen:</h5>
+                            <ul>
+                                <li>Kann nicht alle Zugänglichkeitsprobleme vollständig lösen</li>
+                                <li>Abhängigkeit von JavaScript</li>
+                                <li>Potenzielle Datenschutzbedenken</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plugin-card">
+                    <h3>Helperbird</h3>
+                    <p>Helperbird ist eine umfassende Browsererweiterung, die zahlreiche Funktionen zur Verbesserung der Lesbarkeit und Zugänglichkeit von Webseiten bietet. Die Erweiterung richtet sich an Nutzer mit verschiedenen Bedürfnissen, darunter Dyslexie, Sehbehinderungen und andere kognitive Herausforderungen.</p>
+                    
+                    <div class="features">
+                        <h4>Funktionen:</h4>
+                        <ul>
+                            <li>Text-to-Speech mit über 30 Stimmen</li>
+                            <li>Dyslexie-freundliche Schriftarten und Anpassungen</li>
+                            <li>Farbüberlagerungen und Leselineal</li>
+                            <li>Bildschirmaufnahme und OCR (Texterkennung in Bildern)</li>
+                            <li>Automatische Zusammenfassung von Webseiten</li>
+                            <li>Spracherkennung für Diktieren von Text</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="evaluation">
+                        <h4>Bewertung:</h4>
+                        <div class="strengths">
+                            <h5>Stärken:</h5>
+                            <ul>
+                                <li>Vielseitige Funktionen für verschiedene Bedürfnisse</li>
+                                <li>Gute Anpassungsmöglichkeiten</li>
+                                <li>Unterstützung für mehrere Browser (Chrome, Firefox, Edge)</li>
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h5>Schwächen:</h5>
+                            <ul>
+                                <li>Einige fortgeschrittene Funktionen erfordern ein kostenpflichtiges Abonnement</li>
+                                <li>Kann auf einigen Websites Performance-Probleme verursachen</li>
+                                <li>Begrenzte semantische Analyse von Webinhalten</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="plugin-card">
+                    <h3>Experimenteller KI-Screenreader (Elastic)</h3>
+                    <p>Ein experimenteller Ansatz von Elastic Labs, der GPT-4o nutzt, um einen intelligenteren Screenreader zu entwickeln. Das Projekt demonstriert, wie generative KI die Webzugänglichkeit transformieren kann, indem sie eine intuitivere und kontextbewusstere Interaktion ermöglicht.</p>
+                    
+                    <div class="features">
+                        <h4>Funktionen:</h4>
+                        <ul>
+                            <li>Beschreibung der aktuellen Webseite in natürlicher Sprache</li>
+                            <li>Beantwortung spezifischer Fragen zum Seiteninhalt</li>
+                            <li>Spracherkennung und Text-to-Speech</li>
+                            <li>Kontextbewusste Interpretation von Bildern und visuellen Elementen</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="evaluation">
+                        <h4>Bewertung:</h4>
+                        <div class="strengths">
+                            <h5>Stärken:</h5>
+                            <ul>
+                                <li>Natürlichere und intuitivere Interaktion</li>
+                                <li>Besseres Verständnis des Kontexts und der Bedeutung von Inhalten</li>
+                                <li>Fähigkeit, komplexe visuelle Inhalte zu beschreiben</li>
+                            </ul>
+                        </div>
+                        <div class="weaknesses">
+                            <h5>Schwächen:</h5>
+                            <ul>
+                                <li>Experimenteller Status, noch nicht für den breiten Einsatz verfügbar</li>
+                                <li>Potenzielle Datenschutz- und Si<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

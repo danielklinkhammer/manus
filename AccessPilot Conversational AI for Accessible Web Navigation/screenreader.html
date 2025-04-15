@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenreader & Webhilfsmittel - AccessPilot</title>
+    <style>
+        :root {
+            --primary-color: #0a3d62;
+            --secondary-color: #3498db;
+            --text-color: #333;
+            --background-color: #f8f9fa;
+            --accent-color: #e74c3c;
+            --light-gray: #f1f1f1;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        
+        header {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+        
+        .logo h1 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .hero {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .content h2 {
+            color: var(--primary-color);
+            margin: 2rem 0 1rem;
+        }
+        
+        .content h3 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .content ul, .content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
+        
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .image-caption {
+            margin-top: 1rem;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .references {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+        }
+        
+        .references h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .references ol {
+            padding-left: 2rem;
+        }
+        
+        .references li {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ddd;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th, .comparison-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/F16BD85F-5723-461C-BE2E-0613DC0BB618.png" alt="AccessPilot Logo">
+                    <h1>AccessPilot</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="screenreader.html">Screenreader</a></li>
+                        <li><a href="research.html">Forschung</a></li>
+                        <li><a href="plugins.html">KI-Plugins</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Screenreader & Webhilfsmittel</h2>
+            <p>Analyse der aktuellen technischen Möglichkeiten und Grenzen von marktführenden Screenreadern</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <h2>Einführung</h2>
+                <p>Screenreader sind essentielle Hilfsmittel für blinde und sehbehinderte Menschen, um mit digitalen Inhalten zu interagieren. Sie wandeln Bildschirminhalte in Sprache oder Braille-Ausgabe um und ermöglichen so den Zugang zu Webseiten, Dokumenten und Anwendungen. Diese Analyse untersucht die aktuellen technischen Möglichkeiten und Grenzen der marktführenden Screenreader und identifiziert typische Probleme, die durch den AccessPilot-Ansatz adressiert werden können.</p>
+                
+                <div class="image-container">
+                    <img src="images/26D6D01A-7646-4FA8-A5EA-D67E8D14B0AF.png" alt="Screenreader Nutzung">
+                    <p class="image-caption">Abbildung 1: Nutzung eines Screenreaders zur Navigation auf einer Webseite</p>
+                </div>
+                
+                <h2>Marktführende Screenreader im Vergleich</h2>
+                <p>Die drei am weitesten verbreiteten Screenreader sind JAWS, NVDA und VoiceOver. Laut einer Studie von WebAIM (2021) nutzen mehr als 53,7% der befragten Personen JAWS auf Windows, mehr als 30,7% NVDA auf Windows und etwa 6,5% VoiceOver auf macOS. Im Folgenden werden diese drei Screenreader detailliert verglichen.</p>
+                
+                <h3>JAWS (Job Access With Speech)</h3>
+                <p>JAWS ist der am weitesten verbreitete Screenreader weltweit und wird von Freedom Scientific entwickelt. Er ist ausschließlich für Windows-Betriebssysteme verfügbar.</p>
+                
+                <h4>Vorteile:</h4>
+                <ul>
+                    <li>Umfangreich anpassbar mit vielen Konfigurationsmöglichkeiten</li>
+                    <li>Vielfältige Optionen zur Navigation durch Webseiten und Dokumente</li>
+                    <li>Gilt als Industriestandard mit breiter Akzeptanz</li>
+                    <li>Große Nutzerbasis, was zu umfangreichem Peer-Support führt</li>
+                </ul>
+                
+                <h4>Nachteile:</h4>
+                <ul>
+                    <li>Komplexere Bedienung im Vergleich zu NVDA oder VoiceOver</li>
+                    <li>Teilweise nicht-intuitive Befehle</li>
+                    <li>Viele zu erlernende Befehle, was zu einer steilen Lernkurve führt</li>
+                    <li>Nicht für Mac verfügbar</li>
+                    <li>Kostenpflichtig (zwischen $90 für eine jährliche Lizenz und $1605 für eine Dauerlizenz)</li>
+                    <li>Unterschiedliche Tastenkombinationen für Desktop und Laptop, was den Wissenstransfer erschweren kann</li>
+                </ul>
+                
+                <h3>NVDA (NonVisual Digital Access)</h3>
+                <p>NVDA ist ein kostenloser, quelloffener Screenreader für Windows, der von NV Access entwickelt wird. Er ist der zweitbeliebteste Screenreader weltweit.</p>
+                
+                <h4>Vorteile:</h4>
+                <ul>
+                    <li>Liefert zuverlässige Informationen zum Bildschirminhalt</li>
+                    <li>Einfach zu erlernende Tastenkombinationen</li>
+                    <li>Open Source, was bedeutet, dass die Community Updates und Fixes beitragen kann</li>
+                    <li>Kostenlos, daher eine erschwingliche Option für Windows-Nutzer</li>
+                </ul>
+                
+                <h4>Nachteile:</h4>
+                <ul>
+                    <li>Nicht für Mac verfügbar</li>
+                    <li>Weniger umfangreiche Anpassungsmöglichkeiten als JAWS</li>
+                </ul>
+                
+                <h3>VoiceOver</h3>
+                <p>VoiceOver ist der in macOS integrierte Screenreader von Apple. Er ist kostenlos und auf allen Apple-Geräten vorinstalliert.</p>
+                
+                <h4>Vorteile:</h4>
+                <ul>
+                    <li>Einfach zu bedienen und zu erlernen</li>
+                    <li>Intuitive Befehle</li>
+                    <li>Kostenlos und auf allen macOS-Geräten vorinstalliert</li>
+                </ul>
+                
+                <h4>Nachteile:</h4>
+                <ul>
+                    <li>Nicht für Windows verfügbar</li>
+                    <li>Keine eigenständige App, Updates nur mit macOS-Updates</li>
+                    <li>Weniger verbreitet als JAWS oder NVDA</li>
+                </ul>
+                
+                <h2>Vergleichsübersicht</h2>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Merkmal</th>
+                            <th>JAWS</th>
+                            <th>NVDA</th>
+                            <th>VoiceOver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Betriebssystem</td>
+                            <td>Windows</td>
+                            <td>Windows</td>
+                            <td>macOS</td>
+                        </tr>
+                        <tr>
+                            <td>Preis</td>
+                            <td>$90 - $1605</td>
+                            <td>Kostenlos</td>
+                            <td>Kostenlos (vorinstalliert)</td>
+                        </tr>
+                        <tr>
+                            <td>Marktanteil</td>
+                            <td>ca. 50%</td>
+                            <td>ca. 30%</td>
+                            <td>ca. 6%</td>
+                        </tr>
+                        <tr>
+                            <td>Anpassbarkeit</td>
+                            <td>Hoch</td>
+                            <td>Mittel</td>
+                            <td>Mittel</td>
+                        </tr>
+                        <tr>
+                            <td>Lernkurve</td>
+                            <td>Steil</td>
+                            <td>Moderat</td>
+                            <td>Flach</td>
+                        </tr>
+                        <tr>
+                            <td>Navigationsmethoden</td>
+                            <td>Vielfältig</td>
+                            <td>Gut</td>
+                            <td>Gut</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Typische Probleme mit Screenreadern</h2>
+                <p>Trotz der kontinuierlichen Verbesserungen von Screenreadern gibt es nach wie vor erhebliche Herausforderungen für blinde und sehbehinderte Nutzer bei der Interaktion mit Webinhalten. Die folgenden Probleme wurden in der Forschung und durch Nutzerfeedback identifiziert:</p>
+                
+                <h3>1. Lineare Struktur</h3>
+                <p>Screenreader lesen Webseiten typischerweise linear vor, was die Orientierung und das Verständnis der Gesamtstruktur erschwert. Dies kann besonders bei komplexen oder informationsreichen Seiten problematisch sein, da Nutzer den Überblick verlieren können.</p>
+                
+                <h3>2. Fehlende Kontextinformationen</h3>
+                <p>Nutzer erhalten oft nicht genügend Kontext über die Gesamtstruktur einer Webseite oder App. Dies erschwert das Verständnis der Beziehungen zwischen verschiedenen Elementen und der Hierarchie der Informationen.</p>
+                
+                <h3>3. Navigationsprobleme</h3>
+                <p>Die Navigation durch komplexe Webseiten kann zeitaufwändig und frustrierend sein. Nutzer müssen oft viele Elemente durchlaufen, bevor sie zu den gewünschten Informationen gelangen.</p>
+                
+                <h3>4. Fehlende Task-Fokussierung</h3>
+                <p>Screenreader bieten keine aufgabenorientierte Navigation, sondern erfordern vom Nutzer, die relevanten Informationen selbst zu finden. Dies kann bei spezifischen Aufgaben wie dem Ausfüllen eines Formulars oder dem Finden bestimmter Informationen ineffizient sein.</p>
+                
+                <h3>5. Lernkurve</h3>
+                <p>Besonders bei umfangreichen Screenreadern wie JAWS gibt es eine steile Lernkurve mit vielen zu erlernenden Befehlen. Dies kann für neue Nutzer oder Personen mit kognitiven Einschränkungen eine Herausforderung darstellen.</p>
+                
+                <h3>6. Plattformbeschränkungen</h3>
+                <p>Die meisten Screenreader sind auf ein Betriebssystem beschränkt (Windows oder macOS), was die Flexibilität der Nutzer einschränkt und den Wechsel zwischen verschi<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

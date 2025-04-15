@@ -1,0 +1,37 @@
+[
+  {
+    "id": "classics",
+    "name": "Klassiker",
+    "description": "Grundlegende Werke, die die HCI- und UX-Disziplin geprägt haben"
+  },
+  {
+    "id": "modern",
+    "name": "Neuere Werke",
+    "description": "Veröffentlichungen der letzten Jahre, die aktuelle Trends und Entwicklungen reflektieren"
+  },
+  {
+    "id": "design-principles",
+    "name": "Designprinzipien",
+    "description": "Bücher mit Fokus auf grundlegende Regeln und Konzepte für effektives Design"
+  },
+  {
+    "id": "psychology",
+    "name": "Psychologie",
+    "description": "Werke, die sich mit den psychologischen Aspekten der Mensch-Computer-Interaktion befassen"
+  },
+  {
+    "id": "usability",
+    "name": "Usability",
+    "description": "Bücher mit Schwerpunkt auf Benutzerfreundlichkeit und Nutzbarkeit"
+  },
+  {
+    "id": "accessibility",
+    "name": "Barrierefreiheit",
+    "description": "Literatur zum Thema inklusives Design und Zugänglichkeit für alle Nutzer"
+  },
+  {
+    "id": "methodology",
+    "name": "Methodik",
+    "description": "Werke, die praktische Methoden und Prozesse für UX-Design und -Forschung vermitteln"
+  }
+]

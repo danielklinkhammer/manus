@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Interaction Levels</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect fill="#F8F9FA" x="0" y="0" width="600" height="400"></rect>
+        
+        <!-- Layers -->
+        <g transform="translate(100, 100)">
+            <!-- Implicit Layer -->
+            <rect x="0" y="0" width="400" height="60" rx="10" fill="#0A192F"></rect>
+            <text font-family="Arial" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle" x="200" y="35">Implizite Ebene</text>
+            <text font-family="Arial" font-size="14" fill="#CCD6F6" text-anchor="middle" x="200" y="85">Passive Kontexterfassung, proaktive Anpassung, Ambient Intelligence</text>
+            
+            <!-- Dialogic Layer -->
+            <rect x="0" y="120" width="400" height="60" rx="10" fill="#172A45"></rect>
+            <text font-family="Arial" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle" x="200" y="155">Dialogische Ebene</text>
+            <text font-family="Arial" font-size="14" fill="#CCD6F6" text-anchor="middle" x="200" y="205">Natürliche Konversation, kontextbewusster Dialog, Balance zwischen System- und Nutzerinitiative</text>
+            
+            <!-- Direct Layer -->
+            <rect x="0" y="240" width="400" height="60" rx="10" fill="#64FFDA"></rect>
+            <text font-family="Arial" font-size="18" font-weight="bold" fill="#0A192F" text-anchor="middle" x="200" y="275">Direkte Ebene</text>
+            <text font-family="Arial" font-size="14" fill="#0A192F" text-anchor="middle" x="200" y="325">Traditionelle direkte Manipulation, präzise Kontrolle, nahtloser Übergang zu anderen Ebenen</text>
+        </g>
+        
+        <!-- Connecting Lines -->
+        <line x1="300" y1="160" x2="300" y2="220" stroke="#8892B0" stroke-width="2" stroke-dasharray="5,5"></line>
+        <line x1="300" y1="280" x2="300" y2="340" stroke="#8892B0" stroke-width="2" stroke-dasharray="5,5"></line>
+        
+        <!-- Icons -->
+        <g transform="translate(50, 130)">
+            <circle cx="0" cy="0" r="15" fill="#64FFDA" fill-opacity="0.5"></circle>
+            <circle cx="0" cy="0" r="25" stroke="#64FFDA" stroke-width="1" stroke-dasharray="3,3"></circle>
+            <circle cx="0" cy="0" r="35" stroke="#64FFDA" stroke-width="1" stroke-dasharray="3,3"></circle>
+        </g>
+        
+        <g transform="translate(50, 250)">
+            <rect x="-15" y="-15" width="30" height="30" rx="5" fill="#64FFDA"></rect>
+            <text font-family="Arial" font-size="20" font-weight="bold" fill="#0A192F" text-anchor="middle" x="0" y="7">?</text>
+        </g>
+        
+        <g transform="translate(50, 370)">
+            <circle cx="0" cy="0" r="15" fill="#0A192F"></circle>
+            <line x1="-10" y1="-5" x2="10" y2="-5" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="-10" y1="0" x2="10" y2="0" stroke="#FFFFFF" stroke-width="2"></line>
+            <line x1="-10" y1="5" x2="10" y2="5" stroke="#FFFFFF" stroke-width="2"></line>
+        </g>
+        
+        <!-- Title -->
+        <text font-family="Arial" font-size="24" font-weight="bold" fill="#0A192F" text-anchor="middle" x="300" y="50">Interaktionsebenen</text>
+        <text font-family="Arial" font-size="16" fill="#8892B0" text-anchor="middle" x="300" y="80">Nahtlose Übergänge zwischen verschiedenen Interaktionsmodalitäten</text>
+    </g>
+</svg>

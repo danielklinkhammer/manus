@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entwicklung von Mixed Reality Experiences</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Entwicklung von Mixed Reality Experiences</h1>
+            <nav>
+                <ul>
+                    <li><a href="#modulubersicht">Modulübersicht</a></li>
+                    <li><a href="#einfuhrung">Einführung</a></li>
+                    <li><a href="#ux-design">UX-Design</a></li>
+                    <li><a href="#unity">Unity</a></li>
+                    <li><a href="#programmierung">Programmierung</a></li>
+                    <li><a href="#projekt">Projekt</a></li>
+                    <li><a href="#vorlesungsplan">Vorlesungsplan</a></li>
+                    <li><a href="#leistungsnachweise">Leistungsnachweise</a></li>
+                    <li><a href="#ressourcen">Ressourcen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="modulubersicht">
+                <h2>Modulübersicht</h2>
+                <div class="module-info">
+                    <p><strong>Modulname:</strong> Entwicklung von Mixed Reality Experiences</p>
+                    <p><strong>Kürzel:</strong> MR</p>
+                    <p><strong>ECTS-Punkte:</strong> 4</p>
+                    <p><strong>Typ:</strong> Wahlpflichtmodul</p>
+                    <p><strong>Verantwortliche:</strong> Daniel Klinkhammer, Florian Mathis</p>
+                    <p><strong>Unterrichtssprache:</strong> Deutsch (Material evtl. teilweise auf Englisch)</p>
+                    <p><strong>Zeitaufwand:</strong> 120 Stunden (27h Präsenzunterricht, 44h Projektarbeit, 49h Selbststudium)</p>
+                </div>
+
+                <h3>Leitidee</h3>
+                <p>Das Modul bietet eine Einführung in die Thematik der gemischten Realität aus zwei Perspektiven:</p>
+                <ol>
+                    <li>User Experience (UX) Perspektive</li>
+                    <li>Entwicklungsperspektive</li>
+                </ol>
+                <p>Ziel ist es, durch die Verbindung theoretischer Konzepte mit praktischer Anwendung:</p>
+                <ul>
+                    <li>Ein Verständnis für Mixed Reality zu entwickeln</li>
+                    <li>Fähigkeiten zu erwerben, immersive Erfahrungen mit Unity zu gestalten und umzusetzen</li>
+                </ul>
+
+                <h3>Lernziele</h3>
+                <p>Nach erfolgreichem Abschluss des Moduls sollen die Studierenden in der Lage sein:</p>
+                <ol>
+                    <li>Die Grundlagen der Mixed Reality zu verstehen, einschließlich der Kernelemente und Prinzipien von Mixed Reality, Augmented Reality (AR) und Virtual Reality (VR), sowie deren Anwendungsbereiche in verschiedenen Branchen.</li>
+                    <li>UX-Design für Mixed Reality zu konzipieren, von der Benutzerforschung über das Prototyping bis zur Implementierung von benutzerzentrierten Designs.</li>
+                    <li>Eine Entwicklungsumgebung für VR/AR Experiences zu nutzen, insbesondere die Unity-Plattform mit ihrer Entwicklungsumgebung, Assets und grundlegenden Programmierkonzepten.</li>
+                    <li>Mixed Reality-Anwendungen zu programmieren, insbesondere mit Unity und C#, und dabei fortgeschrittene Interaktionsmöglichkeiten zu implementieren.</li>
+                    <li>Kollaborative Projekte umzusetzen, die die erworbenen Kenntnisse und Fähigkeiten in einem praxisorientierten Projekt anwenden und kollaboratives Arbeiten, Problemlösung und Kreativität fördern.</li>
+                </ol>
+
+                <h3>Lehr- und Lernmethoden</h3>
+                <p>Das Modul kombiniert verschiedene Lehr- und Lernmethoden:</p>
+                <ul>
+                    <li><strong>Vorlesungen:</strong> Theoretische Grundlagen und Konzepte (7 Präsenz, 2 Remote)</li>
+                    <li><strong>Praktische Übungen:</strong> Anwendung des Gelernten in konkreten Aufgaben</li>
+                    <li><strong>Projektarbeit:</strong> Entwicklung einer eigenen Mixed Reality-Anwendung</li>
+                    <li><strong>Selbststudium:</strong> Vertiefung der Inhalte durch eigenständiges Lernen</li>
+                    <li><strong>Präsentationen:</strong> Vorstellung und Diskussion der Projektergebnisse</li>
+                </ul>
+
+                <h3>Voraussetzungen</h3>
+                <ul>
+                    <li>Grundkenntnisse in objektorientierter Programmierung</li>
+                    <li>Grundlegende Kenntnisse in Mensch-Computer-Interaktion</li>
+                    <li>Interesse an immersiven Technologien und User Experience Design</li>
+                </ul>
+            </section>
+
+            <section id="einfuhrung">
+                <h2>Einführung in Mixed Reality</h2>
+                <p>Mixed Reality (MR) ist ein Bereich der immersiven Technologien, der die reale und virtuelle Welt miteinander verbindet. Im Gegensatz zu Virtual Reality (VR), die den Benutzer vollständig in eine virtuelle Umgebung eintauchen lässt, oder Augmented Reality (AR), die virtuelle Elemente in die reale Welt einblendet, kombiniert Mixed Reality beide Ansätze und ermöglicht eine nahtlose Interaktion zwischen realen und virtuellen Objekten.</p>
+                
+                <h3>Das Reality-Virtuality-Kontinuum</h3>
+                <p>Das Reality-Virtuality-Kontinuum, erstmals von Paul Milgram und Fumio Kishino 1994 beschrieben, stellt die verschiedenen Stufen der Realitätswahrnehmung dar:</p>
+                <ul>
+                    <li><strong>Reale Umgebung:</strong> Die physische Welt ohne virtuelle Elemente</li>
+                    <li><strong>Augmented Reality (AR):</strong> Die reale Welt wird mit virtuellen Elementen angereichert</li>
+                    <li><strong>Augmented Virtuality (AV):</strong> Eine virtuelle Umgebung wird mit realen Elementen angereichert</li>
+                    <li><strong>Virtual Reality (VR):</strong> Eine vollständig virtuelle Umgebung ohne reale Elemente</li>
+                </ul>
+                <p>Mixed Reality umfasst den Bereich zwischen AR und AV, wobei reale und virtuelle Objekte koexistieren und in Echtzeit interagieren können.</p>
+                
+                <h3>Technologische Grundlagen</h3>
+                <p>Für Mixed Reality werden verschiedene Technologien eingesetzt:</p>
+                <ul>
+                    <li><strong>Tracking-Systeme:</strong> Erfassen die Position und Bewegung des Benutzers und der Umgebung</li>
+                    <li><strong>Displays:</strong> Head-Mounted Displays (HMDs) wie HoloLens oder transparente Displays</li>
+                    <li><strong>Sensoren:</strong> Kameras, Tiefensensoren, Gyroskope, Beschleunigungsmesser</li>
+                    <li><strong>Eingabemethoden:</strong> Gesten, Sprache, Controller, Eye-Tracking</li>
+                    <li><strong>Rendering-Technologien:</strong> 3D-Grafik, Beleuchtung, Schatten, Reflexionen</li>
+                </ul>
+                
+                <h3>Anwendungsbereiche</h3>
+                <p>Mixed Reality findet in verschiedenen Bereichen Anwendung:</p>
+                <ul>
+                    <li><strong>Bildung und Training:</strong> Interaktive Lernumgebungen, Simulationen, virtuelle Labore</li>
+                    <li><strong>Medizin:</strong> Chirurgische Planung, medizinische Ausbildung, Rehabilitation</li>
+                    <li><strong>Industrie:</strong> Montageanleitungen, Fernwartung, Produktdesign</li>
+                    <li><strong>Architektur und Bauwesen:</strong> Visualisierung von Gebäuden, Bauplanung</li>
+                    <li><strong>Unterhaltung:</strong> Spiele, interaktive Erlebnisse, Kunst</li>
+                    <li><strong>Einzelhandel:</strong> Virtuelle Anproben, Produktvisualisierung</li>
+                </ul>
+            </section>
+
+            <section id="ux-design">
+                <h2>UX-Design für Mixed Reality</h2>
+                <p>Das Design von Benutzererfahrungen (UX) für Mixed Reality unterscheidet sich grundlegend vom traditionellen 2D-Interface-Design. In Mixed Reality-Umgebungen interagieren Benutzer mit dreidimensionalen Objekten in einem räumlichen Kontext, was neue Designansätze erfordert.</p>
+                
+                <h3>Designprinzipien für Mixed Reality</h3>
+                <ul>
+                    <li><strong>Räumliches Denken:</strong> Objekte und Interaktionen müssen im dreidimensionalen Raum konzipiert werden</li>
+                    <li><strong>Natürliche Interaktionen:</strong> Nutzung von Gesten, Blicksteuerung und Sprache für intuitive Bedienung</li>
+                    <li><strong>Komfort und Ergonomie:</strong> Vermeidung von Ermüdung und Unbehagen bei längerer Nutzung</li>
+                    <li><strong>Kontextbewusstsein:</strong> Berücksichtigung der realen Umgebung des Benutzers</li>
+                    <li><strong>Feedback und Affordanz:</strong> Klare Signale, welche Objekte interaktiv sind und wie mit ihnen interagiert werden kann</li>
+                </ul>
+                
+                <h3>UX-Design-Prozess für Mixed Reality</h3>
+                <ol>
+                    <li><strong>Benutzerforschung:</strong> Verstehen der Bedürfnisse, Ziele und Kontexte der Zielgruppe</li>
+                    <li><strong>Ideenfindung:</strong> Entwicklung von Konzepten für räumliche Interaktionen und Erlebnisse</li>
+                    <li><strong>Prototyping:</strong> Erstellung von Low-Fidelity- und High-Fidelity-Prototypen</li>
+                    <li><strong>Usability-Tests:</strong> Evaluation der Benutzererfahrung mit realen Nutzern</li>
+                    <li><strong>Iteration:</strong> Verfeinerung des Designs basierend auf Feedback und Tests</li>
+                </ol>
+                
+                <h3>Interaktionsdesign für Mixed Reality</h3>
+                <p>Effektive Interaktionen in Mixed Reality basieren auf verschiedenen Modalitäten:</p>
+                <ul>
+                    <li><strong>Direkte Manipulation:</strong> Greifen, Ziehen, Skalieren von Objekten mit den Händen</li>
+                    <li><strong>Gestensteuerung:</strong> Definierte Handbewegungen für bestimmte Aktionen</li>
+                    <li><strong>Blicksteuerung:</strong> Auswahl von Objekten durch Fokussierung mit den Augen</li>
+                    <li><strong>Sprachbefehle:</strong> Natürliche Sprachinteraktion für Kommandos und Abfragen</li>
+                    <li><strong>Controller:</strong> Physische Eingabegeräte für präzise Interaktionen</li>
+                </ul>
+                
+                <h3>Visuelle Gestaltung in Mixed Reality</h3>
+                <p>Die visuelle Gestaltung muss die Besonderheiten der Mixed Reality berücksichtigen:</p>
+                <ul>
+                    <li><strong>Typografie:</strong> Lesbare Schriften in verschiedenen Entfernungen und Blickwinkeln</li>
+                    <li><strong>Farbgestaltung:</strong> Kontrastreiche Farben für gute Sichtbarkeit in verschiedenen Umgebungen</li>
+                    <li><strong>Beleuchtung:</strong> Realistische Lichteffekte für bessere Integration in die reale Umgebung</li>
+                    <li><strong>Räumliche Anordnung:</strong> Sinnvolle Platzierung von Elementen im dreidimensionalen Raum</li>
+                    <li><strong>Tiefenhinweise:</strong> Visuelle Hinweise zur Unterstützung der Tiefenwahrnehmung</li>
+                </ul>
+            </section>
+
+            <section id="unity">
+                <h2>Unity-Entwicklungsumgebung für Mixed Reality</h2>
+                <p>Unity ist eine der führenden Entwicklungsplattformen für Mixed Reality-Anwendungen. Sie bietet umfangreiche Werkzeuge und Funktionen für die Erstellung immersiver Erlebnisse und unterstützt verschiedene Mixed Reality-Geräte wie HoloLens, Oculus, HTC Vive und andere.</p>
+                
+                <h3>Einrichtung der Entwicklungsumgebung</h3>
+                <ol>
+                    <li><strong>Installation von Unity:</strong> Download und Installation der Unity Hub und der empfohlenen Unity-Version</li>
+                    <li><strong>Einrichtung des Mixed Reality Toolkit (MRTK):</strong> Integration des MRTK in Unity für Mixed Reality-spezifische Funktionen</li>
+                    <li><strong>Konfiguration der Build-Einstellungen:</strong> Anpassung der Projekteinstellungen für die Zielplattform (z.B. UWP für HoloLens)</li>
+                    <li><strong>Einrichtung der Entwicklungsgeräte:</strong> Konfiguration von Emulatoren oder physischen Geräten für Tests</li>
+                    <li><strong>Installation zusätzlicher Tools:</strong> Visual Studio, Git, 3D-Modellierungssoftware</li>
+                </ol>
+                
+                <h3>Unity-Grundlagen für Mixed Reality</h3>
+                <ul>
+                    <li><strong>Unity-Interface:</strong> Scene View, Game View, Hierarchy, Inspector, Project Browser</li>
+                    <li><strong>GameObjects und Komponenten:</strong> Grundlegende Bausteine in Unity</li>
+                    <li><strong>Transformationen:</strong> Position, Rotation und Skalierung von Objekten im 3D-Raum</li>
+                    <li><strong>Materials und Shader:</strong> Visuelle Darstellung von Objekten</li>
+                    <li><strong>Lighting:</strong> Beleuchtungssysteme für realistische Darstellung</li>
+                    <li><strong>Physics:</strong> Kollisionserkennung und physikalische Simulation</li>
+                    <li><strong>Animation:</strong> Bewegung und Veränderung von Objekten über Zeit</li>
+                </ul>
+                
+                <h3>Mixed Reality Toolkit (MRTK)</h3>
+                <p>Das Mixed Reality Toolkit ist eine Sammlung von Komponenten und Funktionen für die Entwicklung von Mixed Reality-Anwendungen in Unity:</p>
+                <ul>
+                    <li><strong>Input-System:</strong> Unterstützung für verschiedene Eingabemethoden (Gesten, Controller, Sprache)</li>
+                    <li><strong>UX-Komponenten:</strong> Vorgefertigte UI-Elemente für räumliche Interfaces</li>
+                    <li><strong>Spatial Awareness:</strong> Erkennung und Darstellung der realen Umgebung</li>
+                    <li><strong>Diagnostics:</strong> Tools zur Überwachung und Optimierung der Anwendungsleistung</li>
+                    <li><strong>Service-Infrastruktur:</strong> Framework für die Integration verschiedener Dienste</li>
+                    <li><strong>Beispielprojekte:</strong> Demonstrationen und Vorlagen für verschiedene Anwendungsfälle</li>
+                </ul>
+                
+                <h3>Assets und Ressourcen</h3>
+                <p>Für die Entwicklung von Mixed Reality-Anwendungen werden verschiedene Assets benötigt:</p>
+                <ul>
+                    <li><strong>3D-Modelle:</strong> Objekte, Charaktere, Umgebungen</li>
+                    <li><strong>Texturen:</strong> Oberflächendetails für 3D-Modelle</li>
+                    <li><strong>Materialien:</strong> Definition des visuellen Erscheinungsbilds von Objekten</li>
+                    <li><strong>Audio:</strong> Soundeffekte, Musik, Sprachausgabe</li>
+                    <li><strong>Animationen:</strong> Bewegungsabläufe für Objekte und Charaktere</li>
+                    <li><strong>Skripte:</strong> Programmcode für Interaktionen und Verhalten</li>
+                </ul>
+            </section>
+
+            <section id="programmierung">
+                <h2>Programmierung von Mixed Reality-Anwendungen</h2>
+                <p>Die Programmierung von Mixed Reality-Anwendungen erfordert spezifische Kenntnisse und Techniken, um immersive und interaktive Erlebnisse zu schaffen. In diesem Modul konzentrieren wir uns auf die Programmierun<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>
