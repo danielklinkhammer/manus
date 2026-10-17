@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma UX Design Kurs</title>
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            margin-top: 1.5em;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .toc {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        
+        .toc li {
+            margin-bottom: 8px;
+        }
+        
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+            margin-top: 15px;
+        }
+        
+        .active, .collapsible:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        
+        .content.open {
+            max-height: none;
+            padding: 18px;
+        }
+        
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .note {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .tip {
+            background-color: #e8f8e8;
+            border-left: 4px solid #2ecc71;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .warning {
+            background-color: #fff8e8;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        
+        .image-caption {
+            text-align: center;
+            font-style: italic;
+            margin-top: -15px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+        
+        .back-to-top:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Figma UX Design Kurs</h1>
+    <p>Willkommen zu diesem einstündigen Einführungskurs in Figma für UX Design. Dieser Kurs bietet einen umfassenden Überblick über die Grundlagen von Figma und ermöglicht es Ihnen, erste praktische Erfahrungen mit diesem leistungsstarken Tool zu sammeln.</p>
+    
+    <div class="toc">
+        <h2>Inhaltsverzeichnis</h2>
+        <ul>
+            <li><a href="#einfuehrung">1. Einführung und Überblick</a></li>
+            <li><a href="#grundlagen">2. Grundlegende Funktionen und Werkzeuge</a></li>
+            <li><a href="#uebung">3. Praktische Übung: Einfaches Wireframe erstellen</a></li>
+            <li><a href="#prototyping">4. Prototyping und Kollaboration</a></li>
+            <li><a href="#ressourcen">5. Ressourcen und nächste Schritte</a></li>
+        </ul>
+    </div>
+    
+    <button class="collapsible" id="einfuehrung">1. Einführung und Überblick (10 Minuten)</button>
+    <div class="content">
+        <h3>Was ist Figma?</h3>
+        <p>Figma ist ein cloudbasiertes Design-Tool, das speziell für die Zusammenarbeit entwickelt wurde. Es ermöglicht Designern, Entwicklern und anderen Stakeholdern, gemeinsam an UI/UX-Projekten zu arbeiten, unabhängig von ihrem Standort oder Betriebssystem.</p>
+        
+        <h3>Warum Figma für UX Design?</h3>
+        <p>Figma hat sich in den letzten Jahren als eines der führenden Tools für UX/UI-Design etabliert, und das aus gutem Grund:</p>
+        <ul>
+            <li><strong>Kollaboration in Echtzeit:</strong> Mehrere Personen können gleichzeitig an einem Design arbeiten</li>
+            <li><strong>Plattformübergreifend:</strong> Funktioniert im Browser auf jedem Betriebssystem</li>
+            <li><strong>Komponenten und Styles:</strong> Erstellen Sie wiederverwendbare Designelemente für Konsistenz</li>
+            <li><strong>Prototyping-Funktionen:</strong> Erstellen Sie interaktive Prototypen direkt in Figma</li>
+            <li><strong>Umfangreiche Community:</strong> Zugang zu Tausenden von Vorlagen und Plugins</li>
+            <li><strong>Kostenlose Version:</strong> Die Grundfunktionen sind kostenlos nutzbar</li>
+        </ul>
+        
+        <h3>Überblick über die Benutzeroberfläche</h3>
+        <p>Die Figma-Benutzeroberfläche besteht aus mehreren Hauptbereichen:</p>
+        <ul>
+            <li><strong>Werkzeugleiste:</strong> Enthält die wichtigsten Design-Werkzeuge (oben)</li>
+            <li><strong>Ebenen-Panel:</strong> Zeigt die Hierarchie aller Designelemente (links)</li>
+            <li><strong>Eigenschaften-Panel:</strong> Zeigt die Eigenschaften des ausgewählten Elements (rechts)</li>
+            <li><strong>Canvas:</strong> Der Hauptarbeitsbereich, in dem Sie Designs erstellen (Mitte)</li>
+            <li><strong>Seiten-Panel:</strong> Ermöglicht die Navigation zwischen verschiedenen Seiten oder Frames (links oben)</li>
+        </ul>
+        
+        <div class="note">
+            <p><strong>Hinweis:</strong> Figma bietet eine kostenlose Version, die für diesen Kurs ausreichend ist. Sie müssen lediglich ein Konto erstellen, um loszulegen.</p>
+        </div>
+        
+        <h3>Anmeldung und Einrichtung</h3>
+        <p>Um mit Figma zu beginnen:</p>
+        <ol>
+            <li>Besuchen Sie <a href="https://www.figma.com" target="_blank">figma.com</a></li>
+            <li>Klicken Sie auf "Sign up" und erstellen Sie ein kostenloses Konto</li>
+            <li>Nach der Anmeldung können Sie ein neues Design erstellen oder eine Vorlage verwenden</li>
+            <li>Für diesen Kurs empfehlen wir, ein leeres Design zu erstellen</li>
+        </ol>
+        
+        <p><a href="#top">Zurück zum Inhaltsverzeichnis</a></p>
+    </div>
+    
+    <button class="collapsible" id="grundlagen">2. Grundlegende Funktionen und Werkzeuge (15 Minuten)</button>
+    <div class="content">
+        <h3>Navigation in Figma</h3>
+        <p>Die effiziente Navigation in Figma ist entscheidend für einen reibungslosen Workflow:</p>
+        <ul>
+            <li><strong>Zoomen:</strong> Mausrad oder Strg/Cmd + Mausrad</li>
+            <li><strong>Verschieben:</strong> Leertaste + Mausziehen oder mittlere Maustaste</li>
+            <li><strong>Auswählen:</strong> Klicken oder Auswahlrechteck ziehen</li>
+            <li><strong>Mehrfachauswahl:</strong> Shift + Klicken auf Elemente</li>
+            <li><strong>Alles auswählen:</strong> Strg/Cmd + A</li>
+        </ul>
+        
+        <div class="tip">
+            <p><strong>Tipp:</strong> Drücken Sie die Taste "Z", um in den Zoom-Modus zu wechseln, und klicken Sie dann, um auf einen bestimmten Bereich zu zoomen.</p>
+        </div>
+        
+        <h3>Frames und Ebenen erstellen</h3>
+        <p>Frames sind die Grundbausteine in Figma, vergleichbar mit Artboards in anderen Design-Tools:</p>
+        <ol>
+            <li><strong>Frame erstellen:</strong> Wählen Sie das Frame-Tool (F) aus der Werkzeugleiste</li>
+            <li><strong>Gerätegröße auswählen:</strong> Wählen Sie eine vordefinierte Größe oder ziehen Sie einen benutzerdefinierten Frame</li>
+            <li><strong>Frames verschachteln:</strong> Ziehen Sie einen Frame in einen anderen, um eine Hierarchie zu erstellen</li>
+            <li><strong>Ebenen organisieren:</strong> Verwenden Sie das Ebenen-Panel, um Elemente zu gruppieren und zu ordnen</li>
+        </ol>
+        
+        <h3>Grundlegende Formen und Textelemente</h3>
+        <p>Figma bietet verschiedene Werkzeuge zum Erstellen von Grundformen und Text:</p>
+        <ul>
+            <li><strong>Rechteck-Tool (R):</strong> Erstellt Rechtecke und Quadrate</li>
+            <li><strong>Ellipsen-Tool (O):</strong> Erstellt Kreise und Ellipsen</li>
+            <li><strong>Linien-Tool (L):</strong> Erstellt gerade Linien</li>
+            <li><strong>Polygon-Tool:</strong> Erstellt regelmäßige Polygone</li>
+            <li><strong>Text-Tool (T):</strong> Fügt Textfelder hinzu</li>
+        </ul>
+        
+        <p>Um ein Element zu bearbeiten:</p>
+        <ol>
+            <li>Wählen Sie das Element aus</li>
+            <li>Verwenden Sie das Eigenschaften-Panel rechts, um Farbe, Größe, Ausrichtung usw. zu ändern</li>
+            <li>Verwenden Sie die Griffe am Element, um es zu skalieren oder zu drehen</li>
+        </ol>
+        
+        <h3>Ausrichtung und Anordnung von Elementen</h3>
+        <p>Figma bietet leistungsstarke Werkzeuge zur präzisen Ausrichtung von Elementen:</p>
+        <ul>
+            <li><strong>Intelligente Hilfslinien:</strong> Erscheinen automatisch beim Verschieben von Elementen</li>
+            <li><strong>Ausrichtungsoptionen:</strong> Verfügbar in der oberen Werkzeugleiste, wenn mehrere Elemente ausgewählt sind</li>
+            <li><strong>Abstände:</strong> Gleichmäßige Verteilung von Elementen horizontal oder vertikal</li>
+            <li><strong>Raster und Lineale:</strong> Aktivierbar über das Menü Ansicht</li>
+        </ul>
+        
+        <div class="tip">
+            <p><strong>Tipp:</strong> Halten Sie die Alt-Taste gedrückt, während Sie ein Element verschieben, um eine Kopie zu erstellen.</p>
+        </div>
+        
+        <h3>Styles und Komponenten: Grundkonzepte</h3>
+        <p>Styles und Komponenten sind entscheidend für ein konsistentes Design:</p>
+        <ul>
+            <li><strong>Farb-Styles:</strong> Erstellen Sie wiederverwendbare Farben für Ihr Design-System</li>
+            <li><strong>Text-Styles:</strong> Definieren Sie Schriftarten, Größen und Stile für verschiedene Texttypen</li>
+            <li><strong>Effekt-Styles:</strong> Speichern Sie Schatten, Unschärfen und andere Effekte</li>
+            <li><strong>Komponenten:</strong> Erstellen Sie wiederverwendbare UI-Elemente (z.B. Buttons, Karten)</li>
+        </ul>
+        
+        <p>Um einen Style zu erstellen:</p>
+        <ol>
+            <li>Wählen Sie ein Element aus</li>
+            <li>Klicken Sie auf das Vier-Punkte-Symbol neben der Eigenschaft im Eigenschaften-Panel</li>
+            <li>Wählen Sie "Style erstellen"</li>
+            <li>Geben Sie einen Namen ein und klicken Sie auf "Erstellen"</li>
+        </ol>
+        
+        <p><a href="#top">Zurück zum Inhaltsverzeichnis</a></p>
+    </div>
+    
+    <button class="collapsible" id="uebung">3. Praktische Übung: Einfaches Wireframe erstellen (20 Minuten)</button>
+    <div class="content">
+        <h3>Einführung in die Übung</h3>
+        <p>In dieser praktischen Übung werden wir ein einfaches Wireframe für eine Wetter-App erstellen. Dieses Projekt ist ideal für Anfänger, da es grundlegende Figma-Funktionen abdeckt, ohne zu komplex zu sein.</p>
+        
+        <div class="note">
+            <p><strong>Hinweis:</strong> Wireframes sind vereinfachte Darstellungen einer Benutzeroberfläche, die sich auf Struktur und Funktionalität konzentrieren, nicht auf visuelle Details.</p>
+        </div>
+        
+        <h3>Schritt 1: Frame erstellen</h3>
+        <ol>
+            <li>Wählen Sie das Frame-Tool (F) aus der Werkzeugleiste</li>
+            <li>Wählen Sie "iPhone 14 Pro / 15 Pro" aus den vordefinierten Größen (oder ein anderes Smartphone-Format)</li>
+            <li>Klicken Sie auf den Canvas, um den Frame zu platzieren</li>
+            <li>Benennen Sie den Frame "Wetter-App Hauptbildschirm" im Ebenen-Panel</li>
+        </ol>
+        
+        <h3>Schritt 2: Hintergrund und Statusleiste hinzufügen</h3>
+        <ol>
+            <li>Wählen Sie den Frame aus</li>
+            <li>Ändern Sie die Hintergrundfarbe im Eigenschaften-Panel auf einen hellen Blauton (#E6F2FF)</li>
+            <li>Erstellen Sie ein Rechteck (R) für die Statusleiste am oberen Rand des Frames:
+                <ul>
+                    <li>Breite: Gesamte Framebreite</li>
+                    <li>Höhe: 44px</li>
+                    <li>Farbe: Weiß mit 80% Transparenz</li>
+                </ul>
+            </li>
+            <li>Fügen Sie ein Textelement (T) für die Uhrzeit hinzu (z.B. "9:41")</li>
+            <li>Platzieren Sie es mittig in der Statusleiste</li>
+        </ol>
+        
+        <h3>Schritt 3: Hauptinformationen hinzufügen</h3>
+        <ol>
+            <li>Erstellen Sie ein Textelement (T) für den Stadtnamen:
+                <ul>
+                    <li>Text: "Berlin"</li>
+                    <li>Schriftgröße: 32px</li>
+                    <li>Schriftart: System Default oder SF Pro</li>
+                    <li>Ausrichtung: Zentriert</li>
+                    <li>Position: Etwa 100px vom oberen Rand</li>
+                </ul>
+            </li>
+            <li>Fügen Sie ein Textelement für die Temperatur hinzu:
+                <ul>
+                    <li>Text: "21°"</li>
+                    <li>Schriftgröße: 72px</li>
+                    <li>Schriftart: System Default oder SF Pro</li>
+                    <li>Ausrichtung: Zentriert</li>
+                    <li>Position: Unter dem Stadtnamen</li>
+                </ul>
+            </li>
+            <li>Fügen Sie ein Textelement für die Wetterbeschreibung hinzu:
+                <ul>
+                    <li>Text: "Sonnig"</li>
+                    <li>Schriftgröße: 18px</li>
+                    <li>Schriftart: System Default oder SF Pro</li>
+                    <li>Ausrichtung: Zentriert</li>
+                    <li>Position: Unter der Temperatur</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h3>Schritt 4: Wetter-Icon hinzufügen</h3>
+        <ol>
+            <li>Erstellen Sie einen Kreis mit dem Ellipsen-Tool (O):
+                <ul>
+                    <li>Größe: 80x80px</li>
+                    <li>Farbe: Gelb (#FFD700)</li>
+                    <li>Position: Über der Temperatur</li>
+                </ul>
+            </li>
+            <li>Alternativ können Sie ein Icon aus der Figma Community importieren:
+                <ul>
+                    <li>Klicken Sie auf das Menü "Ressourcen" (links oben)</li>
+                    <li>Wählen Sie "Community"</li>
+                    <li>Suchen Sie nach "Weather Icons"</li>
+                    <li>Importieren Sie ein passendes Icon-Set</li>
+                    <li>Ziehen Sie ein Sonnen-Icon auf Ihren Frame</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h3>Schritt 5: Tagesvorhersage-Bereich erstellen</h3>
+        <ol>
+            <li>Erstellen Sie ein Rechteck (R) für den Vorhersage-Bereich:
+                <ul>
+                    <li>Breite: Gesamte Framebreite</li>
+                    <li>Höhe: 200px</li>
+                    <li>Farbe: Weiß mit 90% Deckkraft</li>
+                    <li>Eckenradius: 20px (im Eigenschaften-Panel)</li>
+                    <li>Position: Im unteren Drittel des Frames</li>
+                </ul>
+            </li>
+            <li>Fügen Sie ein Textelement für die Überschrift hinzu:
+                <ul>
+                    <li>Text: "7-Tage-Vorhersage"</li>
+                    <li>Schriftgröße: 18px</li>
+                    <li>Schriftart: System Default oder SF Pro</li>
+                    <li>Schriftstärke: Medium oder Bold</li>
+                    <li>Position: Oben im Vorhersage-Bereich mit 16px Abstand</li>
+                </ul>
+            </li>
+            <li>Erstellen Sie eine Tageszeile (für jeden Tag wiederholen):
+                <ul>
+                    <li>Textelement für den Tag: "Mo" (16px)</li>
+                    <li>Kleines Wetter-Icon (24x24px)</li>
+                    <li>Textelement für die Temperatur: "19° / 24°" (16px)</li>
+                    <li>Horizontale Linie als Trenner (1px Höhe, hellgrau)</li>
+                </ul>
+            </li>
+            <li>Duplizieren Sie die Tageszeile für weitere Tage (Di, Mi, Do, Fr)</li>
+            <li>Verteilen Sie die Zeilen gleichmäßig im Vorhersage-Bereich</li>
+        </ol>
+        
+        <h3>Schritt 6: Layout verfeinern</h3>
+        <ol>
+            <li>Überprüfen Sie die Ausrichtung aller Elemente:
+                <ul>
+                    <li>Wählen Sie alle Elemente im Hauptbereich aus und zentrieren Sie sie horizontal</li>
+                    <li>Stellen Sie sicher, dass die Abstände zwischen den Elementen konsistent sind</li>
+                </ul>
+            </li>
+            <li>Fügen Sie Schatten oder Unschärfe-Effekte hinzu:
+                <ul>
+                    <li>Wählen Sie den Vorhersage-Bereich aus</li>
+                    <li>Fügen Sie im Eigenschaften-Panel unter "Effekte" einen leichten Schatten hinzu</li>
+                </ul>
+            </li>
+            <li>Überprüfen Sie die Lesbarkeit:
+                <ul>
+                    <li>Stellen Sie sicher, dass alle Texte gut lesbar sind</li>
+                    <li>Passen Sie bei Bedarf Farben und Kontraste an</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <div class="tip">
+            <p><strong>Tipp:</strong> Verwenden Sie die Tastenkombination Strg/Cmd + D, um Elemente schnell zu duplizieren, nachdem Sie sie ausgewählt haben.</p>
+        </div>
+        
+        <p><a href="#top">Zurück zum Inhaltsverzeichnis</a></p>
+    </div>
+    
+    <button class="collapsible" id="prototyping">4. Prototyping und Kollaboration (10 Minuten)</button>
+    <div class="content">
+        <h3>Einfache Interaktionen hinzufügen</h3>
+        <p>Figma ermöglicht es Ihnen, interaktive Prototypen zu erstellen, ohne den Editor zu verlassen:</p>
+        <ol>
+            <li>Erstellen Sie einen zweiten Frame für einen Detailbildschirm:
+                <ul>
+                    <li>Duplizieren Sie den Hauptbildschirm (Strg/Cmd + D)</li>
+                    <li>Ändern Sie einige Elemente, um ihn zu unterscheiden</li>
+                    <li>Platzieren Sie ihn rechts neben dem ersten Frame</li>
+                </ul>
+            </li>
+            <li>Wechseln Sie in den Prototyping-Modus:
+                <ul>
+                    <li>Klicken Sie auf den Tab "Prototyp" im rechten Panel</li>
+                </ul>
+            </li>
+            <li>Erstellen Sie eine Verbindung:
+                <ul>
+                    <li>Wählen Sie ein Element im ersten Frame aus (z.B. eine Tageszeile)</li>
+                    <li>Ziehen Sie den Pfeil-Connector (kleiner blauer Kreis) zum zweiten Frame</li>
+                    <li>Wählen Sie die Interaktionseinstellungen:
+                        <ul>
+                            <li>Interaktion: Bei Klick</li>
+                            <li>Animation: Smart Animate</li>
+                            <li>Dauer: 300ms</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Erstellen Sie eine Rückverbindung:
+                <ul>
+                    <li>Wählen Sie ein Element im zweiten Frame aus (z.B. einen "Zurück"-Button)</li>
+                    <li>Verbinden Sie es mit dem ersten Frame</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h3>Prototyp-Vorschau und Teilen</h3>
+        <p>So können Sie Ihren Prototyp testen und teilen:</p>
+        <ol>
+            <li>Starten Sie die Vorschau:
+                <ul>
+                    <li>Klicken Sie auf den "Abspielen"-Button in der oberen rechten Ecke</li>
+                    <li>Oder drücken Sie Strg/Cmd + Alt + Enter</li>
+                </ul>
+            </li>
+            <li>Testen Sie die Interaktionen:
+                <ul>
+                    <li>Klicken Sie auf die interaktiven Elemente</li>
+                    <li>Überprüfen Sie, ob die Übergänge wie erwartet funktionieren</li>
+                </ul>
+            </li>
+            <li>Teilen Sie den Prototyp:
+                <ul>
+                    <li>Klicken Sie auf die Schaltfläche "Teilen" in der oberen rechten Ecke</li>
+                    <li>Wählen Sie die Freigabeeinstellungen (Ansicht oder Bearbeitung)</li>
+                    <li>Kopieren Sie den Link oder laden Sie bestimmte Personen ein</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <div class="note">
+            <p><strong>Hinweis:</strong> Mit der kostenlosen Version von Figma können Sie unbegrenzt viele Projekte erstellen und mit bis zu zwei Bearbeitern zusammenarbeiten.</p>
+        </div>
+        
+        <h3>Zusammenarbeit in Echtzeit demonstrieren</h3>
+        <p>Figma zeichnet sich durch seine Kollaborationsfunktionen aus:</p>
+        <ul>
+            <li><strong>Mehrere Bearbeiter:</strong> Mehrere Personen können gleichzeitig am selben Dokument arbeiten</li>
+            <li><strong>Cursor-Verfolgung:</strong> Sehen Sie, wo andere Benutzer arbeiten</li>
+            <li><strong>Bearbeitungsrechte:</strong> Steuern Sie, wer was bearbeiten kann</li>
+        </ul>
+        
+        <p>So laden Sie Kollaborateure ein:</p>
+        <ol>
+            <li>Klicken Sie auf die Schaltfläche "Teilen" in der oberen rechten Ecke</li>
+            <li>Geben Sie die E-Mail-Adressen der Personen ein, mit denen Sie zusammenarbeiten möchten</li>
+            <li>Wählen Sie die entsprechenden Berechtigungen (Ansicht, Kommentieren, Bearbeiten)</li>
+            <li>Klicken Sie auf "Einladen"</li>
+        </ol>
+        
+        <h3>Kommentare und Feedback</h3>
+        <p>Figma bietet leistungsstarke Feedback-Tools:</p>
+        <ol>
+            <li>Aktivieren Sie den Kommentar-Modus:
+                <ul>
+                    <li>Klicken Sie auf das Sprechblasen-Symbol in der oberen Werkzeugleiste</li>
+                    <li>Oder drücken Sie C</li>
+                </ul>
+            </li>
+            <li>Hinterlassen Sie einen Kommentar:
+                <ul>
+                    <li>Klicken Sie auf den Bereich, den Sie kommentieren möchten</li>
+                    <li>Geben Sie Ihren Kommentar ein</li>
+                    <li>Drücken Sie Enter, um den Kommentar zu speichern</li>
+                </ul>
+            </li>
+            <li>Antworten und Auflösen:
+                <ul>
+                    <li>Klicken Sie auf einen vorhandenen Kommentar, um zu antworten</li>
+                    <li>Klicken Sie auf das Häkchen, um einen Kommentar als gelöst zu markieren</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <div class="tip">
+            <p><strong>Tipp:</strong> Verwenden Sie @Erwähnungen in Kommentaren, um bestimmte Teammitglieder zu benachrichtigen.</p>
+        </div>
+        
+        <p><a href="#top">Zurück zum Inhaltsverzeichnis</a></p>
+    </div>
+    
+    <button class="collapsible" id="ressourcen">5. Ressourcen und nächste Schritte (5 Minuten)</button>
+    <div class="content">
+        <h3>Empfohlene Ressourcen zum Weiterlernen</h3>
+        <p>Um Ihre Figma-Kenntnisse zu vertiefen, empfehlen wir folgende Ressourcen:</p>
+        
+        <h4>Offizielle Figma-Ressourcen</h4>
+        <ul>
+            <li><a href="https://help.figma.com/hc/en-us" target="_blank">Figma Help Center</a> - Offizielle Dokumentation und Tutorials</li>
+            <li><a href="https://www.figma.com/resources/learn-design/" target="_blank">Figma Learn Design</a> - Lernpfade für Anfänger bis Fortgeschrittene</li>
+            <li><a href="https://www.youtube.com/c/Figmadesign" target="_blank">Figma YouTube-Kanal</a> - Video-Tutorials und Produktupdates</li>
+        </ul>
+        
+        <h4>Online-Kurse</h4>
+        <ul>
+            <li><a href="https://www.figma.com/resources/courses-and-more/" target="_blank">Figma Courses</a> - Kostenlose und kostenpflichtige Kurse</li>
+            <li><a href="https://www.udemy.com/topic/figma/" target="_blank">Udemy Figma-Kurse</a> - Umfassende Kurse für verschiedene Niveaus</li>
+            <li><a href="https://www.coursera.org/courses?query=figma" target="_blank">Coursera Figma-Kurse</a> - Akademische Kurse mit Zertifikaten</li>
+        </ul>
+        
+        <h4>Bücher und Artikel</h4>
+        <ul>
+            <li>"Figma for Designers" von Claire Larsen</li>
+            <li>"Figma Handbook" von Pablo Stanley</li>
+            <li><a href="https://www.smashingmagazine.com/tag/figma/" target="_blank">Smashing Magazine Figma-Artikel</a> - Tiefgehende Artikel und Tutorials</li>
+        </ul>
+        
+        <h3>Figma Community und Templates</h3>
+        <p>Die Figma Community bietet eine Fülle von Ressourcen, die Ihnen den Einstieg erleichtern können:</p>
+        <ul>
+            <li><strong>UI Kits:</strong> Vorgefertigte Komponenten für verschiedene Plattformen (iOS, Android, Web)</li>
+            <li><strong>Wireframe-Kits:</strong> Sammlungen von Wireframe-Elementen für schnelles Prototyping</li>
+            <li><strong>Icon-Sets:</strong> Umfangreiche Sammlungen von Icons für verschiedene Anwendungsfälle</li>
+            <li><strong>Plugins:</strong> Erweiterungen, die den Funktionsumfang von Figma erweitern</li>
+        </ul>
+        
+        <p>So greifen Sie auf die Community zu:</p>
+        <ol>
+            <li>Klicken Sie auf das Figma-Logo in der oberen linken Ecke</li>
+            <li>Wählen Sie "Community" aus dem Dropdown-Menü</li>
+            <li>Durchsuchen Sie die verfügbaren Ressourcen oder verwenden Sie die Suchfunktion</li>
+        </ol>
+        
+        <h3>Praktische Übungsprojekte</h3>
+        <p>Um Ihre Figma-Fähigkeiten zu verbessern, empfehlen wir folgende Übungsprojekte:</p>
+        <ol>
+            <li><strong>Erweitern Sie die Wetter-App:</strong>
+                <ul>
+                    <li>Fügen Sie weitere Screens hinzu (Einstellungen, Standortauswahl, etc.)</li>
+                    <li>Erstellen Sie ein vollständiges Navigationskonzept</li>
+                    <li>Experimentieren Sie mit verschiedenen Farbschemata</li>
+                </ul>
+            </li>
+            <li><strong>Erstellen Sie ein einfaches Design-System:</strong>
+                <ul>
+                    <li>Definieren Sie Farb- und Typografie-Styles</li>
+                    <li>Erstellen Sie wiederverwendbare Komponenten (Buttons, Karten, etc.)</li>
+                    <li>Dokumentieren Sie Ihre Komponenten</li>
+                </ul>
+            </li>
+            <li><strong>Redesign einer bestehenden App:</strong>
+                <ul>
+                    <li>Wählen Sie eine App, die Sie häufig nutzen</li>
+                    <li>Analysieren Sie die Benutzeroberfläche</li>
+                    <li>Erstellen Sie ein verbessertes Design in Figma</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <div class="tip">
+            <p><strong>Tipp:</strong> Regelmäßiges Üben ist der Schlüssel zur Beherrschung von Figma. Versuchen Sie, täglich mindestens 30 Minuten mit dem Tool zu arbeiten.</p>
+        </div>
+        
+        <h3>Nächste Schritte in Ihrer Figma-Reise</h3>
+        <p>Nach diesem Einführungskurs könnten folgende Themen für Sie interessant sein:</p>
+        <ul>
+            <li><strong>Fortgeschrittene Komponenten:</strong> Varianten, Eigenschaften und Auto Layout</li>
+            <li><strong>Design-Systeme:</strong> Erstellen und Verwalten umfassender Design-Systeme</li>
+            <li><strong>Fortgeschrittenes Prototyping:</strong> Komplexe Interaktionen und Animationen</li>
+            <li><strong>Plugins entwickeln:</strong> Erstellen eigener Erweiterungen für Figma</li>
+            <li><strong>Design-to-Code:</strong> Übergang von Figma-Designs zu HTML/CSS oder React</li>
+        </ul>
+        
+        <p><a href="#top">Zurück zum Inhaltsverzeichnis</a></p>
+    </div>
+    
+    <a href="#top" class="back-to-top">↑</a>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Collapsible sections
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.classList.remove("open");
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        content.classList.add("open");
+                    }
+                });
+            }
+            
+            // Open section if URL has hash
+            if (window.location.hash) {
+                var section = document.getElementById(window.location.hash.substring(1));
+                if (section && section.classList.contains("collapsible")) {
+                    section.click();
+                    section.scrollIntoView();
+                }
+            }
+            
+            // Handle links to sections
+            var links = document.querySelectorAll('a[href^="#"]');
+            links.forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    var targetId = this.getAttribute('href').substring(1);
+                    var targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement && targetElement.classList.contains("collapsible")) {
+                        if (!targetElement.classList.contains("active")) {
+                            targetElement.click();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
